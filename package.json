@@ -1,0 +1,32 @@
+{
+  "name": "markdown",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@vuepress/client": "^2.0.0-beta.61",
+    "@vuepress/plugin-back-to-top": "^2.0.0-beta.61",
+    "@vuepress/plugin-docsearch": "^2.0.0-beta.61",
+    "@vuepress/plugin-git": "^2.0.0-beta.61",
+    "@vuepress/plugin-prismjs": "^2.0.0-beta.61",
+    "@vuepress/plugin-search": "^2.0.0-beta.61",
+    "@vuepress/plugin-shiki": "^2.0.0-beta.61",
+    "vue": "^3.2.47",
+    "vuepress": "^2.0.0-beta.61",
+    "vuepress-plugin-comment2": "^2.0.0-beta.205",
+    "vuepress-plugin-md-enhance": "^2.0.0-beta.205",
+    "vuepress-plugin-search-pro": "^2.0.0-beta.205"
+  },
+  "dependencies": {
+    "less": "^4.1.3",
+    "less-loader": "^11.1.0",
+    "markdown-it": "^13.0.1",
+    "vuepress-theme-hope": "^2.0.0-beta.205"
+  }
+}
