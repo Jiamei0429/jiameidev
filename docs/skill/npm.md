@@ -1,3 +1,9 @@
+---
+title: 发布NPM软件包
+icon: npm
+order: 2
+---
+
 # 发布NPM软件包 :tada:
 
 第一步：

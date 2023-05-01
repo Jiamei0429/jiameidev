@@ -1,10 +1,13 @@
 ---
 sticky: 10
 star: 10
+title: 递归算法
+icon: sort
+order: 1
 ---
 
 # 递归算法 :tada:
-![](./../../.vuepress/public/images/arithmetic/digui1.png)
+![](/images/arithmetic/digui1.png)
 ## 递归简介:gem:
 #### 什么是递归呢？
 一个函数在内部调用了其本身，那个这个函数就是递归函数，递归本质上是将原来的问题，转化为更小的同一问题，大白话就是：一个函数不断的调用自己，粗暴的理解：函数内部自己调用自己，这个函数就是递归函数。
@@ -25,7 +28,7 @@ star: 10
 - 将问题分为规模更小的相同问题，持续分解，直到问题规模小到可以用非常简单直接的方式来解决
 - 分解完后，再合并结果
 
-![](./../../.vuepress/public/images/arithmetic/digui3.png)
+![](/images/arithmetic/digui3.png)
 
 因此，递归的编写首先可以定义一个函数，其次找到出口条件的同时还要找到规律。
 :::
@@ -39,7 +42,7 @@ star: 10
 ::: tabs#fruit
 @tab JavaScript
 #### 案例：实现5的阶乘
-![](./../../.vuepress/public/images/arithmetic/digui2.png)
+![](/images/arithmetic/digui2.png)
 ```javascript
 // 5的阶乘：5*4*3*2*1
 function sum (num) {
@@ -64,7 +67,7 @@ print(jie_cheng(10))
 假设你正在爬楼梯。需要 n 阶你才能到达楼顶
 每次你可以爬 1 或 2 个台阶。你有多少种不同的方法可以爬到楼顶呢？
 
-![](./../../.vuepress/public/images/arithmetic/digui4.png)
+![](/images/arithmetic/digui4.png)
 
 根据这个数据结果发现规律，结果的1、2、3、5、8... 可以发现这个数据的结果就是斐波那契数列
 

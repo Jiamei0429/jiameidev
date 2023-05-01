@@ -1,0 +1,1 @@
+import{_ as t,Y as a,Z as n,$ as e,a0 as s}from"./framework-5ec5f799.js";const c={},r=e("h1",{id:"_10-6-nextjs模块6",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#_10-6-nextjs模块6","aria-hidden":"true"},"#"),s(" 10.6 NextJS模块6 🎉")],-1),_=[r];function o(d,i){return a(),n("div",null,_)}const l=t(c,[["render",o],["__file","next06.html.vue"]]);export{l as default};

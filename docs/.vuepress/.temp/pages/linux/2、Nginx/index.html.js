@@ -1,0 +1,1 @@
+export const data = JSON.parse("{\"key\":\"v-4ea6148b\",\"path\":\"/linux/2%E3%80%81Nginx/\",\"title\":\"2、 Nginx\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"2、 Nginx\",\"description\":\"\"},\"headers\":[],\"readingTime\":{\"minutes\":0.01,\"words\":2},\"filePathRelative\":null,\"excerpt\":\"\",\"autoDesc\":true,\"git\":{}}")

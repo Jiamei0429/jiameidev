@@ -1,18 +1,21 @@
 ---
+article: false
+title: 主页
+icon: home
+collapsible: true
+link: false
+index: true
+order: 1
 home: true
-title: 嘉美社区
 heroImage: /images/logo.png
 heroImageDark: /images/logo.png
-category:
-  - HTML
-  - Web
 # heroHeight: 580
 actions:
   - text: 快速上手
-    link: /markdown/qianyan/
+    link: /qianyan.md
     type: primary
   - text: 关于我们
-    link: /resume/
+    link: /resume.md
     type: secondary
 features:
   - title: 简洁至上
@@ -28,6 +31,125 @@ features:
 footer: <a href="https://beian.miit.gov.cn/">备案号：	鲁ICP备2022010166号-1</a>
 copyright: <a href="https://jiameikj.com">嘉美开发社区 &nbsp;&nbsp; CopyRight@2023 &nbsp;&nbsp; Version:1.2.4</a>
 ---
+
+## 知识树
+```mindmap
+root((嘉美开发社区))
+    后端
+      Node方向
+        NodeJS
+        Express
+        NestJS
+      Python方向
+        Python
+        Flask
+        Django
+        爬虫
+        办公自动化
+        网络与并发编程
+    前端
+      前端三件套
+      LESS <br /> SCSS
+      TypeScript
+      WebPack <br /> Vite
+      ECMAScript
+      Vue
+      React
+      Uniapp
+      Electron
+      微信小程序
+      NuxtJS
+      NextJS
+    Linux
+      Ubuntu
+      Nginx
+      Docker
+    数据库
+      Redis
+      Mysql
+      MongoDb
+    必备技能
+    算法
+    面试题
+```
+## 数据视图
+::: echarts 快速增长
+
+```js
+const data = [];
+
+for (let i = 0; i < 5; i++) data.push(Math.round(Math.random() * 200));
+
+const option = {
+  xAxis: {
+    max: "dataMax",
+  },
+  yAxis: {
+    type: "category",
+    data: ["JavaScript","NodeJs","Python"],
+    inverse: true,
+    animationDuration: 300,
+    animationDurationUpdate: 300,
+    max: 2, // only the largest 3 bars will be displayed
+  },
+  series: [
+    {
+      realtimeSort: true,
+      name: "量",
+      type: "bar",
+      data: data,
+      label: {
+        show: true,
+        position: "right",
+        valueAnimation: true,
+      },
+    },
+  ],
+  legend: {
+    show: true,
+  },
+  toolbox: {
+    show: true,
+    feature: {
+      mark: {
+        show: true,
+      },
+      dataView: {
+        show: true,
+        readOnly: false,
+      },
+      restore: {
+        show: true,
+      },
+      saveAsImage: {
+        show: true,
+      },
+    },
+  },
+  animationDuration: 0,
+  animationDurationUpdate: 3000,
+  animationEasing: "linear",
+  animationEasingUpdate: "linear",
+};
+const run = () => {
+  for (let i = 0; i < data.length; i++)
+    data[i] += Math.round(Math.random() * Math.random() > 0.9 ? 2000 : 200);
+
+  myChart.setOption({
+    series: [{ type: "bar", data }],
+  });
+};
+setTimeout(() => {
+  run();
+}, 0);
+setInterval(() => {
+  run();
+}, 3000);
+```
+
+:::
+
+
 ## 常用网址（临时存在）
 [ChatGPT](https://chat.openai.com/chat)   [GitHub](https://github.com)     [Gitee](https://e.gitee.com/jmwlkj/code/repos)
 

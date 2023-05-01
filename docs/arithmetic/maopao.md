@@ -1,11 +1,13 @@
 ---
 sticky: 9
 star: true
+title: 冒泡排序
+icon: state
+order: 2
 ---
-
 # 冒泡排序  :tada:
 
-![](./../../.vuepress/public/images/arithmetic/maopao1.png)
+![](/images/arithmetic/maopao1.png)
 
 冒泡排序是一种简单的排序算法
 
@@ -19,17 +21,17 @@ star: true
 
 - 持续每次对越来越少的元素重复上面的步骤，直到没有任何一对数字需要比较
 
-  ![](./../../.vuepress/public/images/arithmetic/maopao2.gif)
+  ![](/images/arithmetic/maopao2.gif)
 
 ## 冒泡排序案例 :gem:
 ::: tabs#fruit
 @tab JavaScript
 #### 案例：将数组[40,30,20,10]实现从小到大排序
-![](./../../.vuepress/public/images/arithmetic/maopao3.png)
+![](/images/arithmetic/maopao3.png)
 ---
-![](./../../.vuepress/public/images/arithmetic/maopao4.png)
+![](/images/arithmetic/maopao4.png)
 ---
-![](./../../.vuepress/public/images/arithmetic/maopao5.png)
+![](/images/arithmetic/maopao5.png)
 ```javascript
 function sort(arr) {
   for (var i = 0; i < arr.length-1; i++) {
@@ -50,7 +52,7 @@ function sort(arr) {
 @tab Python
 #### 案例：将列表[5，2，6，4，7，3，1]实现从小到大排序
 
-![](./../../.vuepress/public/images/arithmetic/maopao6.png)
+![](/images/arithmetic/maopao6.png)
 
 
 ```python

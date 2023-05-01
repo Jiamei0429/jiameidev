@@ -1,1 +1,0 @@
-# Django章节2  :tada:

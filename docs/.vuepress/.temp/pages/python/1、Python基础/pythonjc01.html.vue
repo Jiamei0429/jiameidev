@@ -1,0 +1,137 @@
+<template><div><h1 id="_1-1-初体验python" tabindex="-1"><a class="header-anchor" href="#_1-1-初体验python" aria-hidden="true">#</a> 1.1 初体验Python  🎉</h1>
+<figure><img src="/images/python/py1.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>Python是当今世界最流行的程序语言之一。由荷兰人，吉多·范罗苏姆（Guido van Rossum）1989年发明，1991年公布。官网：<a href="http://www.python.org/" target="_blank" rel="noopener noreferrer">www.python.org<ExternalLinkIcon/></a></p>
+<p>Python突出的简洁性、易读性和可扩展性，使得在数据科学、人工智能、云计算、图形处理与互联网应用等领域占尽风头。有这么一个梗，python出了生孩子，其他都能做，足以体现python的地位了。</p>
+<p>目前，Python有两大版本，分别是Python2.x和Python3.x。Python2.x版本在2020年已经停止支持，因此Python3.x是目前主流。</p>
+<blockquote>
+<p>⚠️Python3：2008年发布。Python3有了较大的提升，不兼容Python2。</p>
+<p>❤️兼容问题解决：</p>
+<ol>
+<li>Python3的很多新特性也被移植到了Python2.7，作为过渡。如果程序可以在2.7运行，可以通过一个名为2to3（Python自带的一个脚本）的转换工具无缝迁移到Python3。</li>
+<li>强烈建议大家从Python3开始，毕竟它是现在，也是未来</li>
+</ol>
+</blockquote>
+<h2 id="python特点" tabindex="-1"><a class="header-anchor" href="#python特点" aria-hidden="true">#</a> Python特点💎</h2>
+<ul>
+<li>
+<p><strong>可读性强</strong></p>
+<blockquote>
+<p>可读性远比听上去重要的多得多。</p>
+<p>可读性强意味着让你可以在更短时间内学习和记忆，直接提高生产率。</p>
+</blockquote>
+</li>
+<li>
+<p><strong>简洁，简洁，简洁</strong></p>
+<blockquote>
+<p>python完成同样功能只用其他语言一半的代码，其实就是提高了一倍的生产率。</p>
+<p>程序员再也不需要关注复杂的语法，而是关注任务本身。</p>
+</blockquote>
+</li>
+<li>
+<p><strong>开源</strong></p>
+<blockquote>
+<p>Python是纯粹的开源语言，软件更容易移植到其他的平台，如Mac、Linux等，因此Python拥有丰富的第三方资源库是不足为奇的。</p>
+</blockquote>
+</li>
+<li>
+<p><strong>标准脚本语言</strong></p>
+<blockquote>
+<p>脚本程序是指只有需要被调用时，才会被动态的解释执行。</p>
+<p>Python也被称为：“胶水语言”。</p>
+<p>Python允许混合使用C、Java与Python代码例如Python程序中允许调用一段由Java编写的程序模块（库），甚至这段Java模块可以是保密的。</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="python应用场景" tabindex="-1"><a class="header-anchor" href="#python应用场景" aria-hidden="true">#</a> <strong>Python应用场景</strong>💎</h2>
+<figure><img src="/images/python/py2.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<ol>
+<li>
+<p><strong>人工智能(AI</strong> Artificial Intelligence**)**</p>
+<p>人工智能领域的王者！人工智能领域大多数开发场景都有Python的身影。</p>
+</li>
+<li>
+<p><strong>Web应用开发</strong></p>
+<p>一些Web框架，如Django，TurboGears，web2py，Zope等，可以让程序员轻松地开发和管理复杂的Web程序。</p>
+</li>
+<li>
+<p><strong>操作系统管理、服务器运维的自动化脚本</strong></p>
+<p>大多数Linux发行版以及NetBSD、OpenBSD和MacOSX都集成了Python，可以在终端下直接运行Python。一般说来，Python编写的系统管理脚本在可读性、性能、代码重用度、扩展性几方面都优于普通的shell脚本。</p>
+</li>
+<li>
+<p><strong>科学计算和数据分析</strong></p>
+<p>NumPy，SciPy，Matplotlib可以让Python程序员编写科学计算程序。</p>
+</li>
+<li>
+<p><strong>桌面软件</strong></p>
+<p>PyQt、PySide、wxPython、PyGTK是Python快速开发桌面应用程序的利器。</p>
+</li>
+<li>
+<p><strong>服务器软件、网络爬虫</strong></p>
+</li>
+<li>
+<p><strong>游戏开发</strong></p>
+<p>很多游戏使用C++编写图形显示等高性能模块，而使用Python或者Lua编写游戏的逻辑、服务器。</p>
+</li>
+</ol>
+<h2 id="python运行环境搭建" tabindex="-1"><a class="header-anchor" href="#python运行环境搭建" aria-hidden="true">#</a> Python运行环境搭建💎</h2>
+<figure><img src="/images/python/py3.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>不管用什么工具开发Python程序，都必须安装Python的运行环境。目前最常用的是Windows、Linux平台。由于目前使用Windows的人数最多，我们以Windows10为主讲解。同时，我们使用python3.11版本为主要学习版本。</p>
+<blockquote>
+<p>⚠️其实编程和平台关系不大。大家也可以使用Linux、Mac。</p>
+</blockquote>
+<ul>
+<li>
+<p>第一步：进入python官网(python.org)，<a href="https://www.python.org/ftp/python/3.11.3/python-3.11.3-amd64.exe" target="_blank" rel="noopener noreferrer">下载python安装包<ExternalLinkIcon/></a></p>
+</li>
+<li>
+<p>第二步：以管理员身份运行下载好的<code v-pre>python.exe</code></p>
+<figure><img src="/images/python/py4.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+</li>
+<li>
+<p>第三步：选中界面下方的&quot;Add Python 3.11 to Path&quot;复选框，这样安装程序就会自动将Python的路径加到PATH环境变量中，进行安装</p>
+<figure><img src="/images/python/py5.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="/images/python/py6.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="/images/python/py7.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="/images/python/py8.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>直到看到successful，就代表安装成功了</p>
+</li>
+<li>
+<p>第四步：运行python</p>
+<p>windows查找命令中输入<code v-pre>cmd</code>，或直接win+r输入<code v-pre>cmd</code>， 进入命令行窗口，再输入：<code v-pre>python</code></p>
+<figure><img src="/images/python/py9.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>输入<code v-pre>print(&quot;hello world&quot;)</code></p>
+<figure><img src="/images/python/py10.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<blockquote>
+<ol>
+<li>
+<p><code v-pre>&gt;&gt;&gt;</code> 即为“提示符”</p>
+</li>
+<li>
+<p>关闭交互模式：</p>
+<p>(1) <code v-pre>Ctrl+Z</code>和<code v-pre>回车</code></p>
+<p>(2) 输入<code v-pre>quit()</code>或<code v-pre>exit()</code>命令</p>
+<p>(3) 直接关闭命令行窗口</p>
+</li>
+</ol>
+</blockquote>
+</li>
+</ul>
+<h2 id="idle开发环境使用入门" tabindex="-1"><a class="header-anchor" href="#idle开发环境使用入门" aria-hidden="true">#</a> <strong>IDLE开发环境使用入门</strong>💎</h2>
+<figure><img src="/images/python/py11.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>开发环境，英文是IDE（Integrated Development Environment 集成开发环境）。</p>
+<p>不要纠结于使用哪个开发环境。开发环境本质上就是对Python解释器python.exe的封装，核心都一样。可以说：“开发环境IDE，只是解释器的一个外挂而已”，只是为了让程序员更加方便编程，减少出错率，尤其是拼写错误。</p>
+<p>工欲善其事，必先利其器，选择自己擅长的开发工具是十分重要的。</p>
+<p>常用的开发环境如下：</p>
+<ol>
+<li>IDLE</li>
+<li>Pycharm （推荐）</li>
+<li>vscode （推荐）</li>
+<li>jupyter</li>
+</ol>
+<p>个人习惯使用vscode，在接下来的讲解中，我都用此工具进行代码的编辑。</p>
+<h2 id="视频讲解" tabindex="-1"><a class="header-anchor" href="#视频讲解" aria-hidden="true">#</a> 视频讲解📽️</h2>
+<p><video  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/97ac2dcc1367e03ac580204d6ca9a724.mp4" width="100%" controls></video></p>
+<p>至此，我们已经初步体验了python并用其写出了第一个程序，接下来我会带大家正式进入python知识的学习了</p>
+</div></template>
+
+

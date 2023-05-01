@@ -1,10 +1,13 @@
 ---
 sticky: true
 star: 10
+title: 快速排序
+icon: speed
+order: 3
 ---
 # 快速排序 :tada:
 
-![](./../../.vuepress/public/images/arithmetic/kuaisu1.png)
+![](/images/arithmetic/kuaisu1.png)
 
 ## 算法思路 :gem:
 
@@ -15,20 +18,20 @@ star: 10
 3. 对"基准"左边和右边的两个子集，不断重复第一步和第二步，直到所有子集只剩下一个元素为止
 4. 把所有的生成的新的数组元素合并在一起
 
-![](./../../.vuepress/public/images/arithmetic/kuaisu2.gif)
+![](/images/arithmetic/kuaisu2.gif)
 
 ## 快速排序案例 :gem:
 ::: tabs#fruit
 @tab JavaScript
 #### 案例：将数组[4,2,5,7,3,9,1]实现从小到大排序
 - 第一步，选择中间的元素7作为"基准"。（基准值可以任意选择，但是选择中间的值比较容易理解。）
-![](./../../.vuepress/public/images/arithmetic/kuaisu4.png)
+![](/images/arithmetic/kuaisu4.png)
 - 第二步，按照顺序，将每个元素与"基准"进行比较，形成两个子集，一个"小于7"，另一个"大于等于7"
-![](./../../.vuepress/public/images/arithmetic/kuaisu5.png)
+![](/images/arithmetic/kuaisu5.png)
 - 第三步，对两个子集不断重复第一步和第二步，直到所有子集只剩下一个元素为止
-![](./../../.vuepress/public/images/arithmetic/kuaisu6.png)
+![](/images/arithmetic/kuaisu6.png)
 - 第四步，合并所有的元素
-![](./../../.vuepress/public/images/arithmetic/kuaisu7.png)
+![](/images/arithmetic/kuaisu7.png)
 ```javascript
 var quickSort = function (arr) {
   if (arr.length <= 1) {
@@ -51,7 +54,7 @@ var quickSort = function (arr) {
 @tab Python
 #### 案例：将列表[5，7，9，1，6，4，10，2，3，8]实现从小到大排序
 
-![](./../../.vuepress/public/images/arithmetic/kuaisu8.png)
+![](/images/arithmetic/kuaisu8.png)
 
 
 ```python

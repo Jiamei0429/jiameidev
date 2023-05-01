@@ -1,0 +1,85 @@
+<template><div><h1 id="初体验redis" tabindex="-1"><a class="header-anchor" href="#初体验redis" aria-hidden="true">#</a> 初体验Redis🎉</h1>
+<h2 id="redis概述-什么是nosql" tabindex="-1"><a class="header-anchor" href="#redis概述-什么是nosql" aria-hidden="true">#</a> Redis概述_什么是NoSQL💎</h2>
+<figure><img src="@source/../.vuepress/public/images/redis/redis1.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>NoSQL(NoSQL = <strong>Not Only SQL</strong>)，意即“不仅仅是SQL”，泛指<strong>非关系型的数据库</strong>。随着互联网web2.0网站的兴起，传统的关系数据库在应付特别是超大规模和高并发类型纯动态网站已经显得力不从心，暴露了很多难以克服的问题。</p>
+<h3 id="结构化数据和非结构化数据" tabindex="-1"><a class="header-anchor" href="#结构化数据和非结构化数据" aria-hidden="true">#</a> 结构化数据和非结构化数据👻</h3>
+<figure><img src="@source/../.vuepress/public/images/redis/redis2.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<ul>
+<li>结构化数据指的是由二维表结构来逻辑表达和实现的数据，严格遵循数据格式与长度规范，也称作为行数据。</li>
+<li>非结构化数据，指的是<strong>数据结构不规则或不完整，没有任何预定义的数据模型，不方便用二维逻辑表来表现的数据</strong>，例如办公文档（Word）、文本、图片、HTML、各类报表、视频音频等。</li>
+</ul>
+<h3 id="nosql的四大分类" tabindex="-1"><a class="header-anchor" href="#nosql的四大分类" aria-hidden="true">#</a> NoSQL的四大分类👻</h3>
+<ul>
+<li>
+<h4 id="kv型nosql-代表-redis" tabindex="-1"><a class="header-anchor" href="#kv型nosql-代表-redis" aria-hidden="true">#</a> <strong>KV型NoSql（代表----Redis）</strong></h4>
+<p>KV型NoSql顾名思义就是以键值对形式存储的非关系型数据库，是最简单、最容易理解也是大家最熟悉的一种NoSql，因此比较快地带过。</p>
+<div class="hint-container tip">
+<p class="hint-container-title">注意</p>
+<p>KV型NoSql最大的优点就是<strong>高性能</strong>，利用Redis自带的BenchMark做基准测试，TPS可达到10万的级别，性能非常强劲。</p>
+</div>
+</li>
+<li>
+<h4 id="列式nosql-代表-hbase" tabindex="-1"><a class="header-anchor" href="#列式nosql-代表-hbase" aria-hidden="true">#</a> <strong>列式NoSql（代表----HBase）</strong></h4>
+<p>列式NoSql，大数据时代最具代表性的技术之一了，以HBase为代表。</p>
+<figure><img src="@source/../.vuepress/public/images/redis/redis3.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<div class="hint-container tip">
+<p class="hint-container-title">注意</p>
+<p>在关系型数据库数据中看到每行有name、phone、address三个字段，这是行式存储的方式，且可以观察id = 2的这条数据，即使phone字段没有，它也是占空间的。</p>
+</div>
+<p>而使用列式NoSql,就会像如下这样</p>
+<div style="display:flex;justify-content:space-around;flex-wrap:wrap;">
+    <img src="@source/../.vuepress/public/images/redis/redis4.png" style="width:350px"/>
+    <img src="@source/../.vuepress/public/images/redis/redis5.png" style="width:350px"/>
+</div>
+::: tip  注意
+1、查询时只有指定的列会被读取，不会读取所有列
+<p>2、列数据被组织到一起，一次磁盘IO可以将一列数据一次性读取到内存中
+:::</p>
+</li>
+<li>
+<h4 id="文档型nosql-代表-mongodb" tabindex="-1"><a class="header-anchor" href="#文档型nosql-代表-mongodb" aria-hidden="true">#</a> <strong>文档型NoSql（代表----MongoDB）</strong></h4>
+<p>什么是文档型NoSql呢，文档型NoSql指的是将半结构化数据存储为文档的一种NoSql，文档型NoSql通常以JSON或者XML格式存储数据。</p>
+<figure><img src="@source/../.vuepress/public/images/redis/redis6.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<div class="hint-container tip">
+<p class="hint-container-title">注意</p>
+<p>关系型数据库是按部就班地每个字段一列存，在MongDB里面就是一个JSON字符串存储。</p>
+</div>
+</li>
+<li>
+<h4 id="搜索型nosql-代表-elasticsearch" tabindex="-1"><a class="header-anchor" href="#搜索型nosql-代表-elasticsearch" aria-hidden="true">#</a> <strong>搜索型NoSql（代表----ElasticSearch）</strong></h4>
+<p>传统关系型数据库主要通过索引来达到快速查询的目的，但是在全文搜索的场景下，索引是无能为力的，like查询一来无法满足所有模糊匹配需求，二来使用限制太大且使用不当容易造成慢查询，<strong>搜索型NoSql的诞生正是为了解决关系型数据库全文搜索能力较弱的问题</strong>，ElasticSearch是搜索型NoSql的代表产品。</p>
+<figure><img src="@source/../.vuepress/public/images/redis/redis7.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+</li>
+</ul>
+<h2 id="关系型数据库和非关系型数据及其区别" tabindex="-1"><a class="header-anchor" href="#关系型数据库和非关系型数据及其区别" aria-hidden="true">#</a> 关系型数据库和非关系型数据及其区别💎</h2>
+<p><strong>关系型数据库最典型的数据结构是表，由二维表及其之间的联系所组成的一个数据组织</strong></p>
+<p><strong>优点：</strong></p>
+<figure><img src="@source/../.vuepress/public/images/redis/redis8.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<ul>
+<li>易于维护：都是使用表结构，格式一致；</li>
+<li>使用方便：SQL语言通用，可用于复杂查询；</li>
+<li>复杂操作：支持SQL，可用于一个表以及多个表之间非常复杂的查询。</li>
+</ul>
+<p><strong>缺点：</strong></p>
+<ul>
+<li>读写性能比较差，尤其是海量数据的高效率读写；</li>
+<li>固定的表结构，灵活度稍欠；</li>
+</ul>
+<p><strong>非关系型数据库</strong></p>
+<p><strong>优点：</strong></p>
+<figure><img src="@source/../.vuepress/public/images/redis/redis9.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<ul>
+<li>格式灵活：存储数据的格式可以是key,value形式、文档形式、图片形式等等，文档形式、图片形式等等，使用灵活，应用场景广泛，而关系型数据库则只支持基础类型。</li>
+<li>速度快：nosql可以使用硬盘或者随机存储器作为载体，而关系型数据库只能使用硬盘；</li>
+<li>高扩展性；</li>
+<li>成本低：nosql数据库部署简单，基本都是开源软件。</li>
+</ul>
+<p><strong>缺点：</strong></p>
+<ul>
+<li>不提供sql支持，学习和使用成本较高；</li>
+<li>无事务处理；</li>
+<li>数据结构相对复杂，复杂查询方面稍欠。</li>
+</ul>
+</div></template>
+
+
