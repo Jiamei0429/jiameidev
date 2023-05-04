@@ -100,9 +100,9 @@ npx create-react-app my-app <span class="token parameter variable">--template</s
 <span class="token punctuation">}</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></CodeDemo><p><strong>轻松一刻</strong></p>
 <AudioPlayer
-  src="/mp3/像鱼.mp3"
-  title="像鱼"
-  poster="/mp3/像鱼.jpg"
+  src="/mp3/4.mp3"
+  title="音乐"
+  poster="/mp3/4.jpg"
 />
 <p><strong>视频教程</strong></p>
 <VideoPlayer

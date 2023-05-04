@@ -1,1 +1,0 @@
-import{_ as t,Y as a,Z as n,$ as e,a0 as u}from"./framework-5ec5f799.js";const c={},r=e("h1",{id:"ubuntu操作系统章节2",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#ubuntu操作系统章节2","aria-hidden":"true"},"#"),u(" Ubuntu操作系统章节2")],-1),s=[r];function o(_,d){return a(),n("div",null,s)}const h=t(c,[["render",o],["__file","ubuntu02.html.vue"]]);export{h as default};

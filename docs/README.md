@@ -72,82 +72,54 @@ root((嘉美开发社区))
     算法
     面试题
 ```
-## 数据视图
-::: echarts 快速增长
 
-```js
-const data = [];
 
-for (let i = 0; i < 5; i++) data.push(Math.round(Math.random() * 200));
-
-const option = {
-  xAxis: {
-    max: "dataMax",
+::: chart 网站资源成分比例
+```json
+{
+  "type": "bar",
+  "data": {
+    "labels": ["WEB前端", "NodeJS", "Python", "Linux", "数据库", "面试题","必备技能","算法"],
+    "datasets": [
+      {
+        "label": "成分占比",
+        "data": [35, 5, 25, 9, 8, 12, 4, 2],
+        "backgroundColor": [
+          "rgba(255, 99, 132, 0.2)",
+          "rgba(54, 162, 235, 0.2)",
+          "rgba(255, 206, 86, 0.2)",
+          "rgba(75, 192, 192, 0.2)",
+          "rgba(153, 102, 255, 0.2)",
+          "rgba(255, 159, 64, 0.2)",
+          "rgba(215, 111, 64, 0.2)",
+          "rgba(125, 32, 64, 0.2)"
+        ],
+        "borderColor": [
+          "rgba(255, 99, 132, 1)",
+          "rgba(54, 162, 235, 1)",
+          "rgba(255, 206, 86, 1)",
+          "rgba(75, 192, 192, 1)",
+          "rgba(153, 102, 255, 1)",
+          "rgba(255, 159, 64, 1)",
+          "rgba(183, 99, 64, 1)",
+          "rgba(32, 134, 64, 1)"
+        ],
+        "borderWidth": 1
+      }
+    ]
   },
-  yAxis: {
-    type: "category",
-    data: ["JavaScript","NodeJs","Python"],
-    inverse: true,
-    animationDuration: 300,
-    animationDurationUpdate: 300,
-    max: 2, // only the largest 3 bars will be displayed
-  },
-  series: [
-    {
-      realtimeSort: true,
-      name: "量",
-      type: "bar",
-      data: data,
-      label: {
-        show: true,
-        position: "right",
-        valueAnimation: true,
-      },
-    },
-  ],
-  legend: {
-    show: true,
-  },
-  toolbox: {
-    show: true,
-    feature: {
-      mark: {
-        show: true,
-      },
-      dataView: {
-        show: true,
-        readOnly: false,
-      },
-      restore: {
-        show: true,
-      },
-      saveAsImage: {
-        show: true,
-      },
-    },
-  },
-  animationDuration: 0,
-  animationDurationUpdate: 3000,
-  animationEasing: "linear",
-  animationEasingUpdate: "linear",
-};
-const run = () => {
-  for (let i = 0; i < data.length; i++)
-    data[i] += Math.round(Math.random() * Math.random() > 0.9 ? 2000 : 200);
-
-  myChart.setOption({
-    series: [{ type: "bar", data }],
-  });
-};
-setTimeout(() => {
-  run();
-}, 0);
-setInterval(() => {
-  run();
-}, 3000);
+  "options": {
+    "scales": {
+      "y": {
+        "beginAtZero": true
+      }
+    }
+  }
+}
 ```
-
 :::
+
+
 
 
 ## 常用网址（临时存在）

@@ -169,7 +169,7 @@ export default defineUserConfig({
                 link: '/nodejs/'
             },
             {
-                text: 'Python后端',
+                text: 'Python',
                 icon: "python",
                 link: '/python/'
             },

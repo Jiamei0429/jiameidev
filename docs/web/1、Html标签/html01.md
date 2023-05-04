@@ -8,14 +8,18 @@ tag: html
 ![](/images/html/html1.png)
 
 `HTML5`是用来描述网页的一种语言，被称为超文本标记语言。用HTML5编写的文件，后缀以.html结尾，`HTML`是一种标记语言，标记语言是一套标记标签。标签是由尖括号包围的关键字，例如：`<html>`
+::: tip
+文件后缀名以.html结尾
 
+在编写代码的过程中，<>必须是英文状态下编写
+:::
 HTML标签有两种表现形式：
 - 双标签，例如：`<html></html>`
 - 单标签，例如：`<img>`
 
-> HTML是做什么的？
->
-> HTML是网页结构的基本架构，你可以把它想象成人的骨架、人体结构等，它决定了网站的结构布局
+::: info HTML是做什么的？
+HTML是网页结构的基本架构，你可以把它想象成人的骨架、人体结构等，它决定了网站的结构布局
+:::
 
 ## **HTML5基本骨架**:gem:
 
@@ -39,8 +43,8 @@ HTML标签有两种表现形式：
   ```html
   <!DOCTYPE html>
   <html>
-        <head>
-        </head>
+    <head>
+    </head>
   </html>
   ```
 - **body标签**
@@ -51,11 +55,11 @@ HTML标签有两种表现形式：
   ```html
   <!DOCTYPE html>
   <html>
-        <head>
-        </head>
-        <body>
-            我会显示在浏览器中
-        </body>
+    <head>
+    </head>
+    <body>
+        我会显示在浏览器中
+    </body>
   </html>
   ```
 - **title标签**
@@ -63,8 +67,9 @@ HTML标签有两种表现形式：
   它显示在浏览器窗口的标题栏或状态栏上。
   `<title>` 标签是 `<head>` 标签中唯一必须要求包含的东西，就是说写head一定要写title
   `<title>`的增加有利于SEO优化
-
-  > SEO是搜索引擎优化的英文缩写。通过对网站内容调整，满足搜索引擎的排名需求
+  ::: tip
+  SEO是搜索引擎优化的英文缩写。通过对网站内容调整，满足搜索引擎的排名需求
+  :::
   ```html
   <!DOCTYPE html>
   <html>
@@ -92,9 +97,22 @@ HTML标签有两种表现形式：
     </body>
   </html>
   ```
+## HTML注释
+![](/images/html/html4.png)
+
+浏览器不会显示注释
+```html
+<!-- 这是一段注释 -->
+<!-- 这里的内容不会被浏览器显示 -->
+```
+::: warning
+在开始标签中有一个叹号，但是结束标签中没有
+:::
 ## 开发工具推荐:gem:
 
 ![](/images/html/html2.png)
+
+工欲善其事，必先利其器，要想有好的开发体验，选择一款合适的开发工具是十分必要的
 
 VS Code，全称是Visual Studio Code，但因为全称太长，微软旗下另一款产品visual studio又经常被简称为VS，所以这款与vs有一定渊源的代码编辑器就被简称为VSCode。
 
@@ -104,8 +122,9 @@ VS Code 使用 Monaco Editor 作为其底层的代码编辑器。
 
 在 2019 年的 Stack Overflow 组织的开发者调查中，Visual Studio Code 被认为是最受开发者欢迎的开发环境。
 
-> vscode生成HTML结构快捷键：`！+回车`，代码如下
->
+::: tip
+vscode生成HTML结构快捷键：`！+回车`，代码如下
+:::
 
 ```html
 <!DOCTYPE html>
@@ -121,18 +140,34 @@ VS Code 使用 Monaco Editor 作为其底层的代码编辑器。
 </body>
 </html>
 ```
-
-### **VSCode常用快捷键列表**:ghost:
-
+::: info VSCode常用快捷键列表
 1. 代码格式化：`Shift+Alt+F`
 2. 向上或向下移动一行：`Alt+Up 或 Alt+Down`
 3. 快速复制一行代码：`Shift+Alt+Up 或 Shift+Alt+Down`
 4. 快速保存：`Ctrl + S`
 5. 快速查找：`Ctrl + F`
 6. 快速替换：`Ctrl + H`
+:::
 
-## 视频教程:film_projector:
 
-<video  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/97ac2dcc1367e03ac580204d6ca9a724.mp4" width="100%" controls></video>
+::: info 浏览器是我们最重要的合作伙伴
+我们推荐谷歌浏览器，有两点原因：
 
-至此，我们已经初步体验了HTML了，接下来我会带大家正式进入HTML知识的学习了
+  - 简洁大方，打开响应速度快
+  - 开发者调试工具
+:::
+
+
+**轻松一刻**
+<AudioPlayer
+  src="/mp3/1.mp3"
+  title="音乐"
+  poster="/mp3/1.jpg"
+/>
+
+**视频教程** :film_projector:
+
+<VideoPlayer
+  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/97ac2dcc1367e03ac580204d6ca9a724.mp4"/>
+
+至此，本章节的学习就到此结束了，如有疑惑，可对接[技术客服](https://work.weixin.qq.com/kfid/kfc8c0fd9b49c1f38b8)进行相关咨询。

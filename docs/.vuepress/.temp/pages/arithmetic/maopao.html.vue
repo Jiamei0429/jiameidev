@@ -62,9 +62,9 @@
 </Tabs>
 <p><strong>轻松一刻</strong></p>
 <AudioPlayer
-  src="/mp3/GoTime.mp3"
-  title="英雄联盟"
-  poster="https://img0.baidu.com/it/u=2811220644,2164135624&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=500"
+  src="/mp3/3.mp3"
+  title="音乐"
+  poster="/mp3/3.jpg"
 />
 <p><strong>视频教程</strong></p>
 <VideoPlayer

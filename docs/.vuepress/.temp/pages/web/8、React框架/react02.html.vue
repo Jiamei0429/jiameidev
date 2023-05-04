@@ -4,12 +4,12 @@
 <p>在React应用中，我们把一个页面看作是由一个个组件构成的。</p>
 <p>每一个组件可以包含自己的页面结构、样式与页面逻辑</p>
 <p>组件化开发，带来了全新的开发体验，也带来了全新的编码方式。</p>
-<p>在React中，构建管理自身状态的封装组件，然后对其组合以构成复杂的 UI。</p>
-<p>由于组件逻辑使用 JavaScript 编写而非模板，因此你可以轻松地在应用中传递数据，并保持状态与 DOM 分离。</p>
+<p>在React中，构建管理自身状态的封装组件
+由于组件逻辑使用 JavaScript 编写而非模板，因此你可以轻松地在应用中传递数据，并保持状态与 DOM 分离。</p>
 <figure><img src="/images/react/react7.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p>如下展示的就是一个React组件，名字为Home</p>
 
-<CodeDemo id="code-demo-30" type="react" title="%E4%BB%A3%E7%A0%81%E6%BC%94%E7%A4%BA%E5%8F%8A%E8%AE%AD%E7%BB%83" code="eJw1j71uAjEQhF9l5DSHhEJP7qhpkiIp4xTGt0REPhv5J0E6XZcibbq8RToaXgfBa7DGXGFptDP+dqcXH0HMhXY2RPRIgV6iioQBDZ5J6fggbTGXriMeVhM0C/TSAmX+2lEI6p2mCBQfi37j4IiqpFiSMU6KCbMATzF5iyproG43n9BGhfCkOmqkWLmdFItisq1dS9i0bGzdF/l1Muyefn5Pf//5oPPh+3jY17Mcu32qZ4y86rxv4Ee7rfMRLa1VMqWItGIqdMjV73kj7kb62Mw4P8fKJMoMTg8Xq/9mnA==">
+<CodeDemo id="code-demo-27" type="react" title="%E4%BB%A3%E7%A0%81%E6%BC%94%E7%A4%BA%E5%8F%8A%E8%AE%AD%E7%BB%83" code="eJw1j71uAjEQhF9l5DSHhEJP7qhpkiIp4xTGt0REPhv5J0E6XZcibbq8RToaXgfBa7DGXGFptDP+dqcXH0HMhXY2RPRIgV6iioQBDZ5J6fggbTGXriMeVhM0C/TSAmX+2lEI6p2mCBQfi37j4IiqpFiSMU6KCbMATzF5iyproG43n9BGhfCkOmqkWLmdFItisq1dS9i0bGzdF/l1Muyefn5Pf//5oPPh+3jY17Mcu32qZ4y86rxv4Ee7rfMRLa1VMqWItGIqdMjV73kj7kb62Mw4P8fKJMoMTg8Xq/9mnA==">
 <div class="language-javascript line-numbers-mode" data-ext="js"><pre v-pre class="language-javascript"><code><span class="token keyword">const</span> <span class="token punctuation">{</span> useState <span class="token punctuation">}</span> <span class="token operator">=</span> React<span class="token punctuation">;</span>
 <span class="token keyword">const</span> <span class="token function-variable function">Home</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
   <span class="token keyword">const</span> <span class="token punctuation">[</span>message<span class="token punctuation">,</span> setMessage<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">useState</span><span class="token punctuation">(</span><span class="token string">"Hello"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -25,9 +25,9 @@
 <span class="token punctuation">}</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></CodeDemo><p><strong>轻松一刻</strong></p>
 <AudioPlayer
-  src="/mp3/十年.mp3"
-  title="十年"
-  poster="/mp3/十年.jpg"
+  src="/mp3/5.mp3"
+  title="音乐"
+  poster="/mp3/5.jpg"
 />
 <p><strong>视频教程</strong></p>
 <VideoPlayer
@@ -71,7 +71,7 @@
 <span class="token keyword">export</span> <span class="token keyword">default</span> Home
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>在上述代码中，我创建了一个函数组件，组件名称为<code v-pre>Home</code>，该组件返回一个React元素，我在上边提到过，React元素用来描述页面应该长什么样子。所以，此组件最终的样子就是<code v-pre>&lt;div&gt;&lt;p&gt;哈哈&lt;/p&gt;&lt;/div&gt;</code> 所渲染的样式。</p>
 
-<CodeDemo id="code-demo-88" type="react" title="%E4%BB%A3%E7%A0%81%E6%BC%94%E7%A4%BA%E5%8F%8A%E8%AE%AD%E7%BB%83" code="eJyrVsoqVrJSSs7PKy5R8MjPTVWwVdDQVLC1U6hWAAJ9/adLlr9cuefp5g1PJ+59OqE3Jg8kDFGekwkkbBWqIWIgUJJZkpNqpWCogxBKTAcJGCGJpKQWJ1spxCg9ndwBRDFKEJlaCFWUWlJalKeggVBuk5JZZofggoUK7KpBluuBjKq10S9AkrfRR6jXjMkDGptaUZBfVAK0Ni2xNAfiyZg8pVoAGUtNbg==">
+<CodeDemo id="code-demo-85" type="react" title="%E4%BB%A3%E7%A0%81%E6%BC%94%E7%A4%BA%E5%8F%8A%E8%AE%AD%E7%BB%83" code="eJyrVsoqVrJSSs7PKy5R8MjPTVWwVdDQVLC1U6hWAAJ9/adLlr9cuefp5g1PJ+59OqE3Jg8kDFGekwkkbBWqIWIgUJJZkpNqpWCogxBKTAcJGCGJpKQWJ1spxCg9ndwBRDFKEJlaCFWUWlJalKeggVBuk5JZZofggoUK7KpBluuBjKq10S9AkrfRR6jXjMkDGptaUZBfVAK0Ni2xNAfiyZg8pVoAGUtNbg==">
 <div class="language-javascript line-numbers-mode" data-ext="js"><pre v-pre class="language-javascript"><code><span class="token keyword">const</span> <span class="token function-variable function">Home</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>    <span class="token comment">//大驼峰命名</span>
     <span class="token keyword">const</span> list <span class="token operator">=</span> <span class="token punctuation">{</span>
         <span class="token literal-property property">title</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
@@ -103,7 +103,7 @@
 <p>因为class在react中作为关键字被保留了</p>
 </div>
 <h4 id="classname" tabindex="-1"><a class="header-anchor" href="#classname" aria-hidden="true">#</a> className</h4>
-<CodeTabs id="129" :data='[{"title":"App.jsx"},{"title":"App.css"}]' tab-id="shell">
+<CodeTabs id="126" :data='[{"title":"App.jsx"},{"title":"App.css"}]' tab-id="shell">
 <template #tab0="{ title, value, isActive }">
 <div class="language-jsx line-numbers-mode" data-ext="jsx"><pre v-pre class="language-jsx"><code><span class="token keyword">import</span> <span class="token string">'./App.css'</span><span class="token punctuation">;</span>   <span class="token comment">//引入app组件的css样式</span>
 <span class="token keyword">function</span> <span class="token function">App</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
@@ -138,7 +138,7 @@
 <span class="token punctuation">}</span>
 <span class="token keyword">export</span> <span class="token keyword">default</span> App<span class="token punctuation">;</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>
-<CodeDemo id="code-demo-141" type="react" title="%E4%BB%A3%E7%A0%81%E6%BC%94%E7%A4%BA%E5%8F%8A%E8%AE%AD%E7%BB%83" code="eJxVkEFOwzAQRa8ymk1bqSIty5BkzYoTeGPiIQmkdmQ7EGT5CEhwByTEDolte5wseovGtaq2s/tPf/Tnj8NngymWShoL92pDkMN8AXkBDqZJkvH7Z/+7Hf//xq/d+PnBZMDRzifv+jYSTbbXEuZRhclE81qc5RF1ULbcmAe+oXxmabAzMPa9pdw5eGuErVNguF6tuoHhEmpqqtpeoUdevlRa9VIEXGkiyRC8Lxz3WdJd5GXJOX9xx6RnkoZOaQuCnnjfxrZM4hJLE15wE+5xp36t0ulUSsRN9AejPl8P">
+<CodeDemo id="code-demo-138" type="react" title="%E4%BB%A3%E7%A0%81%E6%BC%94%E7%A4%BA%E5%8F%8A%E8%AE%AD%E7%BB%83" code="eJxVkEFOwzAQRa8ymk1bqSIty5BkzYoTeGPiIQmkdmQ7EGT5CEhwByTEDolte5wseovGtaq2s/tPf/Tnj8NngymWShoL92pDkMN8AXkBDqZJkvH7Z/+7Hf//xq/d+PnBZMDRzifv+jYSTbbXEuZRhclE81qc5RF1ULbcmAe+oXxmabAzMPa9pdw5eGuErVNguF6tuoHhEmpqqtpeoUdevlRa9VIEXGkiyRC8Lxz3WdJd5GXJOX9xx6RnkoZOaQuCnnjfxrZM4hJLE15wE+5xp36t0ulUSsRN9AejPl8P">
 <div class="language-javascript line-numbers-mode" data-ext="js"><pre v-pre class="language-javascript"><code><span class="token keyword">const</span> <span class="token function-variable function">Home</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>    <span class="token comment">//大驼峰命名</span>
     <span class="token keyword">const</span> a <span class="token operator">=</span> <span class="token number">12</span>
     <span class="token keyword">return</span> <span class="token punctuation">(</span>
@@ -153,9 +153,9 @@
 <span class="token punctuation">}</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></CodeDemo><p><strong>轻松一刻</strong></p>
 <AudioPlayer
-  src="/mp3/星辰大海.mp3"
-  title="星辰大海"
-  poster="/mp3/星辰大海.jpg"
+  src="/mp3/6.mp3"
+  title="音乐"
+  poster="/mp3/6.jpg"
 />
 <p><strong>视频教程</strong></p>
 <VideoPlayer
@@ -182,7 +182,7 @@
 <span class="token punctuation">}</span>
 <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token constant">APP</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>
-<CodeDemo id="code-demo-166" type="react" title="%E4%BB%A3%E7%A0%81%E6%BC%94%E7%A4%BA%E5%8F%8A%E8%AE%AD%E7%BB%83" code="eJxt0D8KwjAUBvCrfGRSB+t/RGpFT+ABsohGUWpa2lSE0rmTk+gk6AFUxMnJ48RrmKQVOpghJO+9/PhITFYh6ZGpx0OB4XiMPkpl9B3ElAMuE1izMJwsmGqYEiCWwmU9UCIPD7m7U6LLid4CJqKAo5TN2bPlxsmOQGxVIF9Ped7LYypPV1Qs88QM+k5cr8FGFwPFDimB5keUJKpp+f+QS/q5vYtIHk6vPHHVBFWk8uuNpoaUqy6tdqeo5oRt/fKWKVc1tvW9QGDG5pPINX9DOUm+J05gXw==">
+<CodeDemo id="code-demo-163" type="react" title="%E4%BB%A3%E7%A0%81%E6%BC%94%E7%A4%BA%E5%8F%8A%E8%AE%AD%E7%BB%83" code="eJxt0D8KwjAUBvCrfGRSB+t/RGpFT+ABsohGUWpa2lSE0rmTk+gk6AFUxMnJ48RrmKQVOpghJO+9/PhITFYh6ZGpx0OB4XiMPkpl9B3ElAMuE1izMJwsmGqYEiCWwmU9UCIPD7m7U6LLid4CJqKAo5TN2bPlxsmOQGxVIF9Ped7LYypPV1Qs88QM+k5cr8FGFwPFDimB5keUJKpp+f+QS/q5vYtIHk6vPHHVBFWk8uuNpoaUqy6tdqeo5oRt/fKWKVc1tvW9QGDG5pPINX9DOUm+J05gXw==">
 <div class="language-javascript line-numbers-mode" data-ext="js"><pre v-pre class="language-javascript"><code><span class="token keyword">const</span> <span class="token function-variable function">APP</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
   <span class="token keyword">let</span> message <span class="token operator">=</span> <span class="token punctuation">{</span>
     <span class="token literal-property property">title</span><span class="token operator">:</span> <span class="token string">"数据"</span>
@@ -221,7 +221,7 @@
 <p>因此，如果条件是 true，&amp;&amp; 右侧的元素就会被渲染，如果是 false，React 会忽略并跳过它。</p>
 </div>
 
-<CodeDemo id="code-demo-184" type="react" title="%E4%BB%A3%E7%A0%81%E6%BC%94%E7%A4%BA%E5%8F%8A%E8%AE%AD%E7%BB%83" code="eJxNjksKAyEQRK9SuBhmVrMPUfAGcwA3ktGQII74CQHx7vGTX6+qX1dXdyb3QE7kctgQwbcNFPMCypCFBQbWRl5p9En9UOpMSxM69CombzE3DZz324MNWRvHcjNjmiAIF6RUtrrvvN8Z1UPRjHWJ839XeSevn+hF2MrU0x0+YldaJtP/F5aUF0uwPnc=">
+<CodeDemo id="code-demo-181" type="react" title="%E4%BB%A3%E7%A0%81%E6%BC%94%E7%A4%BA%E5%8F%8A%E8%AE%AD%E7%BB%83" code="eJxNjksKAyEQRK9SuBhmVrMPUfAGcwA3ktGQII74CQHx7vGTX6+qX1dXdyb3QE7kctgQwbcNFPMCypCFBQbWRl5p9En9UOpMSxM69CombzE3DZz324MNWRvHcjNjmiAIF6RUtrrvvN8Z1UPRjHWJ839XeSevn+hF2MrU0x0+YldaJtP/F5aUF0uwPnc=">
 <div class="language-javascript line-numbers-mode" data-ext="js"><pre v-pre class="language-javascript"><code><span class="token keyword">const</span> <span class="token function-variable function">APP</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
   <span class="token keyword">const</span> flag<span class="token operator">=</span><span class="token boolean">true</span>
   <span class="token keyword">const</span> uflag<span class="token operator">=</span><span class="token boolean">false</span>
@@ -237,9 +237,9 @@
 <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token constant">APP</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></CodeDemo><p><strong>轻松一刻</strong></p>
 <AudioPlayer
-  src="/mp3/像鱼.mp3"
-  title="像鱼"
-  poster="/mp3/像鱼.jpg"
+  src="/mp3/7.mp3"
+  title="音乐"
+  poster="/mp3/7.jpg"
 />
 <p><strong>视频教程</strong></p>
 <VideoPlayer
@@ -248,7 +248,7 @@
 <h2 id="列表渲染" tabindex="-1"><a class="header-anchor" href="#列表渲染" aria-hidden="true">#</a> 列表渲染 💎</h2>
 <figure><img src="/images/react/react11.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p>列表是页面常见的展示效果,可以通过使用 {} 在 JSX 内构建一个元素集合。</p>
-<CodeTabs id="207" :data='[{"title":"简单列表渲染"},{"title":"复杂列表渲染"}]' tab-id="shell">
+<CodeTabs id="204" :data='[{"title":"简单列表渲染"},{"title":"复杂列表渲染"}]' tab-id="shell">
 <template #tab0="{ title, value, isActive }">
 <div class="language-jsx line-numbers-mode" data-ext="jsx"><pre v-pre class="language-jsx"><code><span class="token keyword">const</span> <span class="token function-variable function">App</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
   <span class="token keyword">const</span> list <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"前端团队"</span><span class="token punctuation">,</span> <span class="token string">"后端团队"</span><span class="token punctuation">,</span> <span class="token string">"设计团队"</span><span class="token punctuation">]</span>
@@ -296,7 +296,7 @@
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></template>
 </CodeTabs>
 
-<CodeDemo id="code-demo-215" type="react" title="%E4%BB%A3%E7%A0%81%E6%BC%94%E7%A4%BA%E5%8F%8A%E8%AE%AD%E7%BB%83" code="eJyFkstOg0AUQH/lZuICkqYElg2Q+B1iUlJGMzqlBAZTQ2bXjQsfy0YXRmPiwqTV6MZN/wZp/8JhBqaiTZwNcC733AcU6CRDAzSaxBmD/SQBDwwTPB+KIAZQOEzTTPCDAJUXl9XLsrx73MzvA9QDQW6ufpH1YrVePLTkcKuhJGPKIxCoAvVhhFE8qF2v19Xbu7C0kfBYcNvWzxHORvWLtm0HSEHeBHfYnp532Bznj81xHG2rL7LlFLM8jcFQ3I3Imd/mFXKQ/jhMDIMwPO4BiSM83W5Nna5BHTencIrPvUJmcK1sopSAXwz3itral4Pw6nZWfn5sVrOv+bIJiDn4kLsWJZ1818rpD2C2t9yUU8nO6y/5b+O6dTfpNCuri7qJrqLVrtUuSJQVDE+TScrEho/CnMr/KogR/wY7Jsl4">
+<CodeDemo id="code-demo-212" type="react" title="%E4%BB%A3%E7%A0%81%E6%BC%94%E7%A4%BA%E5%8F%8A%E8%AE%AD%E7%BB%83" code="eJyFkstOg0AUQH/lZuICkqYElg2Q+B1iUlJGMzqlBAZTQ2bXjQsfy0YXRmPiwqTV6MZN/wZp/8JhBqaiTZwNcC733AcU6CRDAzSaxBmD/SQBDwwTPB+KIAZQOEzTTPCDAJUXl9XLsrx73MzvA9QDQW6ufpH1YrVePLTkcKuhJGPKIxCoAvVhhFE8qF2v19Xbu7C0kfBYcNvWzxHORvWLtm0HSEHeBHfYnp532Bznj81xHG2rL7LlFLM8jcFQ3I3Imd/mFXKQ/jhMDIMwPO4BiSM83W5Nna5BHTencIrPvUJmcK1sopSAXwz3itral4Pw6nZWfn5sVrOv+bIJiDn4kLsWJZ1818rpD2C2t9yUU8nO6y/5b+O6dTfpNCuri7qJrqLVrtUuSJQVDE+TScrEho/CnMr/KogR/wY7Jsl4">
 <div class="language-javascript line-numbers-mode" data-ext="js"><pre v-pre class="language-javascript"><code><span class="token keyword">const</span> <span class="token function-variable function">App</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
   <span class="token keyword">const</span> arrs <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"前端团队"</span><span class="token punctuation">,</span> <span class="token string">"后端团队"</span><span class="token punctuation">,</span> <span class="token string">"设计团队"</span><span class="token punctuation">]</span>
   <span class="token keyword">const</span> lists <span class="token operator">=</span> <span class="token punctuation">[</span>
@@ -336,9 +336,9 @@
 </div>
 <p><strong>轻松一刻</strong></p>
 <AudioPlayer
-  src="/mp3/像鱼.mp3"
-  title="像鱼"
-  poster="/mp3/像鱼.jpg"
+  src="/mp3/8.mp3"
+  title="音乐"
+  poster="/mp3/8.jpg"
 />
 <p><strong>视频教程</strong></p>
 <VideoPlayer
@@ -352,7 +352,7 @@
 <li>使用 JSX 语法时你需要传入一个函数作为事件处理函数，而不是一个字符串。</li>
 </ul>
 <p>在学Recat之前，事件处理是这样的:</p>
-<CodeTabs id="267" :data='[{"title":"Html"},{"title":"Js"}]' tab-id="shell">
+<CodeTabs id="264" :data='[{"title":"Html"},{"title":"Js"}]' tab-id="shell">
 <template #tab0="{ title, value, isActive }">
 <div class="language-html line-numbers-mode" data-ext="html"><pre v-pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token special-attr"><span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token value javascript language-javascript"><span class="token function">onadd</span><span class="token punctuation">(</span><span class="token punctuation">)</span></span><span class="token punctuation">"</span></span></span><span class="token punctuation">></span></span>新增<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div></template>
@@ -384,7 +384,7 @@
 <span class="token punctuation">}</span>
 <span class="token keyword">export</span> <span class="token keyword">default</span> App
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>
-<CodeDemo id="code-demo-279" type="react" title="%E4%BB%A3%E7%A0%81%E6%BC%94%E7%A4%BA%E5%8F%8A%E8%AE%AD%E7%BB%83" code="eJyrVsoqVrJSSs7PKy5RcCwoULBV0NBUsLVTqI7JU1CACOfnOaakoEpApPJzUvVy8tM11J837XzavvvJru4nu7c97Z/4fMr8J7va1DVBKmsR5iRnJOalp+I16NnaxU/nrHixb/LT1qVI+otSS0qL8hQ0IDpsUjLL7CBMICeptKQkPw/oSOeczORs22qwa2vtnvVPeLJriY0+RBqhPDOvoLREoaSyINU2RqkktaIkRgkmpwAyBOxG22qIW8GWw6Tc8pNLi22rIY5HcfWLvu1P901/3rIMGA7qmiianHJKi7Dqebpk49O+3Rh69KEutdGHeRIYCkDZ1IqC/KIShZTUtMTSHHBMxeQp1QIATrihkw==">
+<CodeDemo id="code-demo-276" type="react" title="%E4%BB%A3%E7%A0%81%E6%BC%94%E7%A4%BA%E5%8F%8A%E8%AE%AD%E7%BB%83" code="eJyrVsoqVrJSSs7PKy5RcCwoULBV0NBUsLVTqI7JU1CACOfnOaakoEpApPJzUvVy8tM11J837XzavvvJru4nu7c97Z/4fMr8J7va1DVBKmsR5iRnJOalp+I16NnaxU/nrHixb/LT1qVI+otSS0qL8hQ0IDpsUjLL7CBMICeptKQkPw/oSOeczORs22qwa2vtnvVPeLJriY0+RBqhPDOvoLREoaSyINU2RqkktaIkRgkmpwAyBOxG22qIW8GWw6Tc8pNLi22rIY5HcfWLvu1P901/3rIMGA7qmiianHJKi7Dqebpk49O+3Rh69KEutdGHeRIYCkDZ1IqC/KIShZTUtMTSHHBMxeQp1QIATrihkw==">
 <div class="language-javascript line-numbers-mode" data-ext="js"><pre v-pre class="language-javascript"><code><span class="token keyword">const</span> <span class="token function-variable function">App</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
   <span class="token keyword">const</span> <span class="token function-variable function">onAdd</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
     console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'点击事件发生了'</span><span class="token punctuation">)</span>
@@ -405,492 +405,182 @@
 <span class="token punctuation">}</span>
 <span class="token keyword">export</span> <span class="token keyword">default</span> App
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></CodeDemo><h3 id="事件对象" tabindex="-1"><a class="header-anchor" href="#事件对象" aria-hidden="true">#</a> 事件对象👻</h3>
-<h3 id="事件传参" tabindex="-1"><a class="header-anchor" href="#事件传参" aria-hidden="true">#</a> 事件传参👻</h3>
+<figure><img src="/images/react/react14.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>默认情况下，react会传递一个事件对象到事件的处理函数，这个事件对象是一个合成事件对象。</p>
+<div class="language-jsx line-numbers-mode" data-ext="jsx"><pre v-pre class="language-jsx"><code><span class="token keyword">const</span> <span class="token function-variable function">App</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> <span class="token function-variable function">onAdd</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">onClick</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>onAdd<span class="token punctuation">}</span></span><span class="token punctuation">></span></span><span class="token plain-text">提交</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span><span class="token plain-text">
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+  <span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>通过事件对象，我们可以达到阻止默认事件、阻止冒泡、获取输入的值等目的。</p>
+<div class="language-jsx line-numbers-mode" data-ext="jsx"><pre v-pre class="language-jsx"><code><span class="token keyword">const</span> <span class="token function-variable function">App</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> <span class="token function-variable function">onAdd</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+    e<span class="token punctuation">.</span><span class="token function">preventDefault</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//阻止默认事件</span>
+    e<span class="token punctuation">.</span><span class="token function">stopPropagation</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment">//阻止事件冒泡</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">onClick</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>onAdd<span class="token punctuation">}</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://www.baidu.com<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token plain-text">点击</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">onChange</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>e<span class="token punctuation">.</span>target<span class="token punctuation">.</span>value<span class="token punctuation">)</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span> <span class="token punctuation">/></span></span><span class="token plain-text">
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+  <span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> App
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>
+<CodeDemo id="code-demo-293" type="react" title="%E4%BB%A3%E7%A0%81%E6%BC%94%E7%A4%BA%E5%8F%8A%E8%AE%AD%E7%BB%83" code="eJxVkLFOwzAQQH/l5ClZ7L0kkaryAXxAFpO4SSDYlnNJkKIsDDCwMXUFscKChAT5nbbQv8DGRBWL5bt7unt3A7loyIJkSjYIS60hhiCEOIEhlQA+reQyz11BHCsAgmojOiHxVKx5W2MQnjB22Ez7l6fDtPl+fd5+3m+n9xluUOkzozQvOFZKBuEMe2x3+7B/e/Swm6pqQWtV2JEuN7rHCGyNhMBDUV51if/agFvJVV1ll/HwaztCacQ6TkmJqJsFY33f03Ne5S3N1FVKkq+bj93dFDF+7FFJ3bplVyWXhYiHed3/PhS5KQTSjtetBcYR2F+LiM1K1tkai2utDELuz+OOm0oy/gBso4bl">
+<div class="language-javascript line-numbers-mode" data-ext="js"><pre v-pre class="language-javascript"><code><span class="token keyword">const</span> <span class="token function-variable function">App</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> <span class="token function-variable function">onAdd</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+    e<span class="token punctuation">.</span><span class="token function">preventDefault</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//阻止默认事件</span>
+    e<span class="token punctuation">.</span><span class="token function">stopPropagation</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment">//阻止事件冒泡</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>div<span class="token operator">></span>
+      <span class="token operator">&lt;</span>a onClick<span class="token operator">=</span><span class="token punctuation">{</span>onAdd<span class="token punctuation">}</span> href<span class="token operator">=</span><span class="token string">"https://www.baidu.com"</span><span class="token operator">></span>点击<span class="token operator">&lt;</span><span class="token operator">/</span>a<span class="token operator">></span>
+      <span class="token operator">&lt;</span>input onChange<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>e<span class="token punctuation">.</span>target<span class="token punctuation">.</span>value<span class="token punctuation">)</span> <span class="token punctuation">}</span><span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">></span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+  <span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> App
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></CodeDemo><h3 id="事件传参" tabindex="-1"><a class="header-anchor" href="#事件传参" aria-hidden="true">#</a> 事件传参👻</h3>
+<figure><img src="/images/react/react15.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>除了自带的事件对象参数，还可以传递其他的一个或多个参数</p>
+<div class="language-jsx line-numbers-mode" data-ext="jsx"><pre v-pre class="language-jsx"><code><span class="token keyword">const</span> <span class="token function-variable function">App</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token comment">// 方式1</span>
+  <span class="token keyword">const</span> <span class="token function-variable function">onAdd</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">param</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>param<span class="token punctuation">)</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+  <span class="token comment">//方式2</span>
+  <span class="token keyword">const</span> <span class="token function-variable function">onAdd1</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">param<span class="token punctuation">,</span>e</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>param<span class="token punctuation">)</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">onClick</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token function">onAdd</span><span class="token punctuation">(</span><span class="token string">'hello'</span><span class="token punctuation">)</span><span class="token punctuation">}</span></span><span class="token punctuation">></span></span><span class="token plain-text">点击1</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">onClick</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token function">onAdd1</span><span class="token punctuation">(</span><span class="token string">'hello'</span><span class="token punctuation">,</span> e<span class="token punctuation">)</span><span class="token punctuation">}</span></span><span class="token punctuation">></span></span><span class="token plain-text">点击2</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span><span class="token plain-text">
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+  <span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> App
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p>当参数和事件对象都要传递时，默认把事件对象<code v-pre>event</code>放到后面</p>
+</div>
+
+<CodeDemo id="code-demo-311" type="react" title="%E4%BB%A3%E7%A0%81%E6%BC%94%E7%A4%BA%E5%8F%8A%E8%AE%AD%E7%BB%83" code="eJx1kU0OgjAUhK/ywkZIiA0sDZAQr8EGoSpaWwLFmBA2bly68y5Er4NeQ2ipPyibNn2dmW/Sltom12ZaxGjOwU9TcEE3wPWgDCgAQnC/1M3tbHUnKWLUj+NOloZZuHtrATLMi4yCjj+H0sYInhK26j3/bnA/rbpNLAhJtj1gWx0cRJL5hRoD/WJEvqorRU6c7D1VzFkUnDPa8uYkibZuKcD6ZI0JYROj8h7HujldLQdJ4bixfwxZXAWYgF8Z9iDDQapI27TtiQ8pyzjEeBkWRHxRQLXqCfzpkWM=">
+<div class="language-javascript line-numbers-mode" data-ext="js"><pre v-pre class="language-javascript"><code><span class="token keyword">const</span> <span class="token function-variable function">App</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token comment">// 方式1</span>
+  <span class="token keyword">const</span> <span class="token function-variable function">onAdd</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">param</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>param<span class="token punctuation">)</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+  <span class="token comment">//方式2</span>
+  <span class="token keyword">const</span> <span class="token function-variable function">onAdd1</span> <span class="token operator">=</span> <span class="token punctuation">(</span> <span class="token parameter">param<span class="token punctuation">,</span>e</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>param<span class="token punctuation">)</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>div<span class="token operator">></span>
+      <span class="token operator">&lt;</span>button onClick<span class="token operator">=</span><span class="token punctuation">{</span><span class="token function">onAdd</span><span class="token punctuation">(</span><span class="token string">'hello'</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token operator">></span>点击<span class="token number">1</span><span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">></span>
+      <span class="token operator">&lt;</span>button onClick<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token function">onAdd1</span><span class="token punctuation">(</span><span class="token string">'hello'</span><span class="token punctuation">,</span> e<span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token operator">></span>点击<span class="token number">2</span><span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">></span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+  <span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> App
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></CodeDemo><h3 id="class组件中的事件" tabindex="-1"><a class="header-anchor" href="#class组件中的事件" aria-hidden="true">#</a> class组件中的事件👻</h3>
+<figure><img src="/images/react/react16.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>类组件中的<code v-pre>this</code>指向类的实例，在render函数中可以通过<code v-pre>this</code>访问该类的实例的属性。</p>
+<div class="language-jsx line-numbers-mode" data-ext="jsx"><pre v-pre class="language-jsx"><code><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
+<span class="token keyword">class</span> <span class="token class-name">App</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
+  <span class="token function">onAdd</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'点击事件发生了'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">onClick</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>onAdd<span class="token punctuation">}</span></span><span class="token punctuation">></span></span><span class="token plain-text">点击</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span><span class="token plain-text">
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> App
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p>在 JavaScript 中，class 的方法默认不会绑定<code v-pre>this</code>,你可以在上边的案例中的onAdd函数中打印一下<code v-pre>console.log(this)</code>,值为<code v-pre>Undefined</code></p>
+</div>
+<p>那么，如何才能在函数中访问到this?</p>
+<p>我准备了三种方式</p>
+<ul>
+<li>
+<p>方法一：手动绑定函数中<code v-pre>this</code>的指向</p>
+<div class="language-jsx line-numbers-mode" data-ext="jsx"><pre v-pre class="language-jsx"><code><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
+<span class="token keyword">class</span> <span class="token class-name">App</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
+  <span class="token function">onAdd</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'点击事件发生了'</span><span class="token punctuation">)</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token punctuation">}</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">onClick</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">onAdd</span><span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">}</span></span><span class="token punctuation">></span></span><span class="token plain-text">点击</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span><span class="token plain-text">
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> App
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
+<li>
+<p>方法二：使用箭头函数</p>
+<div class="language-jsx line-numbers-mode" data-ext="jsx"><pre v-pre class="language-jsx"><code><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
+<span class="token keyword">class</span> <span class="token class-name">App</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
+  <span class="token function-variable function">onAdd</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'点击事件发生了'</span><span class="token punctuation">)</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">onClick</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>onAdd<span class="token punctuation">}</span></span><span class="token punctuation">></span></span><span class="token plain-text">点击</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span><span class="token plain-text">
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> App
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
+<li>
+<p>方法三：在类的构造函数中绑定</p>
+<div class="language-jsx line-numbers-mode" data-ext="jsx"><pre v-pre class="language-jsx"><code><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
+<span class="token keyword">class</span> <span class="token class-name">App</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span><span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter"><span class="token literal-property property">props</span><span class="token operator">:</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>onAdd <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">onAdd</span><span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+  <span class="token function">onAdd</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'点击事件发生了'</span><span class="token punctuation">)</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">onClick</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>onAdd<span class="token punctuation">}</span></span><span class="token punctuation">></span></span><span class="token plain-text">点击</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span><span class="token plain-text">
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> App
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
+</ul>
+<p>在这里，我并不推荐大家使用类组件，很明显，这要比使用函数组件麻烦的多，而且在后期的Ant Design UI组件库的学习中，官方提供的都是函数组件，后期的ReactHook学习也是针对函数组件来进行的，使用函数组件具有一定的技术前瞻性！</p>
 <p><strong>轻松一刻</strong></p>
 <AudioPlayer
-  src="/mp3/像鱼.mp3"
-  title="像鱼"
-  poster="/mp3/像鱼.jpg"
-/>
-<p><strong>视频教程</strong></p>
-<VideoPlayer
-  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/97ac2dcc1367e03ac580204d6ca9a724.mp4"/>
-<p>至此，本章节的学习就到此结束了，如有疑惑，可对接<a href="https://work.weixin.qq.com/kfid/kfc8c0fd9b49c1f38b8" target="_blank" rel="noopener noreferrer">技术客服<ExternalLinkIcon/></a>进行相关咨询。</p>
-<h2 id="react组件化思想-1" tabindex="-1"><a class="header-anchor" href="#react组件化思想-1" aria-hidden="true">#</a> React组件化思想💎</h2>
-
-<CodeDemo id="code-demo-302" type="react" title="%E4%BB%A3%E7%A0%81%E6%BC%94%E7%A4%BA%E5%8F%8A%E8%AE%AD%E7%BB%83" code="eJxVkLFOwzAURX/lyTCkUkT2kmRh6QIDDAwYqa79CgHHjmwHKkX+FxY+o38D/1E7TqJ2sax37z2+fgP5sGRNuFbWwQC9xSfHHIKHCh6RcXdLVRI3usUwzFZQ1TBQBZDmLy1ay94wB4vuPt1fg3FGZZRsUEpNySqw5tQ7U0KiuQTCGSLbXg8T2efP2kixTXk/ngZdbxRkKVaK5gu4ZNY+sBYrSnb6QEmdxCBzLbD+O/78/x7HT5XFOFl02zEFjQjBTn+j2feSEtDqTjb8sxqmrn7xAyzVFkQRGZOjLEKf8R4rx8J46LRxIHDPepl2SRXJCbdx+zehLlzNT8/LldqsYSd7jIzg9iexqo3s">
-<div class="language-javascript line-numbers-mode" data-ext="js"><pre v-pre class="language-javascript"><code><span class="token keyword">const</span> <span class="token punctuation">{</span> useState <span class="token punctuation">}</span> <span class="token operator">=</span> React<span class="token punctuation">;</span>
-<span class="token keyword">const</span> <span class="token function-variable function">Home</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
-  <span class="token keyword">const</span> <span class="token punctuation">[</span>message<span class="token punctuation">,</span> setMessage<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">useState</span><span class="token punctuation">(</span><span class="token string">"Hello"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token keyword">const</span> <span class="token function-variable function">handler</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
-    <span class="token function">setMessage</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>message<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">,World</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span><span class="token punctuation">;</span>
-  <span class="token keyword">return</span> <span class="token punctuation">(</span>
-    <span class="token operator">&lt;</span>div className<span class="token operator">=</span><span class="token string">"box"</span><span class="token operator">></span>
-      <span class="token operator">&lt;</span>code<span class="token operator">></span>你好React<span class="token operator">&lt;</span><span class="token operator">/</span>code<span class="token operator">></span>
-      <span class="token operator">&lt;</span>span id<span class="token operator">=</span><span class="token string">"powerful"</span> onClick<span class="token operator">=</span><span class="token punctuation">{</span>handler<span class="token punctuation">}</span><span class="token operator">></span>
-        <span class="token punctuation">{</span>message<span class="token punctuation">}</span>
-      <span class="token operator">&lt;</span><span class="token operator">/</span>span<span class="token operator">></span>
-    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
-  <span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span>
-<span class="token keyword">export</span> <span class="token keyword">default</span> Home
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-css line-numbers-mode" data-ext="css"><pre v-pre class="language-css"><code><span class="token selector">.box #powerful</span> <span class="token punctuation">{</span>
-  <span class="token property">color</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></CodeDemo><p><strong>轻松一刻</strong></p>
-<AudioPlayer
-  src="/mp3/像鱼.mp3"
-  title="像鱼"
-  poster="/mp3/像鱼.jpg"
-/>
-<p><strong>视频教程</strong></p>
-<VideoPlayer
-  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/97ac2dcc1367e03ac580204d6ca9a724.mp4"/>
-<p>至此，本章节的学习就到此结束了，如有疑惑，可对接<a href="https://work.weixin.qq.com/kfid/kfc8c0fd9b49c1f38b8" target="_blank" rel="noopener noreferrer">技术客服<ExternalLinkIcon/></a>进行相关咨询。</p>
-<h2 id="react组件化思想-2" tabindex="-1"><a class="header-anchor" href="#react组件化思想-2" aria-hidden="true">#</a> React组件化思想💎</h2>
-
-<CodeDemo id="code-demo-320" type="react" title="%E4%BB%A3%E7%A0%81%E6%BC%94%E7%A4%BA%E5%8F%8A%E8%AE%AD%E7%BB%83" code="eJxVkLFOwzAURX/lyTCkUkT2kmRh6QIDDAwYqa79CgHHjmwHKkX+FxY+o38D/1E7TqJ2sax37z2+fgP5sGRNuFbWwQC9xSfHHIKHCh6RcXdLVRI3usUwzFZQ1TBQBZDmLy1ay94wB4vuPt1fg3FGZZRsUEpNySqw5tQ7U0KiuQTCGSLbXg8T2efP2kixTXk/ngZdbxRkKVaK5gu4ZNY+sBYrSnb6QEmdxCBzLbD+O/78/x7HT5XFOFl02zEFjQjBTn+j2feSEtDqTjb8sxqmrn7xAyzVFkQRGZOjLEKf8R4rx8J46LRxIHDPepl2SRXJCbdx+zehLlzNT8/LldqsYSd7jIzg9iexqo3s">
-<div class="language-javascript line-numbers-mode" data-ext="js"><pre v-pre class="language-javascript"><code><span class="token keyword">const</span> <span class="token punctuation">{</span> useState <span class="token punctuation">}</span> <span class="token operator">=</span> React<span class="token punctuation">;</span>
-<span class="token keyword">const</span> <span class="token function-variable function">Home</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
-  <span class="token keyword">const</span> <span class="token punctuation">[</span>message<span class="token punctuation">,</span> setMessage<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">useState</span><span class="token punctuation">(</span><span class="token string">"Hello"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token keyword">const</span> <span class="token function-variable function">handler</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
-    <span class="token function">setMessage</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>message<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">,World</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span><span class="token punctuation">;</span>
-  <span class="token keyword">return</span> <span class="token punctuation">(</span>
-    <span class="token operator">&lt;</span>div className<span class="token operator">=</span><span class="token string">"box"</span><span class="token operator">></span>
-      <span class="token operator">&lt;</span>code<span class="token operator">></span>你好React<span class="token operator">&lt;</span><span class="token operator">/</span>code<span class="token operator">></span>
-      <span class="token operator">&lt;</span>span id<span class="token operator">=</span><span class="token string">"powerful"</span> onClick<span class="token operator">=</span><span class="token punctuation">{</span>handler<span class="token punctuation">}</span><span class="token operator">></span>
-        <span class="token punctuation">{</span>message<span class="token punctuation">}</span>
-      <span class="token operator">&lt;</span><span class="token operator">/</span>span<span class="token operator">></span>
-    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
-  <span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span>
-<span class="token keyword">export</span> <span class="token keyword">default</span> Home
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-css line-numbers-mode" data-ext="css"><pre v-pre class="language-css"><code><span class="token selector">.box #powerful</span> <span class="token punctuation">{</span>
-  <span class="token property">color</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></CodeDemo><p><strong>轻松一刻</strong></p>
-<AudioPlayer
-  src="/mp3/像鱼.mp3"
-  title="像鱼"
-  poster="/mp3/像鱼.jpg"
-/>
-<p><strong>视频教程</strong></p>
-<VideoPlayer
-  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/97ac2dcc1367e03ac580204d6ca9a724.mp4"/>
-<p>至此，本章节的学习就到此结束了，如有疑惑，可对接<a href="https://work.weixin.qq.com/kfid/kfc8c0fd9b49c1f38b8" target="_blank" rel="noopener noreferrer">技术客服<ExternalLinkIcon/></a>进行相关咨询。</p>
-<h2 id="react组件化思想-3" tabindex="-1"><a class="header-anchor" href="#react组件化思想-3" aria-hidden="true">#</a> React组件化思想💎</h2>
-
-<CodeDemo id="code-demo-338" type="react" title="%E4%BB%A3%E7%A0%81%E6%BC%94%E7%A4%BA%E5%8F%8A%E8%AE%AD%E7%BB%83" code="eJxVkLFOwzAURX/lyTCkUkT2kmRh6QIDDAwYqa79CgHHjmwHKkX+FxY+o38D/1E7TqJ2sax37z2+fgP5sGRNuFbWwQC9xSfHHIKHCh6RcXdLVRI3usUwzFZQ1TBQBZDmLy1ay94wB4vuPt1fg3FGZZRsUEpNySqw5tQ7U0KiuQTCGSLbXg8T2efP2kixTXk/ngZdbxRkKVaK5gu4ZNY+sBYrSnb6QEmdxCBzLbD+O/78/x7HT5XFOFl02zEFjQjBTn+j2feSEtDqTjb8sxqmrn7xAyzVFkQRGZOjLEKf8R4rx8J46LRxIHDPepl2SRXJCbdx+zehLlzNT8/LldqsYSd7jIzg9iexqo3s">
-<div class="language-javascript line-numbers-mode" data-ext="js"><pre v-pre class="language-javascript"><code><span class="token keyword">const</span> <span class="token punctuation">{</span> useState <span class="token punctuation">}</span> <span class="token operator">=</span> React<span class="token punctuation">;</span>
-<span class="token keyword">const</span> <span class="token function-variable function">Home</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
-  <span class="token keyword">const</span> <span class="token punctuation">[</span>message<span class="token punctuation">,</span> setMessage<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">useState</span><span class="token punctuation">(</span><span class="token string">"Hello"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token keyword">const</span> <span class="token function-variable function">handler</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
-    <span class="token function">setMessage</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>message<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">,World</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span><span class="token punctuation">;</span>
-  <span class="token keyword">return</span> <span class="token punctuation">(</span>
-    <span class="token operator">&lt;</span>div className<span class="token operator">=</span><span class="token string">"box"</span><span class="token operator">></span>
-      <span class="token operator">&lt;</span>code<span class="token operator">></span>你好React<span class="token operator">&lt;</span><span class="token operator">/</span>code<span class="token operator">></span>
-      <span class="token operator">&lt;</span>span id<span class="token operator">=</span><span class="token string">"powerful"</span> onClick<span class="token operator">=</span><span class="token punctuation">{</span>handler<span class="token punctuation">}</span><span class="token operator">></span>
-        <span class="token punctuation">{</span>message<span class="token punctuation">}</span>
-      <span class="token operator">&lt;</span><span class="token operator">/</span>span<span class="token operator">></span>
-    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
-  <span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span>
-<span class="token keyword">export</span> <span class="token keyword">default</span> Home
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-css line-numbers-mode" data-ext="css"><pre v-pre class="language-css"><code><span class="token selector">.box #powerful</span> <span class="token punctuation">{</span>
-  <span class="token property">color</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></CodeDemo><p><strong>轻松一刻</strong></p>
-<AudioPlayer
-  src="/mp3/像鱼.mp3"
-  title="像鱼"
-  poster="/mp3/像鱼.jpg"
-/>
-<p><strong>视频教程</strong></p>
-<VideoPlayer
-  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/97ac2dcc1367e03ac580204d6ca9a724.mp4"/>
-<p>至此，本章节的学习就到此结束了，如有疑惑，可对接<a href="https://work.weixin.qq.com/kfid/kfc8c0fd9b49c1f38b8" target="_blank" rel="noopener noreferrer">技术客服<ExternalLinkIcon/></a>进行相关咨询。</p>
-<h2 id="react组件化思想-4" tabindex="-1"><a class="header-anchor" href="#react组件化思想-4" aria-hidden="true">#</a> React组件化思想💎</h2>
-
-<CodeDemo id="code-demo-356" type="react" title="%E4%BB%A3%E7%A0%81%E6%BC%94%E7%A4%BA%E5%8F%8A%E8%AE%AD%E7%BB%83" code="eJxVkLFOwzAURX/lyTCkUkT2kmRh6QIDDAwYqa79CgHHjmwHKkX+FxY+o38D/1E7TqJ2sax37z2+fgP5sGRNuFbWwQC9xSfHHIKHCh6RcXdLVRI3usUwzFZQ1TBQBZDmLy1ay94wB4vuPt1fg3FGZZRsUEpNySqw5tQ7U0KiuQTCGSLbXg8T2efP2kixTXk/ngZdbxRkKVaK5gu4ZNY+sBYrSnb6QEmdxCBzLbD+O/78/x7HT5XFOFl02zEFjQjBTn+j2feSEtDqTjb8sxqmrn7xAyzVFkQRGZOjLEKf8R4rx8J46LRxIHDPepl2SRXJCbdx+zehLlzNT8/LldqsYSd7jIzg9iexqo3s">
-<div class="language-javascript line-numbers-mode" data-ext="js"><pre v-pre class="language-javascript"><code><span class="token keyword">const</span> <span class="token punctuation">{</span> useState <span class="token punctuation">}</span> <span class="token operator">=</span> React<span class="token punctuation">;</span>
-<span class="token keyword">const</span> <span class="token function-variable function">Home</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
-  <span class="token keyword">const</span> <span class="token punctuation">[</span>message<span class="token punctuation">,</span> setMessage<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">useState</span><span class="token punctuation">(</span><span class="token string">"Hello"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token keyword">const</span> <span class="token function-variable function">handler</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
-    <span class="token function">setMessage</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>message<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">,World</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span><span class="token punctuation">;</span>
-  <span class="token keyword">return</span> <span class="token punctuation">(</span>
-    <span class="token operator">&lt;</span>div className<span class="token operator">=</span><span class="token string">"box"</span><span class="token operator">></span>
-      <span class="token operator">&lt;</span>code<span class="token operator">></span>你好React<span class="token operator">&lt;</span><span class="token operator">/</span>code<span class="token operator">></span>
-      <span class="token operator">&lt;</span>span id<span class="token operator">=</span><span class="token string">"powerful"</span> onClick<span class="token operator">=</span><span class="token punctuation">{</span>handler<span class="token punctuation">}</span><span class="token operator">></span>
-        <span class="token punctuation">{</span>message<span class="token punctuation">}</span>
-      <span class="token operator">&lt;</span><span class="token operator">/</span>span<span class="token operator">></span>
-    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
-  <span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span>
-<span class="token keyword">export</span> <span class="token keyword">default</span> Home
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-css line-numbers-mode" data-ext="css"><pre v-pre class="language-css"><code><span class="token selector">.box #powerful</span> <span class="token punctuation">{</span>
-  <span class="token property">color</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></CodeDemo><p><strong>轻松一刻</strong></p>
-<AudioPlayer
-  src="/mp3/像鱼.mp3"
-  title="像鱼"
-  poster="/mp3/像鱼.jpg"
-/>
-<p><strong>视频教程</strong></p>
-<VideoPlayer
-  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/97ac2dcc1367e03ac580204d6ca9a724.mp4"/>
-<p>至此，本章节的学习就到此结束了，如有疑惑，可对接<a href="https://work.weixin.qq.com/kfid/kfc8c0fd9b49c1f38b8" target="_blank" rel="noopener noreferrer">技术客服<ExternalLinkIcon/></a>进行相关咨询。</p>
-<h2 id="react组件化思想-5" tabindex="-1"><a class="header-anchor" href="#react组件化思想-5" aria-hidden="true">#</a> React组件化思想💎</h2>
-
-<CodeDemo id="code-demo-374" type="react" title="%E4%BB%A3%E7%A0%81%E6%BC%94%E7%A4%BA%E5%8F%8A%E8%AE%AD%E7%BB%83" code="eJxVkLFOwzAURX/lyTCkUkT2kmRh6QIDDAwYqa79CgHHjmwHKkX+FxY+o38D/1E7TqJ2sax37z2+fgP5sGRNuFbWwQC9xSfHHIKHCh6RcXdLVRI3usUwzFZQ1TBQBZDmLy1ay94wB4vuPt1fg3FGZZRsUEpNySqw5tQ7U0KiuQTCGSLbXg8T2efP2kixTXk/ngZdbxRkKVaK5gu4ZNY+sBYrSnb6QEmdxCBzLbD+O/78/x7HT5XFOFl02zEFjQjBTn+j2feSEtDqTjb8sxqmrn7xAyzVFkQRGZOjLEKf8R4rx8J46LRxIHDPepl2SRXJCbdx+zehLlzNT8/LldqsYSd7jIzg9iexqo3s">
-<div class="language-javascript line-numbers-mode" data-ext="js"><pre v-pre class="language-javascript"><code><span class="token keyword">const</span> <span class="token punctuation">{</span> useState <span class="token punctuation">}</span> <span class="token operator">=</span> React<span class="token punctuation">;</span>
-<span class="token keyword">const</span> <span class="token function-variable function">Home</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
-  <span class="token keyword">const</span> <span class="token punctuation">[</span>message<span class="token punctuation">,</span> setMessage<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">useState</span><span class="token punctuation">(</span><span class="token string">"Hello"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token keyword">const</span> <span class="token function-variable function">handler</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
-    <span class="token function">setMessage</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>message<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">,World</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span><span class="token punctuation">;</span>
-  <span class="token keyword">return</span> <span class="token punctuation">(</span>
-    <span class="token operator">&lt;</span>div className<span class="token operator">=</span><span class="token string">"box"</span><span class="token operator">></span>
-      <span class="token operator">&lt;</span>code<span class="token operator">></span>你好React<span class="token operator">&lt;</span><span class="token operator">/</span>code<span class="token operator">></span>
-      <span class="token operator">&lt;</span>span id<span class="token operator">=</span><span class="token string">"powerful"</span> onClick<span class="token operator">=</span><span class="token punctuation">{</span>handler<span class="token punctuation">}</span><span class="token operator">></span>
-        <span class="token punctuation">{</span>message<span class="token punctuation">}</span>
-      <span class="token operator">&lt;</span><span class="token operator">/</span>span<span class="token operator">></span>
-    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
-  <span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span>
-<span class="token keyword">export</span> <span class="token keyword">default</span> Home
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-css line-numbers-mode" data-ext="css"><pre v-pre class="language-css"><code><span class="token selector">.box #powerful</span> <span class="token punctuation">{</span>
-  <span class="token property">color</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></CodeDemo><p><strong>轻松一刻</strong></p>
-<AudioPlayer
-  src="/mp3/像鱼.mp3"
-  title="像鱼"
-  poster="/mp3/像鱼.jpg"
-/>
-<p><strong>视频教程</strong></p>
-<VideoPlayer
-  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/97ac2dcc1367e03ac580204d6ca9a724.mp4"/>
-<p>至此，本章节的学习就到此结束了，如有疑惑，可对接<a href="https://work.weixin.qq.com/kfid/kfc8c0fd9b49c1f38b8" target="_blank" rel="noopener noreferrer">技术客服<ExternalLinkIcon/></a>进行相关咨询。</p>
-<h2 id="react组件化思想-6" tabindex="-1"><a class="header-anchor" href="#react组件化思想-6" aria-hidden="true">#</a> React组件化思想💎</h2>
-
-<CodeDemo id="code-demo-392" type="react" title="%E4%BB%A3%E7%A0%81%E6%BC%94%E7%A4%BA%E5%8F%8A%E8%AE%AD%E7%BB%83" code="eJxVkLFOwzAURX/lyTCkUkT2kmRh6QIDDAwYqa79CgHHjmwHKkX+FxY+o38D/1E7TqJ2sax37z2+fgP5sGRNuFbWwQC9xSfHHIKHCh6RcXdLVRI3usUwzFZQ1TBQBZDmLy1ay94wB4vuPt1fg3FGZZRsUEpNySqw5tQ7U0KiuQTCGSLbXg8T2efP2kixTXk/ngZdbxRkKVaK5gu4ZNY+sBYrSnb6QEmdxCBzLbD+O/78/x7HT5XFOFl02zEFjQjBTn+j2feSEtDqTjb8sxqmrn7xAyzVFkQRGZOjLEKf8R4rx8J46LRxIHDPepl2SRXJCbdx+zehLlzNT8/LldqsYSd7jIzg9iexqo3s">
-<div class="language-javascript line-numbers-mode" data-ext="js"><pre v-pre class="language-javascript"><code><span class="token keyword">const</span> <span class="token punctuation">{</span> useState <span class="token punctuation">}</span> <span class="token operator">=</span> React<span class="token punctuation">;</span>
-<span class="token keyword">const</span> <span class="token function-variable function">Home</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
-  <span class="token keyword">const</span> <span class="token punctuation">[</span>message<span class="token punctuation">,</span> setMessage<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">useState</span><span class="token punctuation">(</span><span class="token string">"Hello"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token keyword">const</span> <span class="token function-variable function">handler</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
-    <span class="token function">setMessage</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>message<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">,World</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span><span class="token punctuation">;</span>
-  <span class="token keyword">return</span> <span class="token punctuation">(</span>
-    <span class="token operator">&lt;</span>div className<span class="token operator">=</span><span class="token string">"box"</span><span class="token operator">></span>
-      <span class="token operator">&lt;</span>code<span class="token operator">></span>你好React<span class="token operator">&lt;</span><span class="token operator">/</span>code<span class="token operator">></span>
-      <span class="token operator">&lt;</span>span id<span class="token operator">=</span><span class="token string">"powerful"</span> onClick<span class="token operator">=</span><span class="token punctuation">{</span>handler<span class="token punctuation">}</span><span class="token operator">></span>
-        <span class="token punctuation">{</span>message<span class="token punctuation">}</span>
-      <span class="token operator">&lt;</span><span class="token operator">/</span>span<span class="token operator">></span>
-    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
-  <span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span>
-<span class="token keyword">export</span> <span class="token keyword">default</span> Home
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-css line-numbers-mode" data-ext="css"><pre v-pre class="language-css"><code><span class="token selector">.box #powerful</span> <span class="token punctuation">{</span>
-  <span class="token property">color</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></CodeDemo><p><strong>轻松一刻</strong></p>
-<AudioPlayer
-  src="/mp3/像鱼.mp3"
-  title="像鱼"
-  poster="/mp3/像鱼.jpg"
-/>
-<p><strong>视频教程</strong></p>
-<VideoPlayer
-  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/97ac2dcc1367e03ac580204d6ca9a724.mp4"/>
-<p>至此，本章节的学习就到此结束了，如有疑惑，可对接<a href="https://work.weixin.qq.com/kfid/kfc8c0fd9b49c1f38b8" target="_blank" rel="noopener noreferrer">技术客服<ExternalLinkIcon/></a>进行相关咨询。</p>
-<h2 id="react组件化思想-7" tabindex="-1"><a class="header-anchor" href="#react组件化思想-7" aria-hidden="true">#</a> React组件化思想💎</h2>
-
-<CodeDemo id="code-demo-410" type="react" title="%E4%BB%A3%E7%A0%81%E6%BC%94%E7%A4%BA%E5%8F%8A%E8%AE%AD%E7%BB%83" code="eJxVkLFOwzAURX/lyTCkUkT2kmRh6QIDDAwYqa79CgHHjmwHKkX+FxY+o38D/1E7TqJ2sax37z2+fgP5sGRNuFbWwQC9xSfHHIKHCh6RcXdLVRI3usUwzFZQ1TBQBZDmLy1ay94wB4vuPt1fg3FGZZRsUEpNySqw5tQ7U0KiuQTCGSLbXg8T2efP2kixTXk/ngZdbxRkKVaK5gu4ZNY+sBYrSnb6QEmdxCBzLbD+O/78/x7HT5XFOFl02zEFjQjBTn+j2feSEtDqTjb8sxqmrn7xAyzVFkQRGZOjLEKf8R4rx8J46LRxIHDPepl2SRXJCbdx+zehLlzNT8/LldqsYSd7jIzg9iexqo3s">
-<div class="language-javascript line-numbers-mode" data-ext="js"><pre v-pre class="language-javascript"><code><span class="token keyword">const</span> <span class="token punctuation">{</span> useState <span class="token punctuation">}</span> <span class="token operator">=</span> React<span class="token punctuation">;</span>
-<span class="token keyword">const</span> <span class="token function-variable function">Home</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
-  <span class="token keyword">const</span> <span class="token punctuation">[</span>message<span class="token punctuation">,</span> setMessage<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">useState</span><span class="token punctuation">(</span><span class="token string">"Hello"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token keyword">const</span> <span class="token function-variable function">handler</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
-    <span class="token function">setMessage</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>message<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">,World</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span><span class="token punctuation">;</span>
-  <span class="token keyword">return</span> <span class="token punctuation">(</span>
-    <span class="token operator">&lt;</span>div className<span class="token operator">=</span><span class="token string">"box"</span><span class="token operator">></span>
-      <span class="token operator">&lt;</span>code<span class="token operator">></span>你好React<span class="token operator">&lt;</span><span class="token operator">/</span>code<span class="token operator">></span>
-      <span class="token operator">&lt;</span>span id<span class="token operator">=</span><span class="token string">"powerful"</span> onClick<span class="token operator">=</span><span class="token punctuation">{</span>handler<span class="token punctuation">}</span><span class="token operator">></span>
-        <span class="token punctuation">{</span>message<span class="token punctuation">}</span>
-      <span class="token operator">&lt;</span><span class="token operator">/</span>span<span class="token operator">></span>
-    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
-  <span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span>
-<span class="token keyword">export</span> <span class="token keyword">default</span> Home
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-css line-numbers-mode" data-ext="css"><pre v-pre class="language-css"><code><span class="token selector">.box #powerful</span> <span class="token punctuation">{</span>
-  <span class="token property">color</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></CodeDemo><p><strong>轻松一刻</strong></p>
-<AudioPlayer
-  src="/mp3/像鱼.mp3"
-  title="像鱼"
-  poster="/mp3/像鱼.jpg"
-/>
-<p><strong>视频教程</strong></p>
-<VideoPlayer
-  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/97ac2dcc1367e03ac580204d6ca9a724.mp4"/>
-<p>至此，本章节的学习就到此结束了，如有疑惑，可对接<a href="https://work.weixin.qq.com/kfid/kfc8c0fd9b49c1f38b8" target="_blank" rel="noopener noreferrer">技术客服<ExternalLinkIcon/></a>进行相关咨询。</p>
-<h2 id="react组件化思想-8" tabindex="-1"><a class="header-anchor" href="#react组件化思想-8" aria-hidden="true">#</a> React组件化思想💎</h2>
-
-<CodeDemo id="code-demo-428" type="react" title="%E4%BB%A3%E7%A0%81%E6%BC%94%E7%A4%BA%E5%8F%8A%E8%AE%AD%E7%BB%83" code="eJxVkLFOwzAURX/lyTCkUkT2kmRh6QIDDAwYqa79CgHHjmwHKkX+FxY+o38D/1E7TqJ2sax37z2+fgP5sGRNuFbWwQC9xSfHHIKHCh6RcXdLVRI3usUwzFZQ1TBQBZDmLy1ay94wB4vuPt1fg3FGZZRsUEpNySqw5tQ7U0KiuQTCGSLbXg8T2efP2kixTXk/ngZdbxRkKVaK5gu4ZNY+sBYrSnb6QEmdxCBzLbD+O/78/x7HT5XFOFl02zEFjQjBTn+j2feSEtDqTjb8sxqmrn7xAyzVFkQRGZOjLEKf8R4rx8J46LRxIHDPepl2SRXJCbdx+zehLlzNT8/LldqsYSd7jIzg9iexqo3s">
-<div class="language-javascript line-numbers-mode" data-ext="js"><pre v-pre class="language-javascript"><code><span class="token keyword">const</span> <span class="token punctuation">{</span> useState <span class="token punctuation">}</span> <span class="token operator">=</span> React<span class="token punctuation">;</span>
-<span class="token keyword">const</span> <span class="token function-variable function">Home</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
-  <span class="token keyword">const</span> <span class="token punctuation">[</span>message<span class="token punctuation">,</span> setMessage<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">useState</span><span class="token punctuation">(</span><span class="token string">"Hello"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token keyword">const</span> <span class="token function-variable function">handler</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
-    <span class="token function">setMessage</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>message<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">,World</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span><span class="token punctuation">;</span>
-  <span class="token keyword">return</span> <span class="token punctuation">(</span>
-    <span class="token operator">&lt;</span>div className<span class="token operator">=</span><span class="token string">"box"</span><span class="token operator">></span>
-      <span class="token operator">&lt;</span>code<span class="token operator">></span>你好React<span class="token operator">&lt;</span><span class="token operator">/</span>code<span class="token operator">></span>
-      <span class="token operator">&lt;</span>span id<span class="token operator">=</span><span class="token string">"powerful"</span> onClick<span class="token operator">=</span><span class="token punctuation">{</span>handler<span class="token punctuation">}</span><span class="token operator">></span>
-        <span class="token punctuation">{</span>message<span class="token punctuation">}</span>
-      <span class="token operator">&lt;</span><span class="token operator">/</span>span<span class="token operator">></span>
-    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
-  <span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span>
-<span class="token keyword">export</span> <span class="token keyword">default</span> Home
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-css line-numbers-mode" data-ext="css"><pre v-pre class="language-css"><code><span class="token selector">.box #powerful</span> <span class="token punctuation">{</span>
-  <span class="token property">color</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></CodeDemo><p><strong>轻松一刻</strong></p>
-<AudioPlayer
-  src="/mp3/像鱼.mp3"
-  title="像鱼"
-  poster="/mp3/像鱼.jpg"
-/>
-<p><strong>视频教程</strong></p>
-<VideoPlayer
-  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/97ac2dcc1367e03ac580204d6ca9a724.mp4"/>
-<p>至此，本章节的学习就到此结束了，如有疑惑，可对接<a href="https://work.weixin.qq.com/kfid/kfc8c0fd9b49c1f38b8" target="_blank" rel="noopener noreferrer">技术客服<ExternalLinkIcon/></a>进行相关咨询。</p>
-<h2 id="react组件化思想-9" tabindex="-1"><a class="header-anchor" href="#react组件化思想-9" aria-hidden="true">#</a> React组件化思想💎</h2>
-
-<CodeDemo id="code-demo-446" type="react" title="%E4%BB%A3%E7%A0%81%E6%BC%94%E7%A4%BA%E5%8F%8A%E8%AE%AD%E7%BB%83" code="eJxVkLFOwzAURX/lyTCkUkT2kmRh6QIDDAwYqa79CgHHjmwHKkX+FxY+o38D/1E7TqJ2sax37z2+fgP5sGRNuFbWwQC9xSfHHIKHCh6RcXdLVRI3usUwzFZQ1TBQBZDmLy1ay94wB4vuPt1fg3FGZZRsUEpNySqw5tQ7U0KiuQTCGSLbXg8T2efP2kixTXk/ngZdbxRkKVaK5gu4ZNY+sBYrSnb6QEmdxCBzLbD+O/78/x7HT5XFOFl02zEFjQjBTn+j2feSEtDqTjb8sxqmrn7xAyzVFkQRGZOjLEKf8R4rx8J46LRxIHDPepl2SRXJCbdx+zehLlzNT8/LldqsYSd7jIzg9iexqo3s">
-<div class="language-javascript line-numbers-mode" data-ext="js"><pre v-pre class="language-javascript"><code><span class="token keyword">const</span> <span class="token punctuation">{</span> useState <span class="token punctuation">}</span> <span class="token operator">=</span> React<span class="token punctuation">;</span>
-<span class="token keyword">const</span> <span class="token function-variable function">Home</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
-  <span class="token keyword">const</span> <span class="token punctuation">[</span>message<span class="token punctuation">,</span> setMessage<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">useState</span><span class="token punctuation">(</span><span class="token string">"Hello"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token keyword">const</span> <span class="token function-variable function">handler</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
-    <span class="token function">setMessage</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>message<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">,World</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span><span class="token punctuation">;</span>
-  <span class="token keyword">return</span> <span class="token punctuation">(</span>
-    <span class="token operator">&lt;</span>div className<span class="token operator">=</span><span class="token string">"box"</span><span class="token operator">></span>
-      <span class="token operator">&lt;</span>code<span class="token operator">></span>你好React<span class="token operator">&lt;</span><span class="token operator">/</span>code<span class="token operator">></span>
-      <span class="token operator">&lt;</span>span id<span class="token operator">=</span><span class="token string">"powerful"</span> onClick<span class="token operator">=</span><span class="token punctuation">{</span>handler<span class="token punctuation">}</span><span class="token operator">></span>
-        <span class="token punctuation">{</span>message<span class="token punctuation">}</span>
-      <span class="token operator">&lt;</span><span class="token operator">/</span>span<span class="token operator">></span>
-    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
-  <span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span>
-<span class="token keyword">export</span> <span class="token keyword">default</span> Home
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-css line-numbers-mode" data-ext="css"><pre v-pre class="language-css"><code><span class="token selector">.box #powerful</span> <span class="token punctuation">{</span>
-  <span class="token property">color</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></CodeDemo><p><strong>轻松一刻</strong></p>
-<AudioPlayer
-  src="/mp3/像鱼.mp3"
-  title="像鱼"
-  poster="/mp3/像鱼.jpg"
-/>
-<p><strong>视频教程</strong></p>
-<VideoPlayer
-  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/97ac2dcc1367e03ac580204d6ca9a724.mp4"/>
-<p>至此，本章节的学习就到此结束了，如有疑惑，可对接<a href="https://work.weixin.qq.com/kfid/kfc8c0fd9b49c1f38b8" target="_blank" rel="noopener noreferrer">技术客服<ExternalLinkIcon/></a>进行相关咨询。</p>
-<h2 id="react组件化思想-10" tabindex="-1"><a class="header-anchor" href="#react组件化思想-10" aria-hidden="true">#</a> React组件化思想💎</h2>
-
-<CodeDemo id="code-demo-464" type="react" title="%E4%BB%A3%E7%A0%81%E6%BC%94%E7%A4%BA%E5%8F%8A%E8%AE%AD%E7%BB%83" code="eJxVkLFOwzAURX/lyTCkUkT2kmRh6QIDDAwYqa79CgHHjmwHKkX+FxY+o38D/1E7TqJ2sax37z2+fgP5sGRNuFbWwQC9xSfHHIKHCh6RcXdLVRI3usUwzFZQ1TBQBZDmLy1ay94wB4vuPt1fg3FGZZRsUEpNySqw5tQ7U0KiuQTCGSLbXg8T2efP2kixTXk/ngZdbxRkKVaK5gu4ZNY+sBYrSnb6QEmdxCBzLbD+O/78/x7HT5XFOFl02zEFjQjBTn+j2feSEtDqTjb8sxqmrn7xAyzVFkQRGZOjLEKf8R4rx8J46LRxIHDPepl2SRXJCbdx+zehLlzNT8/LldqsYSd7jIzg9iexqo3s">
-<div class="language-javascript line-numbers-mode" data-ext="js"><pre v-pre class="language-javascript"><code><span class="token keyword">const</span> <span class="token punctuation">{</span> useState <span class="token punctuation">}</span> <span class="token operator">=</span> React<span class="token punctuation">;</span>
-<span class="token keyword">const</span> <span class="token function-variable function">Home</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
-  <span class="token keyword">const</span> <span class="token punctuation">[</span>message<span class="token punctuation">,</span> setMessage<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">useState</span><span class="token punctuation">(</span><span class="token string">"Hello"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token keyword">const</span> <span class="token function-variable function">handler</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
-    <span class="token function">setMessage</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>message<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">,World</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span><span class="token punctuation">;</span>
-  <span class="token keyword">return</span> <span class="token punctuation">(</span>
-    <span class="token operator">&lt;</span>div className<span class="token operator">=</span><span class="token string">"box"</span><span class="token operator">></span>
-      <span class="token operator">&lt;</span>code<span class="token operator">></span>你好React<span class="token operator">&lt;</span><span class="token operator">/</span>code<span class="token operator">></span>
-      <span class="token operator">&lt;</span>span id<span class="token operator">=</span><span class="token string">"powerful"</span> onClick<span class="token operator">=</span><span class="token punctuation">{</span>handler<span class="token punctuation">}</span><span class="token operator">></span>
-        <span class="token punctuation">{</span>message<span class="token punctuation">}</span>
-      <span class="token operator">&lt;</span><span class="token operator">/</span>span<span class="token operator">></span>
-    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
-  <span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span>
-<span class="token keyword">export</span> <span class="token keyword">default</span> Home
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-css line-numbers-mode" data-ext="css"><pre v-pre class="language-css"><code><span class="token selector">.box #powerful</span> <span class="token punctuation">{</span>
-  <span class="token property">color</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></CodeDemo><p><strong>轻松一刻</strong></p>
-<AudioPlayer
-  src="/mp3/像鱼.mp3"
-  title="像鱼"
-  poster="/mp3/像鱼.jpg"
-/>
-<p><strong>视频教程</strong></p>
-<VideoPlayer
-  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/97ac2dcc1367e03ac580204d6ca9a724.mp4"/>
-<p>至此，本章节的学习就到此结束了，如有疑惑，可对接<a href="https://work.weixin.qq.com/kfid/kfc8c0fd9b49c1f38b8" target="_blank" rel="noopener noreferrer">技术客服<ExternalLinkIcon/></a>进行相关咨询。</p>
-<h2 id="react组件化思想-11" tabindex="-1"><a class="header-anchor" href="#react组件化思想-11" aria-hidden="true">#</a> React组件化思想💎</h2>
-
-<CodeDemo id="code-demo-482" type="react" title="%E4%BB%A3%E7%A0%81%E6%BC%94%E7%A4%BA%E5%8F%8A%E8%AE%AD%E7%BB%83" code="eJxVkLFOwzAURX/lyTCkUkT2kmRh6QIDDAwYqa79CgHHjmwHKkX+FxY+o38D/1E7TqJ2sax37z2+fgP5sGRNuFbWwQC9xSfHHIKHCh6RcXdLVRI3usUwzFZQ1TBQBZDmLy1ay94wB4vuPt1fg3FGZZRsUEpNySqw5tQ7U0KiuQTCGSLbXg8T2efP2kixTXk/ngZdbxRkKVaK5gu4ZNY+sBYrSnb6QEmdxCBzLbD+O/78/x7HT5XFOFl02zEFjQjBTn+j2feSEtDqTjb8sxqmrn7xAyzVFkQRGZOjLEKf8R4rx8J46LRxIHDPepl2SRXJCbdx+zehLlzNT8/LldqsYSd7jIzg9iexqo3s">
-<div class="language-javascript line-numbers-mode" data-ext="js"><pre v-pre class="language-javascript"><code><span class="token keyword">const</span> <span class="token punctuation">{</span> useState <span class="token punctuation">}</span> <span class="token operator">=</span> React<span class="token punctuation">;</span>
-<span class="token keyword">const</span> <span class="token function-variable function">Home</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
-  <span class="token keyword">const</span> <span class="token punctuation">[</span>message<span class="token punctuation">,</span> setMessage<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">useState</span><span class="token punctuation">(</span><span class="token string">"Hello"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token keyword">const</span> <span class="token function-variable function">handler</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
-    <span class="token function">setMessage</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>message<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">,World</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span><span class="token punctuation">;</span>
-  <span class="token keyword">return</span> <span class="token punctuation">(</span>
-    <span class="token operator">&lt;</span>div className<span class="token operator">=</span><span class="token string">"box"</span><span class="token operator">></span>
-      <span class="token operator">&lt;</span>code<span class="token operator">></span>你好React<span class="token operator">&lt;</span><span class="token operator">/</span>code<span class="token operator">></span>
-      <span class="token operator">&lt;</span>span id<span class="token operator">=</span><span class="token string">"powerful"</span> onClick<span class="token operator">=</span><span class="token punctuation">{</span>handler<span class="token punctuation">}</span><span class="token operator">></span>
-        <span class="token punctuation">{</span>message<span class="token punctuation">}</span>
-      <span class="token operator">&lt;</span><span class="token operator">/</span>span<span class="token operator">></span>
-    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
-  <span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span>
-<span class="token keyword">export</span> <span class="token keyword">default</span> Home
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-css line-numbers-mode" data-ext="css"><pre v-pre class="language-css"><code><span class="token selector">.box #powerful</span> <span class="token punctuation">{</span>
-  <span class="token property">color</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></CodeDemo><p><strong>轻松一刻</strong></p>
-<AudioPlayer
-  src="/mp3/像鱼.mp3"
-  title="像鱼"
-  poster="/mp3/像鱼.jpg"
-/>
-<p><strong>视频教程</strong></p>
-<VideoPlayer
-  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/97ac2dcc1367e03ac580204d6ca9a724.mp4"/>
-<p>至此，本章节的学习就到此结束了，如有疑惑，可对接<a href="https://work.weixin.qq.com/kfid/kfc8c0fd9b49c1f38b8" target="_blank" rel="noopener noreferrer">技术客服<ExternalLinkIcon/></a>进行相关咨询。</p>
-<h2 id="react组件化思想-12" tabindex="-1"><a class="header-anchor" href="#react组件化思想-12" aria-hidden="true">#</a> React组件化思想💎</h2>
-
-<CodeDemo id="code-demo-500" type="react" title="%E4%BB%A3%E7%A0%81%E6%BC%94%E7%A4%BA%E5%8F%8A%E8%AE%AD%E7%BB%83" code="eJxVkLFOwzAURX/lyTCkUkT2kmRh6QIDDAwYqa79CgHHjmwHKkX+FxY+o38D/1E7TqJ2sax37z2+fgP5sGRNuFbWwQC9xSfHHIKHCh6RcXdLVRI3usUwzFZQ1TBQBZDmLy1ay94wB4vuPt1fg3FGZZRsUEpNySqw5tQ7U0KiuQTCGSLbXg8T2efP2kixTXk/ngZdbxRkKVaK5gu4ZNY+sBYrSnb6QEmdxCBzLbD+O/78/x7HT5XFOFl02zEFjQjBTn+j2feSEtDqTjb8sxqmrn7xAyzVFkQRGZOjLEKf8R4rx8J46LRxIHDPepl2SRXJCbdx+zehLlzNT8/LldqsYSd7jIzg9iexqo3s">
-<div class="language-javascript line-numbers-mode" data-ext="js"><pre v-pre class="language-javascript"><code><span class="token keyword">const</span> <span class="token punctuation">{</span> useState <span class="token punctuation">}</span> <span class="token operator">=</span> React<span class="token punctuation">;</span>
-<span class="token keyword">const</span> <span class="token function-variable function">Home</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
-  <span class="token keyword">const</span> <span class="token punctuation">[</span>message<span class="token punctuation">,</span> setMessage<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">useState</span><span class="token punctuation">(</span><span class="token string">"Hello"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token keyword">const</span> <span class="token function-variable function">handler</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
-    <span class="token function">setMessage</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>message<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">,World</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span><span class="token punctuation">;</span>
-  <span class="token keyword">return</span> <span class="token punctuation">(</span>
-    <span class="token operator">&lt;</span>div className<span class="token operator">=</span><span class="token string">"box"</span><span class="token operator">></span>
-      <span class="token operator">&lt;</span>code<span class="token operator">></span>你好React<span class="token operator">&lt;</span><span class="token operator">/</span>code<span class="token operator">></span>
-      <span class="token operator">&lt;</span>span id<span class="token operator">=</span><span class="token string">"powerful"</span> onClick<span class="token operator">=</span><span class="token punctuation">{</span>handler<span class="token punctuation">}</span><span class="token operator">></span>
-        <span class="token punctuation">{</span>message<span class="token punctuation">}</span>
-      <span class="token operator">&lt;</span><span class="token operator">/</span>span<span class="token operator">></span>
-    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
-  <span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span>
-<span class="token keyword">export</span> <span class="token keyword">default</span> Home
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-css line-numbers-mode" data-ext="css"><pre v-pre class="language-css"><code><span class="token selector">.box #powerful</span> <span class="token punctuation">{</span>
-  <span class="token property">color</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></CodeDemo><p><strong>轻松一刻</strong></p>
-<AudioPlayer
-  src="/mp3/像鱼.mp3"
-  title="像鱼"
-  poster="/mp3/像鱼.jpg"
-/>
-<p><strong>视频教程</strong></p>
-<VideoPlayer
-  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/97ac2dcc1367e03ac580204d6ca9a724.mp4"/>
-<p>至此，本章节的学习就到此结束了，如有疑惑，可对接<a href="https://work.weixin.qq.com/kfid/kfc8c0fd9b49c1f38b8" target="_blank" rel="noopener noreferrer">技术客服<ExternalLinkIcon/></a>进行相关咨询。</p>
-<h2 id="react组件化思想-13" tabindex="-1"><a class="header-anchor" href="#react组件化思想-13" aria-hidden="true">#</a> React组件化思想💎</h2>
-
-<CodeDemo id="code-demo-518" type="react" title="%E4%BB%A3%E7%A0%81%E6%BC%94%E7%A4%BA%E5%8F%8A%E8%AE%AD%E7%BB%83" code="eJxVkLFOwzAURX/lyTCkUkT2kmRh6QIDDAwYqa79CgHHjmwHKkX+FxY+o38D/1E7TqJ2sax37z2+fgP5sGRNuFbWwQC9xSfHHIKHCh6RcXdLVRI3usUwzFZQ1TBQBZDmLy1ay94wB4vuPt1fg3FGZZRsUEpNySqw5tQ7U0KiuQTCGSLbXg8T2efP2kixTXk/ngZdbxRkKVaK5gu4ZNY+sBYrSnb6QEmdxCBzLbD+O/78/x7HT5XFOFl02zEFjQjBTn+j2feSEtDqTjb8sxqmrn7xAyzVFkQRGZOjLEKf8R4rx8J46LRxIHDPepl2SRXJCbdx+zehLlzNT8/LldqsYSd7jIzg9iexqo3s">
-<div class="language-javascript line-numbers-mode" data-ext="js"><pre v-pre class="language-javascript"><code><span class="token keyword">const</span> <span class="token punctuation">{</span> useState <span class="token punctuation">}</span> <span class="token operator">=</span> React<span class="token punctuation">;</span>
-<span class="token keyword">const</span> <span class="token function-variable function">Home</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
-  <span class="token keyword">const</span> <span class="token punctuation">[</span>message<span class="token punctuation">,</span> setMessage<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">useState</span><span class="token punctuation">(</span><span class="token string">"Hello"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token keyword">const</span> <span class="token function-variable function">handler</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
-    <span class="token function">setMessage</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>message<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">,World</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span><span class="token punctuation">;</span>
-  <span class="token keyword">return</span> <span class="token punctuation">(</span>
-    <span class="token operator">&lt;</span>div className<span class="token operator">=</span><span class="token string">"box"</span><span class="token operator">></span>
-      <span class="token operator">&lt;</span>code<span class="token operator">></span>你好React<span class="token operator">&lt;</span><span class="token operator">/</span>code<span class="token operator">></span>
-      <span class="token operator">&lt;</span>span id<span class="token operator">=</span><span class="token string">"powerful"</span> onClick<span class="token operator">=</span><span class="token punctuation">{</span>handler<span class="token punctuation">}</span><span class="token operator">></span>
-        <span class="token punctuation">{</span>message<span class="token punctuation">}</span>
-      <span class="token operator">&lt;</span><span class="token operator">/</span>span<span class="token operator">></span>
-    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
-  <span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span>
-<span class="token keyword">export</span> <span class="token keyword">default</span> Home
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-css line-numbers-mode" data-ext="css"><pre v-pre class="language-css"><code><span class="token selector">.box #powerful</span> <span class="token punctuation">{</span>
-  <span class="token property">color</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></CodeDemo><p><strong>轻松一刻</strong></p>
-<AudioPlayer
-  src="/mp3/像鱼.mp3"
-  title="像鱼"
-  poster="/mp3/像鱼.jpg"
-/>
-<p><strong>视频教程</strong></p>
-<VideoPlayer
-  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/97ac2dcc1367e03ac580204d6ca9a724.mp4"/>
-<p>至此，本章节的学习就到此结束了，如有疑惑，可对接<a href="https://work.weixin.qq.com/kfid/kfc8c0fd9b49c1f38b8" target="_blank" rel="noopener noreferrer">技术客服<ExternalLinkIcon/></a>进行相关咨询。</p>
-<h2 id="react组件化思想-14" tabindex="-1"><a class="header-anchor" href="#react组件化思想-14" aria-hidden="true">#</a> React组件化思想💎</h2>
-
-<CodeDemo id="code-demo-536" type="react" title="%E4%BB%A3%E7%A0%81%E6%BC%94%E7%A4%BA%E5%8F%8A%E8%AE%AD%E7%BB%83" code="eJxVkLFOwzAURX/lyTCkUkT2kmRh6QIDDAwYqa79CgHHjmwHKkX+FxY+o38D/1E7TqJ2sax37z2+fgP5sGRNuFbWwQC9xSfHHIKHCh6RcXdLVRI3usUwzFZQ1TBQBZDmLy1ay94wB4vuPt1fg3FGZZRsUEpNySqw5tQ7U0KiuQTCGSLbXg8T2efP2kixTXk/ngZdbxRkKVaK5gu4ZNY+sBYrSnb6QEmdxCBzLbD+O/78/x7HT5XFOFl02zEFjQjBTn+j2feSEtDqTjb8sxqmrn7xAyzVFkQRGZOjLEKf8R4rx8J46LRxIHDPepl2SRXJCbdx+zehLlzNT8/LldqsYSd7jIzg9iexqo3s">
-<div class="language-javascript line-numbers-mode" data-ext="js"><pre v-pre class="language-javascript"><code><span class="token keyword">const</span> <span class="token punctuation">{</span> useState <span class="token punctuation">}</span> <span class="token operator">=</span> React<span class="token punctuation">;</span>
-<span class="token keyword">const</span> <span class="token function-variable function">Home</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
-  <span class="token keyword">const</span> <span class="token punctuation">[</span>message<span class="token punctuation">,</span> setMessage<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">useState</span><span class="token punctuation">(</span><span class="token string">"Hello"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token keyword">const</span> <span class="token function-variable function">handler</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
-    <span class="token function">setMessage</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>message<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">,World</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span><span class="token punctuation">;</span>
-  <span class="token keyword">return</span> <span class="token punctuation">(</span>
-    <span class="token operator">&lt;</span>div className<span class="token operator">=</span><span class="token string">"box"</span><span class="token operator">></span>
-      <span class="token operator">&lt;</span>code<span class="token operator">></span>你好React<span class="token operator">&lt;</span><span class="token operator">/</span>code<span class="token operator">></span>
-      <span class="token operator">&lt;</span>span id<span class="token operator">=</span><span class="token string">"powerful"</span> onClick<span class="token operator">=</span><span class="token punctuation">{</span>handler<span class="token punctuation">}</span><span class="token operator">></span>
-        <span class="token punctuation">{</span>message<span class="token punctuation">}</span>
-      <span class="token operator">&lt;</span><span class="token operator">/</span>span<span class="token operator">></span>
-    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
-  <span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span>
-<span class="token keyword">export</span> <span class="token keyword">default</span> Home
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-css line-numbers-mode" data-ext="css"><pre v-pre class="language-css"><code><span class="token selector">.box #powerful</span> <span class="token punctuation">{</span>
-  <span class="token property">color</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></CodeDemo><p><strong>轻松一刻</strong></p>
-<AudioPlayer
-  src="/mp3/像鱼.mp3"
-  title="像鱼"
-  poster="/mp3/像鱼.jpg"
-/>
-<p><strong>视频教程</strong></p>
-<VideoPlayer
-  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/97ac2dcc1367e03ac580204d6ca9a724.mp4"/>
-<p>至此，本章节的学习就到此结束了，如有疑惑，可对接<a href="https://work.weixin.qq.com/kfid/kfc8c0fd9b49c1f38b8" target="_blank" rel="noopener noreferrer">技术客服<ExternalLinkIcon/></a>进行相关咨询。</p>
-<h2 id="react组件化思想-15" tabindex="-1"><a class="header-anchor" href="#react组件化思想-15" aria-hidden="true">#</a> React组件化思想💎</h2>
-
-<CodeDemo id="code-demo-554" type="react" title="%E4%BB%A3%E7%A0%81%E6%BC%94%E7%A4%BA%E5%8F%8A%E8%AE%AD%E7%BB%83" code="eJxVkLFOwzAURX/lyTCkUkT2kmRh6QIDDAwYqa79CgHHjmwHKkX+FxY+o38D/1E7TqJ2sax37z2+fgP5sGRNuFbWwQC9xSfHHIKHCh6RcXdLVRI3usUwzFZQ1TBQBZDmLy1ay94wB4vuPt1fg3FGZZRsUEpNySqw5tQ7U0KiuQTCGSLbXg8T2efP2kixTXk/ngZdbxRkKVaK5gu4ZNY+sBYrSnb6QEmdxCBzLbD+O/78/x7HT5XFOFl02zEFjQjBTn+j2feSEtDqTjb8sxqmrn7xAyzVFkQRGZOjLEKf8R4rx8J46LRxIHDPepl2SRXJCbdx+zehLlzNT8/LldqsYSd7jIzg9iexqo3s">
-<div class="language-javascript line-numbers-mode" data-ext="js"><pre v-pre class="language-javascript"><code><span class="token keyword">const</span> <span class="token punctuation">{</span> useState <span class="token punctuation">}</span> <span class="token operator">=</span> React<span class="token punctuation">;</span>
-<span class="token keyword">const</span> <span class="token function-variable function">Home</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
-  <span class="token keyword">const</span> <span class="token punctuation">[</span>message<span class="token punctuation">,</span> setMessage<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">useState</span><span class="token punctuation">(</span><span class="token string">"Hello"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token keyword">const</span> <span class="token function-variable function">handler</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
-    <span class="token function">setMessage</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>message<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">,World</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span><span class="token punctuation">;</span>
-  <span class="token keyword">return</span> <span class="token punctuation">(</span>
-    <span class="token operator">&lt;</span>div className<span class="token operator">=</span><span class="token string">"box"</span><span class="token operator">></span>
-      <span class="token operator">&lt;</span>code<span class="token operator">></span>你好React<span class="token operator">&lt;</span><span class="token operator">/</span>code<span class="token operator">></span>
-      <span class="token operator">&lt;</span>span id<span class="token operator">=</span><span class="token string">"powerful"</span> onClick<span class="token operator">=</span><span class="token punctuation">{</span>handler<span class="token punctuation">}</span><span class="token operator">></span>
-        <span class="token punctuation">{</span>message<span class="token punctuation">}</span>
-      <span class="token operator">&lt;</span><span class="token operator">/</span>span<span class="token operator">></span>
-    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
-  <span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span>
-<span class="token keyword">export</span> <span class="token keyword">default</span> Home
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-css line-numbers-mode" data-ext="css"><pre v-pre class="language-css"><code><span class="token selector">.box #powerful</span> <span class="token punctuation">{</span>
-  <span class="token property">color</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></CodeDemo><p><strong>轻松一刻</strong></p>
-<AudioPlayer
-  src="/mp3/像鱼.mp3"
-  title="像鱼"
-  poster="/mp3/像鱼.jpg"
+  src="/mp3/1.mp3"
+  title="音乐"
+  poster="/mp3/1.jpg"
 />
 <p><strong>视频教程</strong></p>
 <VideoPlayer

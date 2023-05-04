@@ -1,1 +1,0 @@
-import{_ as a,Y as t,Z as n,$ as e,a0 as c}from"./framework-5ec5f799.js";const r={},s=e("h1",{id:"_12-2-uniapp章节2",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#_12-2-uniapp章节2","aria-hidden":"true"},"#"),c(" 12.2 Uniapp章节2 🎉")],-1),_=[s];function o(i,p){return t(),n("div",null,_)}const h=a(r,[["render",o],["__file","uniapp02.html.vue"]]);export{h as default};

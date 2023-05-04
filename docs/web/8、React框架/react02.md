@@ -12,9 +12,9 @@ tag: react
 
 组件化开发，带来了全新的开发体验，也带来了全新的编码方式。
 
-在React中，构建管理自身状态的封装组件，然后对其组合以构成复杂的 UI。
-
+在React中，构建管理自身状态的封装组件
 由于组件逻辑使用 JavaScript 编写而非模板，因此你可以轻松地在应用中传递数据，并保持状态与 DOM 分离。
+
 
 ![](/images/react/react7.png)
 
@@ -41,9 +41,9 @@ export default Home
 
 **轻松一刻**
 <AudioPlayer
-  src="/mp3/十年.mp3"
-  title="十年"
-  poster="/mp3/十年.jpg"
+  src="/mp3/5.mp3"
+  title="音乐"
+  poster="/mp3/5.jpg"
 />
 
 **视频教程**
@@ -218,9 +218,9 @@ export default Home
 
 **轻松一刻**
 <AudioPlayer
-  src="/mp3/星辰大海.mp3"
-  title="星辰大海"
-  poster="/mp3/星辰大海.jpg"
+  src="/mp3/6.mp3"
+  title="音乐"
+  poster="/mp3/6.jpg"
 />
 
 **视频教程**
@@ -327,9 +327,9 @@ export default APP
 
 **轻松一刻**
 <AudioPlayer
-  src="/mp3/像鱼.mp3"
-  title="像鱼"
-  poster="/mp3/像鱼.jpg"
+  src="/mp3/7.mp3"
+  title="音乐"
+  poster="/mp3/7.jpg"
 />
 
 **视频教程**
@@ -452,9 +452,9 @@ key 帮助 React 识别哪些元素改变了，比如被添加或删除。因此
 
 **轻松一刻**
 <AudioPlayer
-  src="/mp3/像鱼.mp3"
-  title="像鱼"
-  poster="/mp3/像鱼.jpg"
+  src="/mp3/8.mp3"
+  title="音乐"
+  poster="/mp3/8.jpg"
 />
 
 **视频教程**
@@ -539,842 +539,202 @@ export default App
 ```
 :::
 ### 事件对象:ghost:
+![](/images/react/react14.png)
 
+默认情况下，react会传递一个事件对象到事件的处理函数，这个事件对象是一个合成事件对象。
+```jsx
+const App = () => {
+  const onAdd = (e) => {
+    console.log(e)
+  }
+  return (
+    <div>
+      <button onClick={onAdd}>提交</button>
+    </div>
+  )
+}
+```
+通过事件对象，我们可以达到阻止默认事件、阻止冒泡、获取输入的值等目的。
+```jsx
+const App = () => {
+  const onAdd = (e) => {
+    e.preventDefault();//阻止默认事件
+    e.stopPropagation()//阻止事件冒泡
+    console.log(e)
+  }
+  return (
+    <div>
+      <a onClick={onAdd} href="https://www.baidu.com">点击</a>
+      <input onChange={(e) => { console.log(e.target.value) }} />
+    </div>
+  )
+}
+export default App
+```
+::: react-demo 代码演示及训练
+```js
+const App = () => {
+  const onAdd = (e) => {
+    e.preventDefault();//阻止默认事件
+    e.stopPropagation()//阻止事件冒泡
+    console.log(e)
+  }
+  return (
+    <div>
+      <a onClick={onAdd} href="https://www.baidu.com">点击</a>
+      <input onChange={(e) => { console.log(e.target.value) }} />
+    </div>
+  )
+}
+export default App
+```
+:::
 ### 事件传参:ghost:
+![](/images/react/react15.png)
 
-**轻松一刻**
-<AudioPlayer
-  src="/mp3/像鱼.mp3"
-  title="像鱼"
-  poster="/mp3/像鱼.jpg"
-/>
+除了自带的事件对象参数，还可以传递其他的一个或多个参数
 
-**视频教程**
-<VideoPlayer
-  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/97ac2dcc1367e03ac580204d6ca9a724.mp4"/>
-
-至此，本章节的学习就到此结束了，如有疑惑，可对接[技术客服](https://work.weixin.qq.com/kfid/kfc8c0fd9b49c1f38b8)进行相关咨询。
-
-
-
-
-
-
-
-
-
-
-
-
-## React组件化思想:gem:
+```jsx
+const App = () => {
+  // 方式1
+  const onAdd = (param) => {
+    return (e) => {
+      console.log(param)
+      console.log(e)
+    }
+  }
+  //方式2
+  const onAdd1 = (param,e) => {
+    console.log(param)
+    console.log(e)
+  }
+  return (
+    <div>
+      <button onClick={onAdd('hello')}>点击1</button>
+      <button onClick={(e) => onAdd1('hello', e)}>点击2</button>
+    </div>
+  )
+}
+export default App
+```
+::: tip
+当参数和事件对象都要传递时，默认把事件对象`event`放到后面
+:::
 ::: react-demo 代码演示及训练
 ```js
-const { useState } = React;
-const Home = () => {
-  const [message, setMessage] = useState("Hello");
-  const handler = () => {
-    setMessage(`${message},World`);
-  };
+const App = () => {
+  // 方式1
+  const onAdd = (param) => {
+    return (e) => {
+      console.log(param)
+      console.log(e)
+    }
+  }
+  //方式2
+  const onAdd1 = ( param,e) => {
+    console.log(param)
+    console.log(e)
+  }
   return (
-    <div className="box">
-      <code>你好React</code>
-      <span id="powerful" onClick={handler}>
-        {message}
-      </span>
+    <div>
+      <button onClick={onAdd('hello')}>点击1</button>
+      <button onClick={(e) => onAdd1('hello', e)}>点击2</button>
     </div>
-  );
-};
-export default Home
-```
-```css
-.box #powerful {
-  color: blue;
+  )
 }
+export default App
 ```
 :::
+### class组件中的事件:ghost:
+![](/images/react/react16.png)
 
+类组件中的`this`指向类的实例，在render函数中可以通过`this`访问该类的实例的属性。
+```jsx
+import React from 'react';
+class App extends React.Component {
+  onAdd() {
+    console.log('点击事件发生了')
+  }
+  render() {
+    return <div>
+      <button onClick={this.onAdd}>点击</button>
+    </div>
+  }
+}
+export default App
+```
+::: tip
+在 JavaScript 中，class 的方法默认不会绑定`this`,你可以在上边的案例中的onAdd函数中打印一下`console.log(this)`,值为`Undefined`
+:::
+
+那么，如何才能在函数中访问到this?
+
+我准备了三种方式
+
+  - 方法一：手动绑定函数中`this`的指向
+    ```jsx
+    import React from 'react';
+    class App extends React.Component {
+      onAdd() {
+        console.log('点击事件发生了')
+        console.log(this);
+
+      }
+      render() {
+        return <div>
+          <button onClick={this.onAdd.bind(this)}>点击</button>
+        </div>
+      }
+    }
+    export default App
+    ```
+  - 方法二：使用箭头函数
+
+    ```jsx
+    import React from 'react';
+    class App extends React.Component {
+      onAdd = () => {
+        console.log('点击事件发生了')
+        console.log(this);
+      }
+      render() {
+        return <div>
+          <button onClick={this.onAdd}>点击</button>
+        </div>
+      }
+    }
+    export default App
+    ```
+
+  - 方法三：在类的构造函数中绑定
+
+    ```jsx
+    import React from 'react';
+    class App extends React.Component{
+      constructor(props:) {
+        super(props)
+        this.onAdd = this.onAdd.bind(this)
+      }
+      onAdd() {
+        console.log('点击事件发生了')
+        console.log(this)
+      }
+      render() {
+        return <div>
+          <button onClick={this.onAdd}>点击</button>
+        </div>
+      }
+    }
+    export default App
+    ```
+
+在这里，我并不推荐大家使用类组件，很明显，这要比使用函数组件麻烦的多，而且在后期的Ant Design UI组件库的学习中，官方提供的都是函数组件，后期的ReactHook学习也是针对函数组件来进行的，使用函数组件具有一定的技术前瞻性！
 
 **轻松一刻**
 <AudioPlayer
-  src="/mp3/像鱼.mp3"
-  title="像鱼"
-  poster="/mp3/像鱼.jpg"
-/>
-
-**视频教程**
-<VideoPlayer
-  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/97ac2dcc1367e03ac580204d6ca9a724.mp4"/>
-
-至此，本章节的学习就到此结束了，如有疑惑，可对接[技术客服](https://work.weixin.qq.com/kfid/kfc8c0fd9b49c1f38b8)进行相关咨询。
-
-
-
-
-
-
-
-
-
-## React组件化思想:gem:
-::: react-demo 代码演示及训练
-```js
-const { useState } = React;
-const Home = () => {
-  const [message, setMessage] = useState("Hello");
-  const handler = () => {
-    setMessage(`${message},World`);
-  };
-  return (
-    <div className="box">
-      <code>你好React</code>
-      <span id="powerful" onClick={handler}>
-        {message}
-      </span>
-    </div>
-  );
-};
-export default Home
-```
-```css
-.box #powerful {
-  color: blue;
-}
-```
-:::
-
-
-**轻松一刻**
-<AudioPlayer
-  src="/mp3/像鱼.mp3"
-  title="像鱼"
-  poster="/mp3/像鱼.jpg"
-/>
-
-**视频教程**
-<VideoPlayer
-  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/97ac2dcc1367e03ac580204d6ca9a724.mp4"/>
-
-至此，本章节的学习就到此结束了，如有疑惑，可对接[技术客服](https://work.weixin.qq.com/kfid/kfc8c0fd9b49c1f38b8)进行相关咨询。
-
-
-
-
-
-
-
-
-
-
-
-
-## React组件化思想:gem:
-::: react-demo 代码演示及训练
-```js
-const { useState } = React;
-const Home = () => {
-  const [message, setMessage] = useState("Hello");
-  const handler = () => {
-    setMessage(`${message},World`);
-  };
-  return (
-    <div className="box">
-      <code>你好React</code>
-      <span id="powerful" onClick={handler}>
-        {message}
-      </span>
-    </div>
-  );
-};
-export default Home
-```
-```css
-.box #powerful {
-  color: blue;
-}
-```
-:::
-
-
-**轻松一刻**
-<AudioPlayer
-  src="/mp3/像鱼.mp3"
-  title="像鱼"
-  poster="/mp3/像鱼.jpg"
-/>
-
-**视频教程**
-<VideoPlayer
-  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/97ac2dcc1367e03ac580204d6ca9a724.mp4"/>
-
-至此，本章节的学习就到此结束了，如有疑惑，可对接[技术客服](https://work.weixin.qq.com/kfid/kfc8c0fd9b49c1f38b8)进行相关咨询。
-
-
-
-
-
-
-
-
-
-## React组件化思想:gem:
-::: react-demo 代码演示及训练
-```js
-const { useState } = React;
-const Home = () => {
-  const [message, setMessage] = useState("Hello");
-  const handler = () => {
-    setMessage(`${message},World`);
-  };
-  return (
-    <div className="box">
-      <code>你好React</code>
-      <span id="powerful" onClick={handler}>
-        {message}
-      </span>
-    </div>
-  );
-};
-export default Home
-```
-```css
-.box #powerful {
-  color: blue;
-}
-```
-:::
-
-
-**轻松一刻**
-<AudioPlayer
-  src="/mp3/像鱼.mp3"
-  title="像鱼"
-  poster="/mp3/像鱼.jpg"
-/>
-
-**视频教程**
-<VideoPlayer
-  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/97ac2dcc1367e03ac580204d6ca9a724.mp4"/>
-
-至此，本章节的学习就到此结束了，如有疑惑，可对接[技术客服](https://work.weixin.qq.com/kfid/kfc8c0fd9b49c1f38b8)进行相关咨询。
-
-
-
-
-
-
-
-
-
-
-
-
-## React组件化思想:gem:
-::: react-demo 代码演示及训练
-```js
-const { useState } = React;
-const Home = () => {
-  const [message, setMessage] = useState("Hello");
-  const handler = () => {
-    setMessage(`${message},World`);
-  };
-  return (
-    <div className="box">
-      <code>你好React</code>
-      <span id="powerful" onClick={handler}>
-        {message}
-      </span>
-    </div>
-  );
-};
-export default Home
-```
-```css
-.box #powerful {
-  color: blue;
-}
-```
-:::
-
-
-**轻松一刻**
-<AudioPlayer
-  src="/mp3/像鱼.mp3"
-  title="像鱼"
-  poster="/mp3/像鱼.jpg"
-/>
-
-**视频教程**
-<VideoPlayer
-  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/97ac2dcc1367e03ac580204d6ca9a724.mp4"/>
-
-至此，本章节的学习就到此结束了，如有疑惑，可对接[技术客服](https://work.weixin.qq.com/kfid/kfc8c0fd9b49c1f38b8)进行相关咨询。
-
-
-
-
-
-
-
-
-
-
-## React组件化思想:gem:
-::: react-demo 代码演示及训练
-```js
-const { useState } = React;
-const Home = () => {
-  const [message, setMessage] = useState("Hello");
-  const handler = () => {
-    setMessage(`${message},World`);
-  };
-  return (
-    <div className="box">
-      <code>你好React</code>
-      <span id="powerful" onClick={handler}>
-        {message}
-      </span>
-    </div>
-  );
-};
-export default Home
-```
-```css
-.box #powerful {
-  color: blue;
-}
-```
-:::
-
-
-**轻松一刻**
-<AudioPlayer
-  src="/mp3/像鱼.mp3"
-  title="像鱼"
-  poster="/mp3/像鱼.jpg"
-/>
-
-**视频教程**
-<VideoPlayer
-  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/97ac2dcc1367e03ac580204d6ca9a724.mp4"/>
-
-至此，本章节的学习就到此结束了，如有疑惑，可对接[技术客服](https://work.weixin.qq.com/kfid/kfc8c0fd9b49c1f38b8)进行相关咨询。
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## React组件化思想:gem:
-::: react-demo 代码演示及训练
-```js
-const { useState } = React;
-const Home = () => {
-  const [message, setMessage] = useState("Hello");
-  const handler = () => {
-    setMessage(`${message},World`);
-  };
-  return (
-    <div className="box">
-      <code>你好React</code>
-      <span id="powerful" onClick={handler}>
-        {message}
-      </span>
-    </div>
-  );
-};
-export default Home
-```
-```css
-.box #powerful {
-  color: blue;
-}
-```
-:::
-
-
-**轻松一刻**
-<AudioPlayer
-  src="/mp3/像鱼.mp3"
-  title="像鱼"
-  poster="/mp3/像鱼.jpg"
-/>
-
-**视频教程**
-<VideoPlayer
-  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/97ac2dcc1367e03ac580204d6ca9a724.mp4"/>
-
-至此，本章节的学习就到此结束了，如有疑惑，可对接[技术客服](https://work.weixin.qq.com/kfid/kfc8c0fd9b49c1f38b8)进行相关咨询。
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## React组件化思想:gem:
-::: react-demo 代码演示及训练
-```js
-const { useState } = React;
-const Home = () => {
-  const [message, setMessage] = useState("Hello");
-  const handler = () => {
-    setMessage(`${message},World`);
-  };
-  return (
-    <div className="box">
-      <code>你好React</code>
-      <span id="powerful" onClick={handler}>
-        {message}
-      </span>
-    </div>
-  );
-};
-export default Home
-```
-```css
-.box #powerful {
-  color: blue;
-}
-```
-:::
-
-
-**轻松一刻**
-<AudioPlayer
-  src="/mp3/像鱼.mp3"
-  title="像鱼"
-  poster="/mp3/像鱼.jpg"
-/>
-
-**视频教程**
-<VideoPlayer
-  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/97ac2dcc1367e03ac580204d6ca9a724.mp4"/>
-
-至此，本章节的学习就到此结束了，如有疑惑，可对接[技术客服](https://work.weixin.qq.com/kfid/kfc8c0fd9b49c1f38b8)进行相关咨询。
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## React组件化思想:gem:
-::: react-demo 代码演示及训练
-```js
-const { useState } = React;
-const Home = () => {
-  const [message, setMessage] = useState("Hello");
-  const handler = () => {
-    setMessage(`${message},World`);
-  };
-  return (
-    <div className="box">
-      <code>你好React</code>
-      <span id="powerful" onClick={handler}>
-        {message}
-      </span>
-    </div>
-  );
-};
-export default Home
-```
-```css
-.box #powerful {
-  color: blue;
-}
-```
-:::
-
-
-**轻松一刻**
-<AudioPlayer
-  src="/mp3/像鱼.mp3"
-  title="像鱼"
-  poster="/mp3/像鱼.jpg"
-/>
-
-**视频教程**
-<VideoPlayer
-  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/97ac2dcc1367e03ac580204d6ca9a724.mp4"/>
-
-至此，本章节的学习就到此结束了，如有疑惑，可对接[技术客服](https://work.weixin.qq.com/kfid/kfc8c0fd9b49c1f38b8)进行相关咨询。
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## React组件化思想:gem:
-::: react-demo 代码演示及训练
-```js
-const { useState } = React;
-const Home = () => {
-  const [message, setMessage] = useState("Hello");
-  const handler = () => {
-    setMessage(`${message},World`);
-  };
-  return (
-    <div className="box">
-      <code>你好React</code>
-      <span id="powerful" onClick={handler}>
-        {message}
-      </span>
-    </div>
-  );
-};
-export default Home
-```
-```css
-.box #powerful {
-  color: blue;
-}
-```
-:::
-
-
-**轻松一刻**
-<AudioPlayer
-  src="/mp3/像鱼.mp3"
-  title="像鱼"
-  poster="/mp3/像鱼.jpg"
-/>
-
-**视频教程**
-<VideoPlayer
-  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/97ac2dcc1367e03ac580204d6ca9a724.mp4"/>
-
-至此，本章节的学习就到此结束了，如有疑惑，可对接[技术客服](https://work.weixin.qq.com/kfid/kfc8c0fd9b49c1f38b8)进行相关咨询。
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## React组件化思想:gem:
-::: react-demo 代码演示及训练
-```js
-const { useState } = React;
-const Home = () => {
-  const [message, setMessage] = useState("Hello");
-  const handler = () => {
-    setMessage(`${message},World`);
-  };
-  return (
-    <div className="box">
-      <code>你好React</code>
-      <span id="powerful" onClick={handler}>
-        {message}
-      </span>
-    </div>
-  );
-};
-export default Home
-```
-```css
-.box #powerful {
-  color: blue;
-}
-```
-:::
-
-
-**轻松一刻**
-<AudioPlayer
-  src="/mp3/像鱼.mp3"
-  title="像鱼"
-  poster="/mp3/像鱼.jpg"
-/>
-
-**视频教程**
-<VideoPlayer
-  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/97ac2dcc1367e03ac580204d6ca9a724.mp4"/>
-
-至此，本章节的学习就到此结束了，如有疑惑，可对接[技术客服](https://work.weixin.qq.com/kfid/kfc8c0fd9b49c1f38b8)进行相关咨询。
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## React组件化思想:gem:
-::: react-demo 代码演示及训练
-```js
-const { useState } = React;
-const Home = () => {
-  const [message, setMessage] = useState("Hello");
-  const handler = () => {
-    setMessage(`${message},World`);
-  };
-  return (
-    <div className="box">
-      <code>你好React</code>
-      <span id="powerful" onClick={handler}>
-        {message}
-      </span>
-    </div>
-  );
-};
-export default Home
-```
-```css
-.box #powerful {
-  color: blue;
-}
-```
-:::
-
-
-**轻松一刻**
-<AudioPlayer
-  src="/mp3/像鱼.mp3"
-  title="像鱼"
-  poster="/mp3/像鱼.jpg"
-/>
-
-**视频教程**
-<VideoPlayer
-  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/97ac2dcc1367e03ac580204d6ca9a724.mp4"/>
-
-至此，本章节的学习就到此结束了，如有疑惑，可对接[技术客服](https://work.weixin.qq.com/kfid/kfc8c0fd9b49c1f38b8)进行相关咨询。
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## React组件化思想:gem:
-::: react-demo 代码演示及训练
-```js
-const { useState } = React;
-const Home = () => {
-  const [message, setMessage] = useState("Hello");
-  const handler = () => {
-    setMessage(`${message},World`);
-  };
-  return (
-    <div className="box">
-      <code>你好React</code>
-      <span id="powerful" onClick={handler}>
-        {message}
-      </span>
-    </div>
-  );
-};
-export default Home
-```
-```css
-.box #powerful {
-  color: blue;
-}
-```
-:::
-
-
-**轻松一刻**
-<AudioPlayer
-  src="/mp3/像鱼.mp3"
-  title="像鱼"
-  poster="/mp3/像鱼.jpg"
-/>
-
-**视频教程**
-<VideoPlayer
-  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/97ac2dcc1367e03ac580204d6ca9a724.mp4"/>
-
-至此，本章节的学习就到此结束了，如有疑惑，可对接[技术客服](https://work.weixin.qq.com/kfid/kfc8c0fd9b49c1f38b8)进行相关咨询。
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## React组件化思想:gem:
-::: react-demo 代码演示及训练
-```js
-const { useState } = React;
-const Home = () => {
-  const [message, setMessage] = useState("Hello");
-  const handler = () => {
-    setMessage(`${message},World`);
-  };
-  return (
-    <div className="box">
-      <code>你好React</code>
-      <span id="powerful" onClick={handler}>
-        {message}
-      </span>
-    </div>
-  );
-};
-export default Home
-```
-```css
-.box #powerful {
-  color: blue;
-}
-```
-:::
-
-
-**轻松一刻**
-<AudioPlayer
-  src="/mp3/像鱼.mp3"
-  title="像鱼"
-  poster="/mp3/像鱼.jpg"
-/>
-
-**视频教程**
-<VideoPlayer
-  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/97ac2dcc1367e03ac580204d6ca9a724.mp4"/>
-
-至此，本章节的学习就到此结束了，如有疑惑，可对接[技术客服](https://work.weixin.qq.com/kfid/kfc8c0fd9b49c1f38b8)进行相关咨询。
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## React组件化思想:gem:
-::: react-demo 代码演示及训练
-```js
-const { useState } = React;
-const Home = () => {
-  const [message, setMessage] = useState("Hello");
-  const handler = () => {
-    setMessage(`${message},World`);
-  };
-  return (
-    <div className="box">
-      <code>你好React</code>
-      <span id="powerful" onClick={handler}>
-        {message}
-      </span>
-    </div>
-  );
-};
-export default Home
-```
-```css
-.box #powerful {
-  color: blue;
-}
-```
-:::
-
-
-**轻松一刻**
-<AudioPlayer
-  src="/mp3/像鱼.mp3"
-  title="像鱼"
-  poster="/mp3/像鱼.jpg"
+  src="/mp3/1.mp3"
+  title="音乐"
+  poster="/mp3/1.jpg"
 />
 
 **视频教程**

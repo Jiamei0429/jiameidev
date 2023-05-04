@@ -1,1 +1,0 @@
-import{_ as t,Y as a,Z as c,$ as e,a0 as n}from"./framework-5ec5f799.js";const r={},s=e("h2",{id:"敬请期待",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#敬请期待","aria-hidden":"true"},"#"),n(" 敬请期待……")],-1),o=[s];function _(d,i){return a(),c("div",null,o)}const l=t(r,[["render",_],["__file","index.html.vue"]]);export{l as default};

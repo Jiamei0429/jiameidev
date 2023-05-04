@@ -1,1 +1,0 @@
-import{_ as s,Y as t,Z as a,$ as e,a0 as n}from"./framework-5ec5f799.js";const c={},r=e("h1",{id:"nestjs框架章节2",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#nestjs框架章节2","aria-hidden":"true"},"#"),n(" NestJS框架章节2")],-1),o=[r];function _(d,i){return t(),a("div",null,o)}const l=s(c,[["render",_],["__file","nestjs02.html.vue"]]);export{l as default};

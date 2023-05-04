@@ -1,15 +1,20 @@
 <template><div><h1 id="_1-1-初体验html" tabindex="-1"><a class="header-anchor" href="#_1-1-初体验html" aria-hidden="true">#</a> 1.1 初体验HTML 🎉</h1>
 <figure><img src="/images/html/html1.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p><code v-pre>HTML5</code>是用来描述网页的一种语言，被称为超文本标记语言。用HTML5编写的文件，后缀以.html结尾，<code v-pre>HTML</code>是一种标记语言，标记语言是一套标记标签。标签是由尖括号包围的关键字，例如：<code v-pre>&lt;html&gt;</code></p>
+<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p>文件后缀名以.html结尾</p>
+<p>在编写代码的过程中，&lt;&gt;必须是英文状态下编写</p>
+</div>
 <p>HTML标签有两种表现形式：</p>
 <ul>
 <li>双标签，例如：<code v-pre>&lt;html&gt;&lt;/html&gt;</code></li>
 <li>单标签，例如：<code v-pre>&lt;img&gt;</code></li>
 </ul>
-<blockquote>
-<p>HTML是做什么的？</p>
+<div class="hint-container info">
+<p class="hint-container-title">HTML是做什么的？</p>
 <p>HTML是网页结构的基本架构，你可以把它想象成人的骨架、人体结构等，它决定了网站的结构布局</p>
-</blockquote>
+</div>
 <h2 id="html5基本骨架" tabindex="-1"><a class="header-anchor" href="#html5基本骨架" aria-hidden="true">#</a> <strong>HTML5基本骨架</strong>💎</h2>
 <ul>
 <li>
@@ -29,8 +34,8 @@
 head标签用于定义文档的头部。文档的头部描述了文档的各种属性和信息，包括文档的标题、在 Web 中的位置以及和其他文档的关系等。绝大多数文档头部包含的数据都不会真正作为内容显示给读者。</p>
 <div class="language-html line-numbers-mode" data-ext="html"><pre v-pre class="language-html"><code><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">></span></span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
 <li>
@@ -40,11 +45,11 @@ body 元素包含文档的所有内容（比如文本、超链接、图像、表
 它会直接在页面中显示出来，也就是用户可以直观看到的内容</p>
 <div class="language-html line-numbers-mode" data-ext="html"><pre v-pre class="language-html"><code><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">></span></span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
-          我会显示在浏览器中
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
+      我会显示在浏览器中
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
 <li>
@@ -53,9 +58,10 @@ body 元素包含文档的所有内容（比如文本、超链接、图像、表
 它显示在浏览器窗口的标题栏或状态栏上。
 <code v-pre>&lt;title&gt;</code> 标签是 <code v-pre>&lt;head&gt;</code> 标签中唯一必须要求包含的东西，就是说写head一定要写title
 <code v-pre>&lt;title&gt;</code>的增加有利于SEO优化</p>
-<blockquote>
+<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
 <p>SEO是搜索引擎优化的英文缩写。通过对网站内容调整，满足搜索引擎的排名需求</p>
-</blockquote>
+</div>
 <div class="language-html line-numbers-mode" data-ext="html"><pre v-pre class="language-html"><code><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">></span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
@@ -81,15 +87,26 @@ meta标签用来描述一个HTML网页文档的属性，关键词等，例如：
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
 </ul>
+<h2 id="html注释" tabindex="-1"><a class="header-anchor" href="#html注释" aria-hidden="true">#</a> HTML注释</h2>
+<figure><img src="/images/html/html4.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>浏览器不会显示注释</p>
+<div class="language-html line-numbers-mode" data-ext="html"><pre v-pre class="language-html"><code><span class="token comment">&lt;!-- 这是一段注释 --></span>
+<span class="token comment">&lt;!-- 这里的内容不会被浏览器显示 --></span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><div class="hint-container warning">
+<p class="hint-container-title">注意</p>
+<p>在开始标签中有一个叹号，但是结束标签中没有</p>
+</div>
 <h2 id="开发工具推荐" tabindex="-1"><a class="header-anchor" href="#开发工具推荐" aria-hidden="true">#</a> 开发工具推荐💎</h2>
 <figure><img src="/images/html/html2.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>工欲善其事，必先利其器，要想有好的开发体验，选择一款合适的开发工具是十分必要的</p>
 <p>VS Code，全称是Visual Studio Code，但因为全称太长，微软旗下另一款产品visual studio又经常被简称为VS，所以这款与vs有一定渊源的代码编辑器就被简称为VSCode。</p>
 <p>VSCode是一款由微软开发且跨平台的免费源代码编辑器。该软件支持语法高亮、代码自动补全（又称 IntelliSense）、代码重构、查看定义功能，并且内置了命令行工具和 Git 版本控制系统。用户可以更改主题和键盘快捷方式实现个性化设置，也可以通过内置的扩展程序商店安装扩展以拓展软件功能。</p>
 <p>VS Code 使用 Monaco Editor 作为其底层的代码编辑器。</p>
 <p>在 2019 年的 Stack Overflow 组织的开发者调查中，Visual Studio Code 被认为是最受开发者欢迎的开发环境。</p>
-<blockquote>
+<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
 <p>vscode生成HTML结构快捷键：<code v-pre>！+回车</code>，代码如下</p>
-</blockquote>
+</div>
 <div class="language-html line-numbers-mode" data-ext="html"><pre v-pre class="language-html"><code><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
@@ -102,7 +119,8 @@ meta标签用来描述一个HTML网页文档的属性，关键词等，例如：
     
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="vscode常用快捷键列表" tabindex="-1"><a class="header-anchor" href="#vscode常用快捷键列表" aria-hidden="true">#</a> <strong>VSCode常用快捷键列表</strong>👻</h3>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="hint-container info">
+<p class="hint-container-title">VSCode常用快捷键列表</p>
 <ol>
 <li>代码格式化：<code v-pre>Shift+Alt+F</code></li>
 <li>向上或向下移动一行：<code v-pre>Alt+Up 或 Alt+Down</code></li>
@@ -111,9 +129,25 @@ meta标签用来描述一个HTML网页文档的属性，关键词等，例如：
 <li>快速查找：<code v-pre>Ctrl + F</code></li>
 <li>快速替换：<code v-pre>Ctrl + H</code></li>
 </ol>
-<h2 id="视频教程" tabindex="-1"><a class="header-anchor" href="#视频教程" aria-hidden="true">#</a> 视频教程📽️</h2>
-<p><video  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/97ac2dcc1367e03ac580204d6ca9a724.mp4" width="100%" controls></video></p>
-<p>至此，我们已经初步体验了HTML了，接下来我会带大家正式进入HTML知识的学习了</p>
+</div>
+<div class="hint-container info">
+<p class="hint-container-title">浏览器是我们最重要的合作伙伴</p>
+<p>我们推荐谷歌浏览器，有两点原因：</p>
+<ul>
+<li>简洁大方，打开响应速度快</li>
+<li>开发者调试工具</li>
+</ul>
+</div>
+<p><strong>轻松一刻</strong></p>
+<AudioPlayer
+  src="/mp3/1.mp3"
+  title="音乐"
+  poster="/mp3/1.jpg"
+/>
+<p><strong>视频教程</strong> 📽️</p>
+<VideoPlayer
+  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/97ac2dcc1367e03ac580204d6ca9a724.mp4"/>
+<p>至此，本章节的学习就到此结束了，如有疑惑，可对接<a href="https://work.weixin.qq.com/kfid/kfc8c0fd9b49c1f38b8" target="_blank" rel="noopener noreferrer">技术客服<ExternalLinkIcon/></a>进行相关咨询。</p>
 </div></template>
 
 

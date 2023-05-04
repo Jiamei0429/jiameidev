@@ -1,1 +1,0 @@
-import{_ as s,Y as t,Z as a,$ as e,a0 as c}from"./framework-5ec5f799.js";const r={},_=e("h1",{id:"_1-4-mysql章节4",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#_1-4-mysql章节4","aria-hidden":"true"},"#"),c(" 1.4 MySql章节4")],-1),o=[_];function n(l,d){return t(),a("div",null,o)}const h=s(r,[["render",n],["__file","mysql04.html.vue"]]);export{h as default};

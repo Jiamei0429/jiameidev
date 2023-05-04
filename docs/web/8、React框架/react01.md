@@ -118,9 +118,9 @@ export default Home
 
 **轻松一刻**
 <AudioPlayer
-  src="/mp3/像鱼.mp3"
-  title="像鱼"
-  poster="/mp3/像鱼.jpg"
+  src="/mp3/4.mp3"
+  title="音乐"
+  poster="/mp3/4.jpg"
 />
 
 **视频教程**
