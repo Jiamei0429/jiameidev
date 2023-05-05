@@ -1,5 +1,5 @@
-<template><div><h1 id="初体验vue3" tabindex="-1"><a class="header-anchor" href="#初体验vue3" aria-hidden="true">#</a> 初体验Vue3🎉</h1>
-<figure><img src="@source/../.vuepress/public/images/vue/vue0.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<template><div><h1 id="_7-1-初体验vue3" tabindex="-1"><a class="header-anchor" href="#_7-1-初体验vue3" aria-hidden="true">#</a> 7.1 初体验Vue3🎉</h1>
+<figure><img src="/images/vue/vue0.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p>Vue (发音为 /vjuː/，类似 <strong>view</strong>) 是一款用于构建用户界面的 JavaScript 框架。它基于标准 HTML、CSS 和 JavaScript 构建，并提供了一套声明式的、组件化的编程模型，帮助你高效地开发用户界面。无论是简单还是复杂的界面，Vue 都可以胜任，Vue易学易用，性能出色，适用场景丰富的 Web 前端框架，他是国内目前前端最火的框架之一。</p>
 <p>目前，在开发中，Vue有两个大版本可以选择<code v-pre>Vue2</code>和<code v-pre>Vue3</code>，老项目一般都是<code v-pre>Vue2</code>的，而新项目一般都选择<code v-pre>Vue3</code>开发</p>
 <p>我们本套课程讲解版本为<code v-pre>Vue3</code>，因为<code v-pre>Vue3</code>涵盖了<code v-pre>Vue2</code>的知识体系，当然<code v-pre>Vue3</code>也增加了很多新特性</p>
@@ -9,7 +9,7 @@
 <p>地址：<a href="https://cn.vuejs.org/" target="_blank" rel="noopener noreferrer">https://cn.vuejs.org/<ExternalLinkIcon/></a></p>
 </blockquote>
 <h2 id="创建项目" tabindex="-1"><a class="header-anchor" href="#创建项目" aria-hidden="true">#</a> 创建项目💎</h2>
-<figure><img src="@source/../.vuepress/public/images/vue/vue1.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="/images/vue/vue1.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <blockquote>
 <p><strong>前提条件</strong></p>
 <ul>
@@ -33,7 +33,7 @@ npm run dev
 <div class="language-apl line-numbers-mode" data-ext="apl"><pre v-pre class="language-apl"><code>npm run build
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>当你完成开发后，你可以使用该命令对你的项目进行打包，打包完成后，你会在你的根目录下看到一个dist文件夹。</p>
 <h2 id="vue项目目录结构" tabindex="-1"><a class="header-anchor" href="#vue项目目录结构" aria-hidden="true">#</a> Vue项目目录结构💎</h2>
-<figure><img src="@source/../.vuepress/public/images/vue/vue2.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="/images/vue/vue2.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p>我们通过Vue命令行工具 <code v-pre>npm init vue@latest</code> 创建项目，会出现很多文件及文件夹</p>
 <div class="language-apl line-numbers-mode" data-ext="apl"><pre v-pre class="language-apl"><code>└─ 项目名
    └─  <span class="token dyadic-operator operator">.</span>vscode     <span class="token function">-</span><span class="token function">-</span><span class="token function">-</span> VSCode工具的配置文件夹

@@ -1,5 +1,5 @@
-<template><div><h1 id="初体验python" tabindex="-1"><a class="header-anchor" href="#初体验python" aria-hidden="true">#</a> 初体验Python  🎉</h1>
-<figure><img src="@source/../.vuepress/public/images/python/py1.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<template><div><h1 id="_1-1-初体验python" tabindex="-1"><a class="header-anchor" href="#_1-1-初体验python" aria-hidden="true">#</a> 1.1 初体验Python  🎉</h1>
+<figure><img src="/images/python/py1.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p>Python是当今世界最流行的程序语言之一。由荷兰人，吉多·范罗苏姆（Guido van Rossum）1989年发明，1991年公布。官网：<a href="http://www.python.org/" target="_blank" rel="noopener noreferrer">www.python.org<ExternalLinkIcon/></a></p>
 <p>Python突出的简洁性、易读性和可扩展性，使得在数据科学、人工智能、云计算、图形处理与互联网应用等领域占尽风头。有这么一个梗，python出了生孩子，其他都能做，足以体现python的地位了。</p>
 <p>目前，Python有两大版本，分别是Python2.x和Python3.x。Python2.x版本在2020年已经停止支持，因此Python3.x是目前主流。</p>
@@ -43,7 +43,7 @@
 </li>
 </ul>
 <h2 id="python应用场景" tabindex="-1"><a class="header-anchor" href="#python应用场景" aria-hidden="true">#</a> <strong>Python应用场景</strong>💎</h2>
-<figure><img src="@source/../.vuepress/public/images/python/py2.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="/images/python/py2.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <ol>
 <li>
 <p><strong>人工智能(AI</strong> Artificial Intelligence**)**</p>
@@ -74,7 +74,7 @@
 </li>
 </ol>
 <h2 id="python运行环境搭建" tabindex="-1"><a class="header-anchor" href="#python运行环境搭建" aria-hidden="true">#</a> Python运行环境搭建💎</h2>
-<figure><img src="@source/../.vuepress/public/images/python/py3.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="/images/python/py3.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p>不管用什么工具开发Python程序，都必须安装Python的运行环境。目前最常用的是Windows、Linux平台。由于目前使用Windows的人数最多，我们以Windows10为主讲解。同时，我们使用python3.11版本为主要学习版本。</p>
 <blockquote>
 <p>⚠️其实编程和平台关系不大。大家也可以使用Linux、Mac。</p>
@@ -85,22 +85,22 @@
 </li>
 <li>
 <p>第二步：以管理员身份运行下载好的<code v-pre>python.exe</code></p>
-<figure><img src="@source/../.vuepress/public/images/python/py4.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="/images/python/py4.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 </li>
 <li>
 <p>第三步：选中界面下方的&quot;Add Python 3.11 to Path&quot;复选框，这样安装程序就会自动将Python的路径加到PATH环境变量中，进行安装</p>
-<figure><img src="@source/../.vuepress/public/images/python/py5.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
-<figure><img src="@source/../.vuepress/public/images/python/py6.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
-<figure><img src="@source/../.vuepress/public/images/python/py7.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
-<figure><img src="@source/../.vuepress/public/images/python/py8.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="/images/python/py5.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="/images/python/py6.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="/images/python/py7.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="/images/python/py8.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p>直到看到successful，就代表安装成功了</p>
 </li>
 <li>
 <p>第四步：运行python</p>
 <p>windows查找命令中输入<code v-pre>cmd</code>，或直接win+r输入<code v-pre>cmd</code>， 进入命令行窗口，再输入：<code v-pre>python</code></p>
-<figure><img src="@source/../.vuepress/public/images/python/py9.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="/images/python/py9.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p>输入<code v-pre>print(&quot;hello world&quot;)</code></p>
-<figure><img src="@source/../.vuepress/public/images/python/py10.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="/images/python/py10.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <blockquote>
 <ol>
 <li>
@@ -117,7 +117,7 @@
 </li>
 </ul>
 <h2 id="idle开发环境使用入门" tabindex="-1"><a class="header-anchor" href="#idle开发环境使用入门" aria-hidden="true">#</a> <strong>IDLE开发环境使用入门</strong>💎</h2>
-<figure><img src="@source/../.vuepress/public/images/python/py11.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="/images/python/py11.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p>开发环境，英文是IDE（Integrated Development Environment 集成开发环境）。</p>
 <p>不要纠结于使用哪个开发环境。开发环境本质上就是对Python解释器python.exe的封装，核心都一样。可以说：“开发环境IDE，只是解释器的一个外挂而已”，只是为了让程序员更加方便编程，减少出错率，尤其是拼写错误。</p>
 <p>工欲善其事，必先利其器，选择自己擅长的开发工具是十分重要的。</p>

@@ -1,5 +1,5 @@
-<template><div><h1 id="面向对象编程" tabindex="-1"><a class="header-anchor" href="#面向对象编程" aria-hidden="true">#</a> 面向对象编程  🎉</h1>
-<figure><img src="@source/../.vuepress/public/images/python/py13.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<template><div><h1 id="_1-5-面向对象编程" tabindex="-1"><a class="header-anchor" href="#_1-5-面向对象编程" aria-hidden="true">#</a> 1.5 面向对象编程  🎉</h1>
+<figure><img src="/images/python/py13.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p>Python完全采用了面向对象的思想，是真正面向对象的编程语言，完全支持面向对象的基本功能，例如：继承、多态、封装等。</p>
 <p>Python中，一切皆对象。我们在前面学习的数据类型、函数等，都是对象。</p>
 <blockquote>
@@ -14,13 +14,13 @@
 <p>面向过程和面向对象都是对软件分析、设计和开发的一种思想,它指导着人们以不同的方式去分析、设计和开发软件。C语言是一种典型的面向过程语言，Java是一种典型的面向对象语言。</p>
 <h3 id="面向过程是什么" tabindex="-1"><a class="header-anchor" href="#面向过程是什么" aria-hidden="true">#</a> 面向过程是什么？👻</h3>
 <p>面向过程适合简单、不需要协作的事务，重点关注如何执行。面向过程时，我们首先思考“怎么按步骤实现？”。比如，如何开车？我们很容易就列出实现步骤：</p>
-<figure><img src="@source/../.vuepress/public/images/python/py14.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="/images/python/py14.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p>再比如：把大象装冰箱分几步？</p>
-<figure><img src="@source/../.vuepress/public/images/python/py15.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="/images/python/py15.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <h3 id="面向对象是什么" tabindex="-1"><a class="header-anchor" href="#面向对象是什么" aria-hidden="true">#</a> 面向对象是什么？👻</h3>
 <p>面向对象(Oriented-Object)思想更契合人的思维模式。我们首先思考的是&quot;怎么设计这个事物？”。比如思考造车，我们就会先思考“车怎么设计？”，而不是“怎么按步骤造车的问题”。这就是思维方式的转变。</p>
 <p>天然的，我们就会从“车由什么组成”开始思考：</p>
-<figure><img src="@source/../.vuepress/public/images/python/py16.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="/images/python/py16.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p>为了协作，我们找轮胎厂完成制造轮胎的步骤，发动机厂完成制造发动机的步骤；这样，发现大家可以同时进行车的制造，最终进行组装，大大提高了效率。</p>
 <p>具体到轮胎厂的一个流水线操作，仍然是有步骤的，还是离不开执行者、离不开面向过程！</p>
 <p>我们千万不要把面向过程和面向对象对立起来。他们是相辅相成的。面向对象离不开面向过程！</p>
@@ -41,7 +41,7 @@
 </ul>
 </blockquote>
 <h2 id="类的定义" tabindex="-1"><a class="header-anchor" href="#类的定义" aria-hidden="true">#</a> 类的定义💎</h2>
-<figure><img src="@source/../.vuepress/public/images/python/py17.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="/images/python/py17.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p>类可以看做是一个模版，或者图纸，系统根据类的定义来造出对象。我们要造一个汽车，怎么样造？类就是这个图纸，规定了汽车的详细信息，然后根据图纸将汽车造出来。</p>
 <blockquote>
 <p>类：我们叫做<code v-pre>class</code>。 对象：我们叫做<code v-pre>object</code>、<code v-pre>instance</code>(实例)。以后我们说某个类的对象，某个类的实例。是一样的意思。</p>
@@ -59,12 +59,12 @@
 <h3 id="属性和方法" tabindex="-1"><a class="header-anchor" href="#属性和方法" aria-hidden="true">#</a> 属性和方法👻</h3>
 <p>我们通过类定义数据类型的属性（数据）和方法（行为）,也就是说，“类将行为和状态打包在一起”。</p>
 <div style="display:flex;justify-content:space-around;flex-wrap:wrap;">
-    <img src="@source/../.vuepress/public/images/python/py18.png" style="width:350px"/>
-    <img src="@source/../.vuepress/public/images/python/py19.png" style="width:350px"/>
+    <img src="/images/python/py18.png" style="width:350px"/>
+    <img src="/images/python/py19.png" style="width:350px"/>
 </div>
 <p>对象是类的具体实体，一般称为“类的实例”。类看做“饼干模具”，对象就是根据这个“模具”制造出的“饼干”。</p>
 <p>从一个类创建对象时，每个对象会共享这个类的行为（类中定义的方法），但会有自己的属性值（不共享状态）。更具体一点：“方法代码是共享的，属性数据不共享”。</p>
-<figure><img src="@source/../.vuepress/public/images/python/py20.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="/images/python/py20.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <h3 id="基本示例" tabindex="-1"><a class="header-anchor" href="#基本示例" aria-hidden="true">#</a> 基本示例👻</h3>
 <div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code><span class="token keyword">class</span> <span class="token class-name">Student</span><span class="token punctuation">:</span>
     company <span class="token operator">=</span> <span class="token string">"SXT"</span>  <span class="token comment"># 类属性</span>
@@ -119,7 +119,7 @@ s1<span class="token punctuation">.</span>say_score<span class="token punctuatio
 </li>
 </ol>
 <p>❤️Python中的<code v-pre>self</code>相当于C++中的<code v-pre>self指针</code>，JAVA和C#中的<code v-pre>this</code>关键字。Python中，<code v-pre>self</code>必须为构造函数的第一个参数，名字可以任意修改。但一般惯例，都叫做<code v-pre>self</code></p>
-<figure><img src="@source/../.vuepress/public/images/python/py21.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="/images/python/py21.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 </blockquote>
 <h2 id="实例属性和实例方法" tabindex="-1"><a class="header-anchor" href="#实例属性和实例方法" aria-hidden="true">#</a> 实例属性和实例方法💎</h2>
 <h3 id="实例属性" tabindex="-1"><a class="header-anchor" href="#实例属性" aria-hidden="true">#</a> 实例属性👻</h3>
@@ -169,7 +169,7 @@ s1<span class="token punctuation">.</span>salary <span class="token operator">=<
 </li>
 <li>
 <p>实例对象的方法调用本质:</p>
-<figure><img src="@source/../.vuepress/public/images/python/py22.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="/images/python/py22.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 </li>
 </ol>
 <p>其他操作:</p>
@@ -281,7 +281,7 @@ Student<span class="token punctuation">.</span>printCompany<span class="token pu
 Student<span class="token punctuation">.</span>add<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="del-方法和-call-方法" tabindex="-1"><a class="header-anchor" href="#del-方法和-call-方法" aria-hidden="true">#</a> <code v-pre>_del_方法</code>和<code v-pre>_call_</code>方法💎</h2>
 <h3 id="del-方法" tabindex="-1"><a class="header-anchor" href="#del-方法" aria-hidden="true">#</a> <code v-pre>_del_方法</code>👻</h3>
-<figure><img src="@source/../.vuepress/public/images/python/py23.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="/images/python/py23.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p><code v-pre>__del__()</code>称为“析构方法”，用于实现对象被销毁时所需的操作。比如：释放对象占用的资源，例如：打开的文件资源、网络连接等。</p>
 <p>Python实现自动的垃圾回收，当对象没有被引用时（引用计数为0），由垃圾回收器调用<code v-pre>__del__()</code>。</p>
 <p>我们也可以通过<code v-pre>del语句</code>删除对象，从而保证调用<code v-pre>__del__()</code>。</p>
@@ -322,7 +322,7 @@ f1<span class="token punctuation">(</span><span class="token punctuation">)</spa
 f2 <span class="token operator">=</span> Car<span class="token punctuation">(</span><span class="token punctuation">)</span>
 f2<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">200000</span><span class="token punctuation">)</span>  <span class="token comment"># 像调用函数那样调用，本质也是调用了__call__()</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="方法没有重载" tabindex="-1"><a class="header-anchor" href="#方法没有重载" aria-hidden="true">#</a> 方法没有重载💎</h2>
-<figure><img src="@source/../.vuepress/public/images/python/py24.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="/images/python/py24.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p>如果我们在类体中定义了多个重名的方法，只有最后一个方法有效。</p>
 <p>建议：不要使用重名的方法！Python中方法没有重载。</p>
 <blockquote>
@@ -342,7 +342,7 @@ p1 <span class="token operator">=</span> Person<span class="token punctuation">(
 <span class="token comment"># p1.say_hi()   # 报错</span>
 p1<span class="token punctuation">.</span>say_hi<span class="token punctuation">(</span><span class="token string">"JAIMEI"</span><span class="token punctuation">)</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="方法的动态性" tabindex="-1"><a class="header-anchor" href="#方法的动态性" aria-hidden="true">#</a> 方法的动态性👻</h3>
-<figure><img src="@source/../.vuepress/public/images/python/py25.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="/images/python/py25.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p>Python是动态语言，我们可以动态的为类添加新的方法，或者动态的修改类的已有的方法</p>
 <div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code><span class="token keyword">class</span> <span class="token class-name">Person</span><span class="token punctuation">:</span>
     <span class="token keyword">def</span> <span class="token function">work</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
@@ -364,7 +364,7 @@ p<span class="token punctuation">.</span>play<span class="token punctuation">(</
 p<span class="token punctuation">.</span>work<span class="token punctuation">(</span><span class="token punctuation">)</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>我们可以看到，<code v-pre>Person</code>动态的新增了<code v-pre>play_game</code>方法，以及用<code v-pre>work2</code>替换了<code v-pre>work</code>方法</p>
 <h2 id="私有属性和私有方法" tabindex="-1"><a class="header-anchor" href="#私有属性和私有方法" aria-hidden="true">#</a> 私有属性和私有方法💎</h2>
-<figure><img src="@source/../.vuepress/public/images/python/py26.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="/images/python/py26.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p>Python对于类的成员没有严格的访问控制限制，这与其他面向对象语言有区别。关于私有属性和私有方法，有如下要点：</p>
 <ol>
 <li>通常我们约定，两个下划线开头的属性是私有的(private)。其他为公共的(public)。</li>
@@ -448,7 +448,7 @@ p1 <span class="token operator">=</span> Employee<span class="token punctuation"
 p1<span class="token punctuation">.</span>salary  <span class="token comment"># 外部通过装饰器强行访问私有实例属性</span>
 p1<span class="token punctuation">.</span>salary <span class="token operator">=</span> <span class="token number">1000000</span>   <span class="token comment"># 外部对私有实例属性赋值</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="面向对象三大特征介绍" tabindex="-1"><a class="header-anchor" href="#面向对象三大特征介绍" aria-hidden="true">#</a> 面向对象三大特征介绍💎</h2>
-<figure><img src="@source/../.vuepress/public/images/python/py27.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="/images/python/py27.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p>Python是面向对象的语言，支持面向对象编程的三大特性：继承、封装（隐藏）、多态。</p>
 <p><strong>封装（隐藏）</strong></p>
 <blockquote>
@@ -465,10 +465,10 @@ p1<span class="token punctuation">.</span>salary <span class="token operator">=<
 <p>多态是指同一个方法调用由于对象不同会产生不同的行为。生活中这样的例子比比皆是：同样是休息方法，人不同休息方法不同。张三休息是睡觉，李四休息是玩游戏，程序员休息是“敲几行代码”。</p>
 </blockquote>
 <h2 id="继承" tabindex="-1"><a class="header-anchor" href="#继承" aria-hidden="true">#</a> <strong>继承</strong>💎</h2>
-<figure><img src="@source/../.vuepress/public/images/python/py28.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="/images/python/py28.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p>继承是面向对象编程的三大特征之一。继承让我们更加容易实现类的扩展。实现代码的重用，不用再重新发明轮子。</p>
 <p>如果一个新类继承自一个设计好的类，就直接具备了已有类的特征，就大大降低了工作难度。已有的类，我们称为“父类或者基类”，新的类，我们称为“子类或者派生类”。</p>
-<figure><img src="@source/../.vuepress/public/images/python/py29.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="/images/python/py29.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <h3 id="语法格式" tabindex="-1"><a class="header-anchor" href="#语法格式" aria-hidden="true">#</a> <strong>语法格式</strong>👻</h3>
 <p>Python支持多重继承，一个子类可以继承多个父类。继承的语法格式如下：</p>
 <div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code><span class="token keyword">class</span> 子类类名<span class="token punctuation">(</span>父类<span class="token number">1</span><span class="token punctuation">[</span>，父类<span class="token number">2</span>，<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">]</span><span class="token punctuation">)</span>：
@@ -556,9 +556,9 @@ s1<span class="token punctuation">.</span>say_name<span class="token punctuation
 <p>执行结果：</p>
 <p>[&lt;class '<strong>main</strong>.C'&gt;, &lt;class '<strong>main</strong>.B'&gt;, &lt;class '<strong>main</strong>.A'&gt;, &lt;class 'object'&gt;]</p>
 </blockquote>
-<figure><img src="@source/../.vuepress/public/images/python/py30.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="/images/python/py30.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <h3 id="object根类" tabindex="-1"><a class="header-anchor" href="#object根类" aria-hidden="true">#</a> object根类👻</h3>
-<figure><img src="@source/../.vuepress/public/images/python/py31.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="/images/python/py31.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p><code v-pre>object</code>类是所有类的父类，因此所有的类都有<code v-pre>object</code>类的属性和方法。我们显然有必要深入研究一下<code v-pre>object</code>类的结构。对于我们继续深入学习Python很有好处。</p>
 <h4 id="dir-查看对象属性" tabindex="-1"><a class="header-anchor" href="#dir-查看对象属性" aria-hidden="true">#</a> <code v-pre>dir()</code>查看对象属性💞</h4>
 <p>为了深入学习对象，先学习内置函数<code v-pre>dir()</code>，他可以让我们方便的看到指定对象所有的属性</p>
@@ -610,7 +610,7 @@ p <span class="token operator">=</span> Person<span class="token punctuation">(<
 <span class="token keyword">print</span><span class="token punctuation">(</span>p<span class="token punctuation">)</span>
 s <span class="token operator">=</span> <span class="token builtin">str</span><span class="token punctuation">(</span>p<span class="token punctuation">)</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="多重继承" tabindex="-1"><a class="header-anchor" href="#多重继承" aria-hidden="true">#</a> 多重继承👻</h3>
-<figure><img src="@source/../.vuepress/public/images/python/py32.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="/images/python/py32.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p>Python支持多重继承，一个子类可以有多个“直接父类”。这样，就具备了“多个父类”的特点。但是由于，这样会被“类的整体层次”搞的异常复杂，尽量避免使用。</p>
 <div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code><span class="token keyword">class</span> <span class="token class-name">A</span><span class="token punctuation">:</span>
     <span class="token keyword">def</span> <span class="token function">aa</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
@@ -675,7 +675,7 @@ c<span class="token punctuation">.</span>say<span class="token punctuation">(</s
 b <span class="token operator">=</span> B<span class="token punctuation">(</span><span class="token punctuation">)</span>
 b<span class="token punctuation">.</span>say<span class="token punctuation">(</span><span class="token punctuation">)</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="多态" tabindex="-1"><a class="header-anchor" href="#多态" aria-hidden="true">#</a> 多态💎</h2>
-<figure><img src="@source/../.vuepress/public/images/python/py33.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="/images/python/py33.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p>多态（polymorphism）是指同一个方法调用由于对象不同可能会产生不同的行为，比如：现实生活中，同一个方法，具体实现会完全不同。 比如：同样是调用人“吃饭”的方法，中国人用筷子吃饭，英国人用刀叉吃饭，印度人用手吃饭。</p>
 <p>关于多态要注意以下2点：</p>
 <ol>
@@ -705,7 +705,7 @@ animalShout<span class="token punctuation">(</span>dog<span class="token punctua
 animalShout<span class="token punctuation">(</span>cat<span class="token punctuation">)</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>在上边的例子中，我们定义了一个Animal类，实现了一个叫的方法，之后我们又定义了一个Dog和Cat的类并分别继承了Animal类，这样Dog和Cat都有了叫的方法，但是猫的叫法和狗的叫法是不同的，所以在Dog和Cat类中又分别重写了叫的方法。最终实现了多态，这也满足了多态的两个必要条件。</p>
 <h2 id="对象的浅拷贝和深拷贝" tabindex="-1"><a class="header-anchor" href="#对象的浅拷贝和深拷贝" aria-hidden="true">#</a> 对象的浅拷贝和深拷贝💎</h2>
-<figure><img src="@source/../.vuepress/public/images/python/py34.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="/images/python/py34.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <h3 id="浅拷贝" tabindex="-1"><a class="header-anchor" href="#浅拷贝" aria-hidden="true">#</a> 浅拷贝👻</h3>
 <p>Python拷贝一般都是浅拷贝。</p>
 <p>浅拷贝：拷贝时，拷贝源对象，但对象包含的子对象内容不拷贝。</p>

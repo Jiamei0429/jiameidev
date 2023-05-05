@@ -83,7 +83,7 @@ export default defineUserConfig({
         logo: '/images/logo.png',  // 页面logo
         logoDark: "/images/logo.png",
         fullscreen: true,      //  开启全屏
-        iconAssets: "iconfont",    // 图标库
+        iconAssets: "iconfont",
         blog: {         // 开启博客功能
             roundAvatar: true,
             avatar: "/images/logo.png",

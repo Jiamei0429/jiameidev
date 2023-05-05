@@ -1,6 +1,6 @@
-<template><div><h1 id="vue基础" tabindex="-1"><a class="header-anchor" href="#vue基础" aria-hidden="true">#</a> Vue基础🎉</h1>
+<template><div><h1 id="_7-2-vue基础" tabindex="-1"><a class="header-anchor" href="#_7-2-vue基础" aria-hidden="true">#</a> 7.2 Vue基础🎉</h1>
 <h2 id="响应式" tabindex="-1"><a class="header-anchor" href="#响应式" aria-hidden="true">#</a> 响应式💎</h2>
-<figure><img src="@source/../.vuepress/public/images/vue/vue6.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="/images/vue/vue6.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p>为了让大家上手组合式API更轻松，我们对比这选项式API来写，不同的编码风格完成相同的功能</p>
 <h3 id="选项式api-响应式" tabindex="-1"><a class="header-anchor" href="#选项式api-响应式" aria-hidden="true">#</a> 选项式API_响应式👻</h3>
 <div class="language-vue line-numbers-mode" data-ext="vue"><pre v-pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">></span></span>
@@ -80,7 +80,7 @@
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="教程视频" tabindex="-1"><a class="header-anchor" href="#教程视频" aria-hidden="true">#</a> 教程视频👻</h3>
 <p><video  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/97ac2dcc1367e03ac580204d6ca9a724.mp4" width="100%" controls></video></p>
 <h2 id="模板语法" tabindex="-1"><a class="header-anchor" href="#模板语法" aria-hidden="true">#</a> 模板语法💎</h2>
-<figure><img src="@source/../.vuepress/public/images/vue/vue3.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="/images/vue/vue3.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p>Vue 使用一种基于 HTML 的模板语法，使我们能够声明式地将其组件实例的数据绑定到呈现的 DOM 上。所有的 Vue 模板都是语法层面合法的 HTML，可以被符合规范的浏览器和 HTML 解析器解析。</p>
 <h3 id="文本插值" tabindex="-1"><a class="header-anchor" href="#文本插值" aria-hidden="true">#</a> 文本插值👻</h3>
 <p>最基本的数据绑定形式是文本插值，它使用的是“Mustache”语法 (即双大括号)：</p>
@@ -128,7 +128,7 @@
 <p><video  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/97ac2dcc1367e03ac580204d6ca9a724.mp4" width="100%" controls></video></p>
 <h2 id="属性绑定" tabindex="-1"><a class="header-anchor" href="#属性绑定" aria-hidden="true">#</a> 属性绑定💎</h2>
 <h3 id="普通类型attribute" tabindex="-1"><a class="header-anchor" href="#普通类型attribute" aria-hidden="true">#</a> 普通类型Attribute👻</h3>
-<figure><img src="@source/../.vuepress/public/images/vue/vue4.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="/images/vue/vue4.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p>双大括号不能在 HTML attributes 中使用。想要响应式地绑定一个 attribute，应该使用 <code v-pre>v-bind</code> 指令</p>
 <p><code v-pre>v-bind</code> 指令指示 Vue 将元素的 <code v-pre>id</code> attribute 与组件的 <code v-pre>dynamicId</code> 属性保持一致。如果绑定的值是 <code v-pre>null</code> 或者 <code v-pre>undefined</code>，那么该 attribute 将会从渲染的元素上移除</p>
 <blockquote>
@@ -177,7 +177,7 @@
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="教程视频-2" tabindex="-1"><a class="header-anchor" href="#教程视频-2" aria-hidden="true">#</a> 教程视频👻</h3>
 <p><video  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/97ac2dcc1367e03ac580204d6ca9a724.mp4" width="100%" controls></video></p>
 <h2 id="class绑定" tabindex="-1"><a class="header-anchor" href="#class绑定" aria-hidden="true">#</a> class绑定💎</h2>
-<figure><img src="@source/../.vuepress/public/images/vue/vue5.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="/images/vue/vue5.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p>数据绑定的一个常见需求场景是操纵元素的 CSS class 列表，因为 <code v-pre>class</code> 是 attribute，我们可以和其他 attribute 一样使用 <code v-pre>v-bind</code> 将它们和动态的字符串绑定。但是，在处理比较复杂的绑定时，通过拼接生成字符串是麻烦且易出错的。因此，Vue 专门为 <code v-pre>class</code> 的 <code v-pre>v-bind</code> 用法提供了特殊的功能增强。除了字符串外，表达式的值也可以是对象或数组</p>
 <h3 id="对象绑定" tabindex="-1"><a class="header-anchor" href="#对象绑定" aria-hidden="true">#</a> 对象绑定👻</h3>
 <div class="language-vue line-numbers-mode" data-ext="vue"><pre v-pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">></span></span>
@@ -311,7 +311,7 @@
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="教程视频-4" tabindex="-1"><a class="header-anchor" href="#教程视频-4" aria-hidden="true">#</a> 教程视频👻</h3>
 <p><video  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/97ac2dcc1367e03ac580204d6ca9a724.mp4" width="100%" controls></video></p>
 <h2 id="条件渲染" tabindex="-1"><a class="header-anchor" href="#条件渲染" aria-hidden="true">#</a> 条件渲染💎</h2>
-<figure><img src="@source/../.vuepress/public/images/vue/vue7.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="/images/vue/vue7.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p>在 <code v-pre>Vue</code> 中，提供了条件渲染，这类似于<code v-pre>JavaScript</code> 中的条件语句</p>
 <h3 id="v-if-v-else-if-v-else" tabindex="-1"><a class="header-anchor" href="#v-if-v-else-if-v-else" aria-hidden="true">#</a> v-if，v-else-if，v-else 👻</h3>
 <ul>
@@ -359,7 +359,7 @@
 <p>相比之下，<code v-pre>v-show</code> 简单许多，元素无论初始条件如何，始终会被渲染，只有 CSS <code v-pre>display</code> 属性会被切换。</p>
 <p>总的来说，<code v-pre>v-if</code> 有更高的切换开销，而 <code v-pre>v-show</code> 有更高的初始渲染开销。因此，如果需要频繁切换，则使用 <code v-pre>v-show</code> 较好；如果在运行时绑定条件很少改变，则 <code v-pre>v-if</code> 会更合适</p>
 <h2 id="列表渲染" tabindex="-1"><a class="header-anchor" href="#列表渲染" aria-hidden="true">#</a> 列表渲染👻</h2>
-<figure><img src="@source/../.vuepress/public/images/vue/vue8.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="/images/vue/vue8.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p>我们可以使用 <code v-pre>v-for</code> 指令基于一个数组来渲染一个列表。<code v-pre>v-for</code> 指令的值需要使用 <code v-pre>item in items</code> 形式的特殊语法，其中 <code v-pre>items</code> 是源数据的数组，而 <code v-pre>item</code> 是迭代项的<strong>别名</strong></p>
 <p>大多数情况，我们渲染的数据源来源于网络请求，也就是 <code v-pre>JSON</code> 格式，要么数组，要么对象。</p>
 <div class="language-vue line-numbers-mode" data-ext="vue"><pre v-pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">></span></span>
@@ -394,7 +394,7 @@
 <p>在这里我并不推荐大家使用<code v-pre>index</code>作为<code v-pre>key</code>的值，我们要确保每一条数据的唯一索引不会发生变化，可以使用item.id等唯一不变的值</p>
 </blockquote>
 <h2 id="事件处理" tabindex="-1"><a class="header-anchor" href="#事件处理" aria-hidden="true">#</a> 事件处理💎</h2>
-<figure><img src="@source/../.vuepress/public/images/vue/vue9.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="/images/vue/vue9.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p>我们可以使用 <code v-pre>v-on</code> 指令 (简写为 <code v-pre>@</code>) 来监听 DOM 事件，并在事件触发时执行对应的 JavaScript。用法：<code v-pre>v-on:click=&quot;methodName&quot;</code> 或 <code v-pre>@click=&quot;handler&quot;</code></p>
 <p>事件处理器的值可以是</p>
 <ol>
@@ -546,7 +546,7 @@
 
 </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="计算属性" tabindex="-1"><a class="header-anchor" href="#计算属性" aria-hidden="true">#</a> 计算属性💎</h2>
-<figure><img src="@source/../.vuepress/public/images/vue/vue10.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="/images/vue/vue10.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p>模板中的表达式虽然方便，但也只能用来做简单的操作。如果在模板中写太多逻辑，会让模板变得臃肿，难以维护。因此我们推荐使用<strong>计算属性</strong>来描述依赖响应式状态的复杂逻辑</p>
 <h3 id="未使用计算属性前" tabindex="-1"><a class="header-anchor" href="#未使用计算属性前" aria-hidden="true">#</a> 未使用计算属性前👻</h3>
 <div class="language-vue line-numbers-mode" data-ext="vue"><pre v-pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">></span></span>
@@ -596,7 +596,7 @@
 <p>方法：方法调用<strong>总是</strong>会在重渲染发生时再次执行函数</p>
 </blockquote>
 <h2 id="侦听器" tabindex="-1"><a class="header-anchor" href="#侦听器" aria-hidden="true">#</a> 侦听器💎</h2>
-<figure><img src="@source/../.vuepress/public/images/vue/vue11.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="/images/vue/vue11.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p>我们可以使用 <code v-pre>watch</code> 选项在每次响应式属性发生变化时触发一个函数</p>
 <div class="language-vue line-numbers-mode" data-ext="vue"><pre v-pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">></span></span>
   	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>main<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
@@ -617,7 +617,7 @@
 <span class="token punctuation">}</span><span class="token punctuation">)</span>
 </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="表单的输入绑定" tabindex="-1"><a class="header-anchor" href="#表单的输入绑定" aria-hidden="true">#</a> 表单的输入绑定💎</h2>
-<figure><img src="@source/../.vuepress/public/images/vue/vue12.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="/images/vue/vue12.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p>在前端处理表单时，我们常常需要将表单输入框的内容同步给 JavaScript 中相应的变量。手动连接值绑定和更改事件监听器可能会很麻烦,<code v-pre>v-model</code> 指令帮我们简化了这一步骤</p>
 <h3 id="普通输入框" tabindex="-1"><a class="header-anchor" href="#普通输入框" aria-hidden="true">#</a> 普通输入框 👻</h3>
 <div class="language-vue line-numbers-mode" data-ext="vue"><pre v-pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">></span></span>
@@ -651,7 +651,7 @@
 <span class="token keyword">const</span> message <span class="token operator">=</span> <span class="token function">ref</span><span class="token punctuation">(</span><span class="token string">""</span><span class="token punctuation">)</span>
 </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="模板引用-dom操作" tabindex="-1"><a class="header-anchor" href="#模板引用-dom操作" aria-hidden="true">#</a> 模板引用(Dom操作)💎</h2>
-<figure><img src="@source/../.vuepress/public/images/vue/vue13.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="/images/vue/vue13.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p>虽然 Vue 的声明性渲染模型为你抽象了大部分对 DOM 的直接操作，但在某些情况下，我们仍然需要直接访问底层 DOM 元素。要实现这一点，我们可以使用特殊的 <code v-pre>ref</code> attribute，组合式API的实现更为简洁</p>
 <div class="language-vue line-numbers-mode" data-ext="vue"><pre v-pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">></span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span><span class="token punctuation">></span></span>组合式API<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">></span></span>

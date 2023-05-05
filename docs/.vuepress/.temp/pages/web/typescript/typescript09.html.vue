@@ -1,6 +1,6 @@
-<template><div><h1 id="面向对象编程" tabindex="-1"><a class="header-anchor" href="#面向对象编程" aria-hidden="true">#</a> 面向对象编程🎉</h1>
+<template><div><h1 id="_6-9-面向对象编程" tabindex="-1"><a class="header-anchor" href="#_6-9-面向对象编程" aria-hidden="true">#</a> 6.9 面向对象编程🎉</h1>
 <h2 id="类的概念" tabindex="-1"><a class="header-anchor" href="#类的概念" aria-hidden="true">#</a> 类的概念💎</h2>
-<figure><img src="@source/../.vuepress/public/images/typescript/ts1.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="/images/typescript/ts1.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p>虽然 JavaScript 中有类的概念，但是可能大多数 JavaScript 程序员并不是非常熟悉类，这里对类相关的概念做一个简单的介绍</p>
 <ul>
 <li>类（Class）：定义了一件事物的抽象特点，包含它的属性和方法</li>
@@ -44,7 +44,7 @@
 <span class="token keyword">let</span> c <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Cat</span><span class="token punctuation">(</span><span class="token string">'Tom'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Tom</span>
 <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>c<span class="token punctuation">.</span><span class="token function">sayHi</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Meow, My name is Tom</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="类的创建" tabindex="-1"><a class="header-anchor" href="#类的创建" aria-hidden="true">#</a> 类的创建💎</h2>
-<figure><img src="@source/../.vuepress/public/images/typescript/ts2.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="/images/typescript/ts2.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p>传统的 JavaScript 程序使用函数和基于原型的继承来创建可重用的组件，但对于熟悉使用面向对象方式的程序员来讲就有些棘手，因为他们用的是基于类的继承并且对象是由类构建出来的。 从 ECMAScript 2015，也就是 ECMAScript 6 开始，JavaScript 程序员将能够使用基于类的面向对象的方式。 使用 TypeScript，我们允许开发者现在就使用这些特性，并且编译后的 JavaScript 可以在所有主流浏览器和平台上运行</p>
 <div class="language-typescript line-numbers-mode" data-ext="ts"><pre v-pre class="language-typescript"><code><span class="token keyword">class</span> <span class="token class-name">Greeter</span> <span class="token punctuation">{</span>
     message<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
@@ -59,7 +59,7 @@
 <span class="token keyword">let</span> s1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Greeter</span><span class="token punctuation">(</span><span class="token string">"world"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>s1<span class="token punctuation">.</span><span class="token function">greet</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="类的继承" tabindex="-1"><a class="header-anchor" href="#类的继承" aria-hidden="true">#</a> 类的继承💎</h2>
-<figure><img src="@source/../.vuepress/public/images/typescript/ts3.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="/images/typescript/ts3.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p>在 TypeScript 里，我们可以使用常用的面向对象模式。 基于类的程序设计中一种最基本的模式，是允许使用继承来扩展现有的类</p>
 <div class="language-typescript line-numbers-mode" data-ext="ts"><pre v-pre class="language-typescript"><code><span class="token keyword">class</span> <span class="token class-name">Animal</span> <span class="token punctuation">{</span>
     <span class="token function">move</span><span class="token punctuation">(</span>distanceInMeters<span class="token operator">:</span> <span class="token builtin">number</span> <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>  <span class="token comment">// 移动</span>
@@ -106,7 +106,7 @@ dog<span class="token punctuation">.</span><span class="token function">bark</sp
 <p>温馨提示：子类继承父类，父类存在构造函数，子类必须实现构造函数</p>
 </blockquote>
 <h2 id="访问修饰符" tabindex="-1"><a class="header-anchor" href="#访问修饰符" aria-hidden="true">#</a> 访问修饰符💎</h2>
-<figure><img src="@source/../.vuepress/public/images/typescript/ts4.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="/images/typescript/ts4.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p>在类中声明的属性与方法，可以添加访问修饰符控制可被访问的范围</p>
 <p>TypeScript 可以使用三种访问修饰符（Access Modifiers），分别是 <code v-pre>public</code>、<code v-pre>private</code> 和 <code v-pre>protected</code></p>
 <ul>
@@ -166,7 +166,7 @@ dog<span class="token punctuation">.</span><span class="token function">move</sp
 c<span class="token punctuation">.</span><span class="token function">move</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span>
 <span class="token comment">// console.log(c.name);  // 外面访问不了</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="readonly-修饰符" tabindex="-1"><a class="header-anchor" href="#readonly-修饰符" aria-hidden="true">#</a> readonly 修饰符💎</h2>
-<figure><img src="@source/../.vuepress/public/images/typescript/ts5.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="/images/typescript/ts5.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p>你可以使用 <code v-pre>readonly</code> 关键字将属性设置为只读的。 只读属性必须在声明时或构造函数里被初始化</p>
 <div class="language-typescript line-numbers-mode" data-ext="ts"><pre v-pre class="language-typescript"><code><span class="token keyword">class</span> <span class="token class-name">Person</span> <span class="token punctuation">{</span>
     <span class="token keyword">readonly</span> name<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
@@ -207,7 +207,7 @@ a<span class="token punctuation">.</span>name <span class="token operator">=</sp
 a<span class="token punctuation">.</span>age <span class="token operator">=</span> <span class="token number">40</span>  <span class="token comment">//设置私有属性</span>
 <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">.</span>age<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//读取私有属性</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="实例方法与静态方法" tabindex="-1"><a class="header-anchor" href="#实例方法与静态方法" aria-hidden="true">#</a> 实例方法与静态方法💎</h2>
-<figure><img src="@source/../.vuepress/public/images/typescript/ts7.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="/images/typescript/ts7.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p>实例方法我们很熟悉了，就是在类中定义的方法并且通过实例对象调用</p>
 <p>使用 <code v-pre>static</code> 修饰符修饰的方法称为静态方法，它们不需要实例化，而是直接通过类来调用</p>
 <div class="language-typescript line-numbers-mode" data-ext="ts"><pre v-pre class="language-typescript"><code><span class="token keyword">class</span> <span class="token class-name">Person</span> <span class="token punctuation">{</span>
@@ -231,7 +231,7 @@ Person<span class="token punctuation">.</span><span class="token function">sayHi
 <p>静态方法是指与本类不相关的代码片段，只是放在了本类中，即冠你之名，与你无关</p>
 </blockquote>
 <h2 id="实例属性与静态属性" tabindex="-1"><a class="header-anchor" href="#实例属性与静态属性" aria-hidden="true">#</a> 实例属性与静态属性💎</h2>
-<figure><img src="@source/../.vuepress/public/images/typescript/ts8.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="/images/typescript/ts8.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p>实例属性我们很熟悉，就是在类中直接定义的属性，可以通过实例对象调用</p>
 <p>ES7 提案中，可以使用 <code v-pre>static</code> 定义一个静态属性，在TypeScript中也同样适用,通过类名调用</p>
 <div class="language-typescript line-numbers-mode" data-ext="ts"><pre v-pre class="language-typescript"><code><span class="token keyword">class</span> <span class="token class-name">Person</span> <span class="token punctuation">{</span>
@@ -252,7 +252,7 @@ a<span class="token punctuation">.</span><span class="token function">sayHello</
 <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">.</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// 访问实例属性</span>
 <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>Person<span class="token punctuation">.</span>job<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// 访问静态属性</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="抽象类" tabindex="-1"><a class="header-anchor" href="#抽象类" aria-hidden="true">#</a> 抽象类💎</h2>
-<figure><img src="@source/../.vuepress/public/images/typescript/ts9.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="/images/typescript/ts9.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p>抽象类要点：</p>
 <ul>
 <li>

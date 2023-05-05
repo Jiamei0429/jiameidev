@@ -1,6 +1,6 @@
-<template><div><h1 id="vue进阶" tabindex="-1"><a class="header-anchor" href="#vue进阶" aria-hidden="true">#</a> Vue进阶🎉</h1>
+<template><div><h1 id="_7-3-vue进阶" tabindex="-1"><a class="header-anchor" href="#_7-3-vue进阶" aria-hidden="true">#</a> 7.3 Vue进阶🎉</h1>
 <h2 id="组件" tabindex="-1"><a class="header-anchor" href="#组件" aria-hidden="true">#</a> 组件💎</h2>
-<figure><img src="@source/../.vuepress/public/images/vue/vue14.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="/images/vue/vue14.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p>组件最大的优势就是可复用性</p>
 <p>当使用构建步骤时，我们一般会将 Vue 组件定义在一个单独的 <code v-pre>.vue</code> 文件中，这被叫做单文件组件(简称 SFC)</p>
 <h3 id="组成结构" tabindex="-1"><a class="header-anchor" href="#组成结构" aria-hidden="true">#</a> 组成结构👻</h3>
@@ -25,7 +25,7 @@
 <p><strong>在Vue单文件组件中，样式中的<code v-pre>scoped</code>的作用是生效作用域，只在当前组件内生效</strong></p>
 </blockquote>
 <h3 id="组件嵌套关系" tabindex="-1"><a class="header-anchor" href="#组件嵌套关系" aria-hidden="true">#</a> 组件嵌套关系👻</h3>
-<figure><img src="@source/../.vuepress/public/images/vue/vue15.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="/images/vue/vue15.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p>组件允许我们将 UI 划分为独立的、可重用的部分，并且可以对每个部分进行单独的思考。在实际应用中，组件常常被组织成层层嵌套的树状结构</p>
 <p>这和我们嵌套 HTML 元素的方式类似，Vue 实现了自己的组件模型，使我们可以在每个组件内封装自定义内容与逻辑</p>
 <h2 id="组件注册方式" tabindex="-1"><a class="header-anchor" href="#组件注册方式" aria-hidden="true">#</a> <strong>组件注册方式</strong>💎</h2>
@@ -54,7 +54,7 @@ app<span class="token punctuation">.</span><span class="token function">componen
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>less<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token style"><span class="token language-css">
 </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="异步组件" tabindex="-1"><a class="header-anchor" href="#异步组件" aria-hidden="true">#</a> <strong>异步组件</strong>💎</h2>
-<figure><img src="@source/../.vuepress/public/images/vue/vue16.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="/images/vue/vue16.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p>在大型项目中，我们可能需要拆分应用为更小的块，并仅在需要时再从服务器加载相关组件。Vue 提供了 <code v-pre>defineAsyncComponent</code>方法来实现此功能</p>
 <h3 id="全局异步注册" tabindex="-1"><a class="header-anchor" href="#全局异步注册" aria-hidden="true">#</a> 全局异步注册👻</h3>
 <div class="language-typescript line-numbers-mode" data-ext="ts"><pre v-pre class="language-typescript"><code><span class="token comment">// main.ts</span>
@@ -77,7 +77,7 @@ app<span class="token punctuation">.</span><span class="token function">componen
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>less<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token style"><span class="token language-css">
 </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="组件的自定义指令" tabindex="-1"><a class="header-anchor" href="#组件的自定义指令" aria-hidden="true">#</a> 组件的自定义指令💎</h2>
-<figure><img src="@source/../.vuepress/public/images/vue/vue17.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="/images/vue/vue17.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p>自定义指令是区分全局和局部注册，在全局注册，可以在任意组件中使用，局部注册，只在当前组件中使用</p>
 <h3 id="全局自定义指令" tabindex="-1"><a class="header-anchor" href="#全局自定义指令" aria-hidden="true">#</a> 全局自定义指令👻</h3>
 <div class="language-typescript line-numbers-mode" data-ext="ts"><pre v-pre class="language-typescript"><code><span class="token comment">// main.ts</span>
@@ -109,7 +109,7 @@ app<span class="token punctuation">.</span><span class="token function">directiv
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>less<span class="token punctuation">"</span></span> <span class="token attr-name">scoped</span><span class="token punctuation">></span></span><span class="token style"><span class="token language-css">
 </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="动态组件" tabindex="-1"><a class="header-anchor" href="#动态组件" aria-hidden="true">#</a> 动态组件💎</h2>
-<figure><img src="@source/../.vuepress/public/images/vue/vue18.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="/images/vue/vue18.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p>有些场景会需要在两个组件间来回切换，比如 Tab 界面</p>
 <p>假设<code v-pre>Home</code>和<code v-pre>About</code>组件已经在全局注册</p>
 <div class="language-vue line-numbers-mode" data-ext="vue"><pre v-pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">></span></span> 
@@ -128,7 +128,7 @@ app<span class="token punctuation">.</span><span class="token function">directiv
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>less<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token style"><span class="token language-css">
 </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="组件保持存活" tabindex="-1"><a class="header-anchor" href="#组件保持存活" aria-hidden="true">#</a> 组件保持存活💎</h2>
-<figure><img src="@source/../.vuepress/public/images/vue/vue19.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="/images/vue/vue19.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p>当使用 <code v-pre>&lt;component :is=&quot;...&quot;&gt;</code> 来在多个组件间作切换时，被切换掉的组件会被卸载。我们可以通过<code v-pre>&lt;keep-alive&gt;</code>组件强制被切换掉的组件仍然保持“存活”的状态</p>
 <p>假设<code v-pre>Home</code>和<code v-pre>About</code>组件已经在全局注册</p>
 <div class="language-vue line-numbers-mode" data-ext="vue"><pre v-pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">></span></span>        
@@ -149,10 +149,10 @@ app<span class="token punctuation">.</span><span class="token function">directiv
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>less<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token style"><span class="token language-css">
 </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="组件生命周期" tabindex="-1"><a class="header-anchor" href="#组件生命周期" aria-hidden="true">#</a> 组件生命周期💎</h2>
-<figure><img src="@source/../.vuepress/public/images/vue/vue20.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="/images/vue/vue20.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p>每个 Vue 组件实例在创建时都需要经历一系列的初始化步骤，比如设置好数据侦听，编译模板，挂载实例到 DOM，以及在数据改变时更新 DOM。在此过程中，它也会运行被称为生命周期钩子的函数，让开发者有机会在特定阶段运行自己的代码</p>
 <h3 id="生命周期示意图" tabindex="-1"><a class="header-anchor" href="#生命周期示意图" aria-hidden="true">#</a> 生命周期示意图👻</h3>
-<figure><img src="@source/../.vuepress/public/images/vue/vue21.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="/images/vue/vue21.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <div class="language-vue line-numbers-mode" data-ext="vue"><pre v-pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">></span></span>
   	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">></span></span>

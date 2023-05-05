@@ -1,4 +1,4 @@
-<template><div><h1 id="初体验react" tabindex="-1"><a class="header-anchor" href="#初体验react" aria-hidden="true">#</a> 初体验React 🎉</h1>
+<template><div><h1 id="_8-1-初体验react" tabindex="-1"><a class="header-anchor" href="#_8-1-初体验react" aria-hidden="true">#</a> 8.1 初体验React 🎉</h1>
 <figure><img src="/images/react/react1.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p>React 起源于 Facebook 的内部项目，于2013年5月公开发布，用于构建用户界面的 JavaScript 库。它通过组件化的方式，使得开发者可以将页面拆分成一系列独立、可重用的组件，每个组件都有自己的状态和行为。React 负责渲染这些组件，并将其组合成完整的用户界面。</p>
 <p>首先，React是目前前端最火的框架之一，其次，React是目前企业技术栈中要求的知识点，能够大大提升开发效率和体验。</p>
@@ -100,9 +100,9 @@ npx create-react-app my-app <span class="token parameter variable">--template</s
 <span class="token punctuation">}</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></CodeDemo><p><strong>轻松一刻</strong></p>
 <AudioPlayer
-  src="/mp3/像鱼.mp3"
-  title="像鱼"
-  poster="/mp3/像鱼.jpg"
+  src="/mp3/4.mp3"
+  title="音乐"
+  poster="/mp3/4.jpg"
 />
 <p><strong>视频教程</strong></p>
 <VideoPlayer

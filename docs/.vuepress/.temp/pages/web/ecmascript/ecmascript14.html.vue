@@ -1,4 +1,4 @@
-<template><div><h1 id="map、weakset、set数据结构" tabindex="-1"><a class="header-anchor" href="#map、weakset、set数据结构" aria-hidden="true">#</a> Map、WeakSet、Set数据结构🎉</h1>
+<template><div><h1 id="_5-14-map、weakset、set数据结构" tabindex="-1"><a class="header-anchor" href="#_5-14-map、weakset、set数据结构" aria-hidden="true">#</a> 5.14 Map、WeakSet、Set数据结构🎉</h1>
 
 <CodeDemo id="code-demo-3" type="normal" title="%E4%BB%A3%E7%A0%81%E6%BC%94%E7%A4%BA" code="eJwljrGKAjEQhl9lbq5REJdrvZju4IorDhSrNEsysKvZZE2ygoiPopXgK4j4Olv4Fk7cZor5v3++OWCVGoszFNWXXHX0HyhGWFbUEPz6lkTBe+VEK0VsSwe1mSvcUdgrlM/Tub/dRJED2T/u/eX6IYqWcZzgOvJR43XXkEvTbceVBVnSyYeRws/hxHhaGvOzY+Kvjokc5UzbWm8UTmA0hrmEg3IApaWQOBuUg4vr38od82Cfjln4/vHd0N76MINAJkOMHF8ck1dC">
 <div class="language-html line-numbers-mode" data-ext="html"><pre v-pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span>VuePress Theme Hope<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span>
