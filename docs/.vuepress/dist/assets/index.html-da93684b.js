@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-c95c646a","path":"/web/6%E3%80%81Typescript%E8%B6%85%E7%BA%A7/","title":"6、 Typescript超级","lang":"zh-CN","frontmatter":{"title":"6、 Typescript超级","description":""},"headers":[],"readingTime":{"minutes":0.01,"words":2},"filePathRelative":null,"excerpt":"","autoDesc":true,"git":{}}');export{e as data};

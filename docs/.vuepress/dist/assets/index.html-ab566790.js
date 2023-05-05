@@ -1,1 +1,0 @@
-const t=JSON.parse('{"key":"v-c041d39e","path":"/linux/1%E3%80%81Ubuntu/","title":"1、 Ubuntu","lang":"zh-CN","frontmatter":{"title":"1、 Ubuntu","description":""},"headers":[],"readingTime":{"minutes":0.01,"words":2},"filePathRelative":null,"excerpt":"","autoDesc":true,"git":{}}');export{t as data};

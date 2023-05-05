@@ -1,1 +1,0 @@
-const t=JSON.parse('{"key":"v-3dbe0654","path":"/web/9%E3%80%81Nuxtjs/","title":"9、 Nuxtjs","lang":"zh-CN","frontmatter":{"title":"9、 Nuxtjs","description":""},"headers":[],"readingTime":{"minutes":0.01,"words":2},"filePathRelative":null,"excerpt":"","autoDesc":true,"git":{}}');export{t as data};

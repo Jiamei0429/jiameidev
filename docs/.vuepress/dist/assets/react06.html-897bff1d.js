@@ -1,1 +1,0 @@
-import{_ as t,Y as a,Z as c,$ as e,a0 as r}from"./framework-5cc4ff0f.js";const s={},_=e("h1",{id:"_8-6-react路由",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#_8-6-react路由","aria-hidden":"true"},"#"),r(" 8.6 React路由 🎉")],-1),o=[_];function n(d,i){return a(),c("div",null,o)}const l=t(s,[["render",n],["__file","react06.html.vue"]]);export{l as default};

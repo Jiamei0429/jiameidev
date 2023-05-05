@@ -1,1 +1,0 @@
-import{_ as t,Y as a,Z as n,$ as e,a0 as s}from"./framework-5cc4ff0f.js";const c={},r=e("h1",{id:"_9-4-nuxtjs模块4",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#_9-4-nuxtjs模块4","aria-hidden":"true"},"#"),s(" 9.4 NuxtJS模块4 🎉")],-1),_=[r];function o(d,i){return a(),n("div",null,_)}const h=t(c,[["render",o],["__file","nuxt04.html.vue"]]);export{h as default};
