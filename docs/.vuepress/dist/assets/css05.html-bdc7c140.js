@@ -1,0 +1,1 @@
+import{_ as s,Y as t,Z as a,$ as e,a0 as c}from"./framework-5cc4ff0f.js";const r={},_=e("h1",{id:"_2-5-浮动与定位",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#_2-5-浮动与定位","aria-hidden":"true"},"#"),c(" 2.5 浮动与定位 🎉")],-1),o=[_];function n(d,i){return t(),a("div",null,o)}const l=s(r,[["render",n],["__file","css05.html.vue"]]);export{l as default};

@@ -1,0 +1,1 @@
+import{_ as s,Y as c,Z as t,$ as e,a0 as a}from"./framework-5cc4ff0f.js";const r={},_=e("h1",{id:"_2-6-css3新特性",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#_2-6-css3新特性","aria-hidden":"true"},"#"),a(" 2.6 CSS3新特性 🎉")],-1),o=[_];function n(d,i){return c(),t("div",null,o)}const l=s(r,[["render",n],["__file","css06.html.vue"]]);export{l as default};

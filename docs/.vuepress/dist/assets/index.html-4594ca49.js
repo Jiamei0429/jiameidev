@@ -1,0 +1,1 @@
+import{_ as n,Y as t,Z as o,a1 as c,I as r}from"./framework-5cc4ff0f.js";const s={};function _(a,l){const e=r("PDF");return t(),o("div",null,[c(e,{url:"/pdfs/web.pdf",height:"1100px"})])}const f=n(s,[["render",_],["__file","index.html.vue"]]);export{f as default};
