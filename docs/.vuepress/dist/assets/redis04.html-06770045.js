@@ -1,1 +1,0 @@
-import{_ as s,Y as r,Z as t,$ as e,a0 as a}from"./framework-5cc4ff0f.js";const c={},d=e("h1",{id:"_2-4-redis章节4",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#_2-4-redis章节4","aria-hidden":"true"},"#"),a(" 2.4 Redis章节4")],-1),_=[d];function o(i,n){return r(),t("div",null,_)}const l=s(c,[["render",o],["__file","redis04.html.vue"]]);export{l as default};

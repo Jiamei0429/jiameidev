@@ -42,24 +42,28 @@
 </ul>
 <div style="display:flex;justify-content:space-between;flex-wrap:wrap;">
     <div>
-        <img src="/images/gzh.jpg" style="width:150px"/>
+        <img src="/images/gzh.jpg" style="width:100px"/>
         <p style="width:100%;text-align:center;margin-top:-5px">微信公众号</p>
     </div>
     <div>
-        <img src="/images/gzh.jpg" style="width:150px"/>
-        <p style="width:100%;text-align:center;margin-top:-5px">微信视频号</p>
-    </div>
-    <div>
-        <img src="/images/gzh.jpg" style="width:150px"/>
+        <img src="/images/xcx.jpg" style="width:100px"/>
         <p style="width:100%;text-align:center;margin-top:-5px">微信小程序</p>
     </div>
     <div>
-        <img src="/images/gzh.jpg" style="width:150px"/>
-        <p style="width:100%;text-align:center;margin-top:-5px">抖音视频号</p>
+        <img src="/images/dy.jpg" style="width:100px"/>
+        <p style="width:100%;text-align:center;margin-top:-5px">抖音</p>
     </div>
     <div>
-        <img src="/images/gzh.jpg" style="width:150px"/>
-        <p style="width:100%;text-align:center;margin-top:-5px">抖音视频号</p>
+        <img src="/images/blbl.jpg" style="width:100px"/>
+        <p style="width:100%;text-align:center;margin-top:-5px">哔哩哔哩</p>
+    </div>
+    <div>
+        <img src="/images/dyxcx.jpg" style="width:100px"/>
+        <p style="width:100%;text-align:center;margin-top:-5px">抖音小程序</p>
+    </div>
+    <div>
+        <img src="/images/app.jpg" style="width:100px"/>
+        <p style="width:100%;text-align:center;margin-top:-5px">安卓APP</p>
     </div>
 </div>
 </div></template>

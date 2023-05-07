@@ -1,1 +1,0 @@
-import{_ as n,Y as t,Z as a,$ as e,a0 as c}from"./framework-5cc4ff0f.js";const r={},s=e("h1",{id:"nginx章节1",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#nginx章节1","aria-hidden":"true"},"#"),c(" Nginx章节1")],-1),o=[s];function i(_,d){return t(),a("div",null,o)}const l=n(r,[["render",i],["__file","nginx01.html.vue"]]);export{l as default};
