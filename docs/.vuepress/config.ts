@@ -218,6 +218,24 @@ export default defineUserConfig({
                 icon: "people",
                 link: '/resume/'
             },
+            {
+                text: '面试（暂时存在）',
+                icon: "creative",
+                children: [
+                    {
+                        text: '个人简历',
+                        link: '/webresume/',
+                        icon: "tool",
+                        activeMatch: '^/webresume/',
+                    },
+                    {
+                        text: '简历附件',
+                        icon: "exercise",
+                        link: '/webresume/web/',
+                        activeMatch: '^/webresume/web/',
+                    },
+                ]
+            }
         ],
         // sidebar: "structure"
         sidebar: {

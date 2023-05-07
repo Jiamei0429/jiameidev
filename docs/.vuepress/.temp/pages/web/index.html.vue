@@ -1,7 +1,7 @@
 <template><div><h1 id="web前端" tabindex="-1"><a class="header-anchor" href="#web前端" aria-hidden="true">#</a> WEB前端</h1>
 <h4 id="一、html标签" tabindex="-1"><a class="header-anchor" href="#一、html标签" aria-hidden="true">#</a> 一、<RouterLink to="/web/html/">HTML标签</RouterLink> 📖</h4>
 <h4 id="二、css样式" tabindex="-1"><a class="header-anchor" href="#二、css样式" aria-hidden="true">#</a> 二、<RouterLink to="/web/css/">CSS样式</RouterLink>  📖</h4>
-<h4 id="三、scss预处理器" tabindex="-1"><a class="header-anchor" href="#三、scss预处理器" aria-hidden="true">#</a> 三、<RouterLink to="/web/scss/">Scss预处理器</RouterLink>  📖</h4>
+<h4 id="三、sass预处理器" tabindex="-1"><a class="header-anchor" href="#三、sass预处理器" aria-hidden="true">#</a> 三、<RouterLink to="/web/sass/">Sass预处理器</RouterLink>  📖</h4>
 <h4 id="四、javascript编程模块" tabindex="-1"><a class="header-anchor" href="#四、javascript编程模块" aria-hidden="true">#</a> 四、<RouterLink to="/web/javascript/">JavaScript编程模块</RouterLink>  📖</h4>
 <h4 id="五、ecmascript新特性" tabindex="-1"><a class="header-anchor" href="#五、ecmascript新特性" aria-hidden="true">#</a> 五、<RouterLink to="/web/ecmascript/">ECMAScript新特性</RouterLink>  📖</h4>
 <h4 id="六、typescript编程模块" tabindex="-1"><a class="header-anchor" href="#六、typescript编程模块" aria-hidden="true">#</a> 六、<RouterLink to="/web/typescript/">TypeScript编程模块</RouterLink>  📖</h4>

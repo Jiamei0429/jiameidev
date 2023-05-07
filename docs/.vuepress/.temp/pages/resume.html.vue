@@ -20,7 +20,7 @@
 <h2 id="第三步" tabindex="-1"><a class="header-anchor" href="#第三步" aria-hidden="true">#</a> 第三步：💪</h2>
 <p>多端开发，当数据足够丰富后，为其进行小程序、APP的补充复制，让用户不再局限于网页端使用，同时开放合作，吸引众多开发者驻足使用。</p>
 <h1 id="支持我们" tabindex="-1"><a class="header-anchor" href="#支持我们" aria-hidden="true">#</a> 支持我们  💐</h1>
-<p>本网站的开发和维护仅仅独自一人进行，并无团队支持，如果你感觉该网站确实对你有所帮助，就打赏请我喝杯咖啡吧，我将不断为其进行维护，丰富新的内容，争取带给大家更多的帮助，如果你有好的建议和想法，也可以<strong>投稿我的邮箱</strong>，我将认真听取大家的意见和反馈。</p>
+<p>本网站的开发和维护仅仅独自一人进行，并无团队支持，如果你感觉该网站确实对你有所帮助，就请打赏支持一下，我将不断为其进行维护，丰富新的内容，争取带给大家更多的帮助，如果你有好的建议和想法，也可以<strong>投稿我的邮箱</strong>，我将认真听取大家的意见和反馈。</p>
 <div style="display:flex;justify-content:space-around;flex-wrap:wrap;">
     <img src="/images/zfb.jpg" style="width:350px"/>
     <img src="/images/wx.jpg" style="width:350px"/>
@@ -52,6 +52,10 @@
     <div>
         <img src="/images/gzh.jpg" style="width:150px"/>
         <p style="width:100%;text-align:center;margin-top:-5px">微信小程序</p>
+    </div>
+    <div>
+        <img src="/images/gzh.jpg" style="width:150px"/>
+        <p style="width:100%;text-align:center;margin-top:-5px">抖音视频号</p>
     </div>
     <div>
         <img src="/images/gzh.jpg" style="width:150px"/>

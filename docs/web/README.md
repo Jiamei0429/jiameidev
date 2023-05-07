@@ -8,7 +8,7 @@ icon: html
 
 #### 一、[HTML标签](/web/html/) :book:
 #### 二、[CSS样式](/web/css/)  :book:
-#### 三、[Scss预处理器](/web/scss/)  :book:
+#### 三、[Sass预处理器](/web/sass/)  :book:
 #### 四、[JavaScript编程模块](/web/javascript/)  :book:
 #### 五、[ECMAScript新特性](/web/ecmascript/)  :book:
 #### 六、[TypeScript编程模块](/web/typescript/)  :book:

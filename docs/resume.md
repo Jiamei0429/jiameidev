@@ -34,7 +34,7 @@ order: 13
 
 # 支持我们  :bouquet:
 
-本网站的开发和维护仅仅独自一人进行，并无团队支持，如果你感觉该网站确实对你有所帮助，就打赏请我喝杯咖啡吧，我将不断为其进行维护，丰富新的内容，争取带给大家更多的帮助，如果你有好的建议和想法，也可以**投稿我的邮箱**，我将认真听取大家的意见和反馈。
+本网站的开发和维护仅仅独自一人进行，并无团队支持，如果你感觉该网站确实对你有所帮助，就请打赏支持一下，我将不断为其进行维护，丰富新的内容，争取带给大家更多的帮助，如果你有好的建议和想法，也可以**投稿我的邮箱**，我将认真听取大家的意见和反馈。
 
 <div style="display:flex;justify-content:space-around;flex-wrap:wrap;">
     <img src="/images/zfb.jpg" style="width:350px"/>
@@ -59,6 +59,10 @@ order: 13
     <div>
         <img src="/images/gzh.jpg" style="width:150px"/>
         <p style="width:100%;text-align:center;margin-top:-5px">微信小程序</p>
+    </div>
+    <div>
+        <img src="/images/gzh.jpg" style="width:150px"/>
+        <p style="width:100%;text-align:center;margin-top:-5px">抖音视频号</p>
     </div>
     <div>
         <img src="/images/gzh.jpg" style="width:150px"/>
