@@ -1,4 +1,4 @@
-<template><div><h1 id="_7-2-vue基础" tabindex="-1"><a class="header-anchor" href="#_7-2-vue基础" aria-hidden="true">#</a> 7.2 Vue基础🎉</h1>
+<template><div><h1 id="_7-2-vue基础" tabindex="-1"><a class="header-anchor" href="#_7-2-vue基础" aria-hidden="true">#</a> 7.2 Vue基础 🎉</h1>
 <h2 id="响应式" tabindex="-1"><a class="header-anchor" href="#响应式" aria-hidden="true">#</a> 响应式💎</h2>
 <figure><img src="/images/vue/vue6.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p>为了让大家上手组合式API更轻松，我们对比这选项式API来写，不同的编码风格完成相同的功能</p>

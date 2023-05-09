@@ -2,7 +2,7 @@
 category: [VUE,WEB前端]
 tag: [vue]
 ---
-# 7.6 Vue路由:tada: 
+# 7.6 网络请求 :tada: 
 
 ::: vue-demo 代码演示
 ```vue

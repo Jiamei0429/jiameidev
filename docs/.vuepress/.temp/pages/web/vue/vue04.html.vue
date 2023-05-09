@@ -1,4 +1,4 @@
-<template><div><h1 id="_7-4-vue高级" tabindex="-1"><a class="header-anchor" href="#_7-4-vue高级" aria-hidden="true">#</a> 7.4 Vue高级🎉</h1>
+<template><div><h1 id="_7-4-vue高级" tabindex="-1"><a class="header-anchor" href="#_7-4-vue高级" aria-hidden="true">#</a> 7.4 Vue高级 🎉</h1>
 
 <CodeDemo id="code-demo-3" type="vue" title="%E4%BB%A3%E7%A0%81%E6%BC%94%E7%A4%BA" code="eJyrViorTVWyUrIpSc0tyEksSbWLyVMAApsCO0MjYxv9AiDfRh9JEsgtTi7KLChRKE4tKQVJgxRAhKDSJZU5qQrFyfkFqSkwaZAQkK1UCwBgUSdu">
 <div class="language-vue line-numbers-mode" data-ext="vue"><pre v-pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">></span></span>

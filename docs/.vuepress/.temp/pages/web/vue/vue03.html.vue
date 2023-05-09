@@ -1,4 +1,4 @@
-<template><div><h1 id="_7-3-vue进阶" tabindex="-1"><a class="header-anchor" href="#_7-3-vue进阶" aria-hidden="true">#</a> 7.3 Vue进阶🎉</h1>
+<template><div><h1 id="_7-3-vue进阶" tabindex="-1"><a class="header-anchor" href="#_7-3-vue进阶" aria-hidden="true">#</a> 7.3 Vue进阶 🎉</h1>
 <h2 id="组件" tabindex="-1"><a class="header-anchor" href="#组件" aria-hidden="true">#</a> 组件💎</h2>
 <figure><img src="/images/vue/vue14.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p>组件最大的优势就是可复用性</p>

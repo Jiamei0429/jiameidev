@@ -1,1 +1,6 @@
-# 1.1 MySql章节1
+---
+category: [数据库]
+tag: [mysql]
+---
+
+# 1.1 Mysql章节1 :tada:

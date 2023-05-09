@@ -1,4 +1,9 @@
-# 2.1 初体验Redis:tada:
+---
+category: [数据库]
+tag: [redis]
+---
+
+# 2.1 初体验Redis :tada:
 
 ## Redis概述_什么是NoSQL:gem:
 

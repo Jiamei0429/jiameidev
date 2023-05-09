@@ -1,6 +1,6 @@
 <template><div><h1 id="_12-5-状态管理pinia" tabindex="-1"><a class="header-anchor" href="#_12-5-状态管理pinia" aria-hidden="true">#</a> 12.5 状态管理Pinia 🎉</h1>
 <details class="hint-container details"><summary>学习此章节之前，请先阅读这里！！！</summary>
-<p>如果你已经完成了Vue的学习，那么你可以继续往下学习此章节，假如你没有学习完Vue，确切的说是没有学习过Pinia，请点击<a href="/web/vue/vue07">状态管理Pinia</a>，学习完该章节之后再继续阅读本章节！</p>
+<p>如果你已经完成了Vue的学习，那么你可以继续往下学习此章节，假如你没有学习完Vue，确切的说是没有学习过Pinia，请点击<a href="/web/vue/vue08">状态管理Pinia</a>，学习完该章节之后再继续阅读本章节！</p>
 </details>
 <figure><img src="/images/uniapp/uni28.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <div class="hint-container tip">

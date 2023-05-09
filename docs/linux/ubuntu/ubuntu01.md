@@ -1,4 +1,9 @@
-# Ubuntu系统的安装 :tada:
+---
+category: [Linxu]
+tag: [ubuntu]
+---
+
+# 1.1 Ubuntu系统的安装 :tada:
 
 > 注意事项：
 >

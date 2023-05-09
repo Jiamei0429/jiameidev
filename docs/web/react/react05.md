@@ -1,5 +1,5 @@
 ---
 category: [RRACT,WEB前端]
-tag: [react,网络请求]
+tag: [react]
 ---
-# 8.5 网络请求 :tada:
+# 8.5 React使用TS :tada:

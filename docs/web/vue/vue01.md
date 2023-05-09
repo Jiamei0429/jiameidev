@@ -2,7 +2,7 @@
 category: [VUE,WEB前端]
 tag: [vue]
 ---
-# 7.1 初体验Vue3:tada:
+# 7.1 初体验Vue3 :tada:
 
 ![](/images/vue/vue0.png)
 

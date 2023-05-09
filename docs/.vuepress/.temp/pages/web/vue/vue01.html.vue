@@ -1,4 +1,4 @@
-<template><div><h1 id="_7-1-初体验vue3" tabindex="-1"><a class="header-anchor" href="#_7-1-初体验vue3" aria-hidden="true">#</a> 7.1 初体验Vue3🎉</h1>
+<template><div><h1 id="_7-1-初体验vue3" tabindex="-1"><a class="header-anchor" href="#_7-1-初体验vue3" aria-hidden="true">#</a> 7.1 初体验Vue3 🎉</h1>
 <figure><img src="/images/vue/vue0.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p>Vue (发音为 /vjuː/，类似 <strong>view</strong>) 是一款用于构建用户界面的 JavaScript 框架。它基于标准 HTML、CSS 和 JavaScript 构建，并提供了一套声明式的、组件化的编程模型，帮助你高效地开发用户界面。无论是简单还是复杂的界面，Vue 都可以胜任，Vue易学易用，性能出色，适用场景丰富的 Web 前端框架，他是国内目前前端最火的框架之一。</p>
 <p>目前，在开发中，Vue有两个大版本可以选择<code v-pre>Vue2</code>和<code v-pre>Vue3</code>，老项目一般都是<code v-pre>Vue2</code>的，而新项目一般都选择<code v-pre>Vue3</code>开发</p>

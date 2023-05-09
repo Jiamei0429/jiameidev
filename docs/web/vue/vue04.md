@@ -2,7 +2,7 @@
 category: [VUE,WEB前端]
 tag: [vue]
 ---
-# 7.4 Vue高级:tada: 
+# 7.4 Vue高级 :tada: 
 
 ::: vue-demo 代码演示
 ```vue

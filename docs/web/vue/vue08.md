@@ -2,7 +2,7 @@
 category: [VUE,WEB前端]
 tag: [vue]
 ---
-# 7.8 UI组件库:tada: 
+# 7.8 Pinia状态管理 :tada: 
 
 ::: vue-demo 代码演示
 ```vue

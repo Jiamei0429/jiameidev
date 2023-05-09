@@ -1,5 +1,5 @@
 ---
 category: [RRACT,WEB前端]
-tag: [react,redux]
+tag: [react,react路由]
 ---
-# 8.7 Redux状态管理 :tada:
+# 8.7 React路由 :tada:

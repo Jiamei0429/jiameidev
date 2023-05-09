@@ -1,4 +1,4 @@
-<template><div><h1 id="ubuntu系统的安装" tabindex="-1"><a class="header-anchor" href="#ubuntu系统的安装" aria-hidden="true">#</a> Ubuntu系统的安装 🎉</h1>
+<template><div><h1 id="_1-1-ubuntu系统的安装" tabindex="-1"><a class="header-anchor" href="#_1-1-ubuntu系统的安装" aria-hidden="true">#</a> 1.1 Ubuntu系统的安装 🎉</h1>
 <blockquote>
 <p>注意事项：</p>
 <p>如若保持双系统，请提前准备一个空的磁盘分区并见将其处于未分配的状态</p>

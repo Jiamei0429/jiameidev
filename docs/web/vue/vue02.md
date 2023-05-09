@@ -2,7 +2,7 @@
 category: [VUE,WEB前端]
 tag: [vue]
 ---
-# 7.2 Vue基础:tada:  
+# 7.2 Vue基础 :tada:  
 
 ## 响应式:gem:
 

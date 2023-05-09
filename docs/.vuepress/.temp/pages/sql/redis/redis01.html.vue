@@ -1,4 +1,4 @@
-<template><div><h1 id="_2-1-初体验redis" tabindex="-1"><a class="header-anchor" href="#_2-1-初体验redis" aria-hidden="true">#</a> 2.1 初体验Redis🎉</h1>
+<template><div><h1 id="_2-1-初体验redis" tabindex="-1"><a class="header-anchor" href="#_2-1-初体验redis" aria-hidden="true">#</a> 2.1 初体验Redis 🎉</h1>
 <h2 id="redis概述-什么是nosql" tabindex="-1"><a class="header-anchor" href="#redis概述-什么是nosql" aria-hidden="true">#</a> Redis概述_什么是NoSQL💎</h2>
 <figure><img src="/images/redis/redis1.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p>NoSQL(NoSQL = <strong>Not Only SQL</strong>)，意即“不仅仅是SQL”，泛指<strong>非关系型的数据库</strong>。随着互联网web2.0网站的兴起，传统的关系数据库在应付特别是超大规模和高并发类型纯动态网站已经显得力不从心，暴露了很多难以克服的问题。</p>
